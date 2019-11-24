@@ -1,3 +1,4 @@
+/* GENERELLE REGLER*/
 * {
   box-sizing: border-box;
 }
@@ -6,7 +7,7 @@ body {
   margin: 0;
   background-color: #151515;
 }
-
+/* TIL DESKTOP STØRRELSE
 h1 {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 64px;
@@ -27,3 +28,205 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
+*/
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 27px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+/* GENERELLE REGLER SLUT */
+
+/* HEADER */
+
+header {
+  background: rgba(21, 21, 21, 0.8);
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid #be8e63;
+  position: absolute;
+  z-index: 2;
+}
+
+.burgermenuIkon {
+  float: right;
+  margin-top: -42px;
+  margin-right: 15px;
+}
+
+.lukBurgermenu {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.navLogo img {
+  width: 18%;
+  margin-left: 15px;
+}
+
+.navLogo2 img {
+  width: 18%;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.mobilOverlay {
+  width: 0px;
+  height: 100%;
+  position: fixed;
+  background-color: #151515;
+  overflow-x: hidden;
+  z-index: 2;
+  top: 0;
+}
+
+.navPunkter {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.navPunkter a {
+  text-transform: uppercase;
+  color: #be8e63;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+/* HEADER SLUT */
+/* FOOTER */
+
+footer {
+  border-top: 2px solid #be8e63;
+  margin-top: 50px;
+}
+
+.kontakt {
+  margin-top: 50px;
+}
+
+footer h3 {
+  text-align: center;
+  margin-block-end: 0.5em;
+}
+li {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+}
+
+.fa {
+  color: white;
+  font-size: 24px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.soMeIkoner {
+  text-align: center;
+}
+
+.rapportContainer {
+  width: 113px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.rapportContainer img {
+  width: 100%;
+}
+
+/* FOOTER SLUT*/
+
+/* INDEX.HTML CSS */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.splashImage img {
+  width: 100%;
+  position: relative;
+}
+
+#jul {
+  margin-top: 30px;
+}
+
+.julImg img {
+  width: 100%;
+}
+
+.julTxt {
+  width: 85%;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.julBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+  position: relative;
+}
+
+.kagensDagImg img {
+  width: 100%;
+  margin-top: 20px;
+}
+.kagensDagTxt {
+  background-image: url(img/bordermobile2-02.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.kagensDagTxt h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.kagensDagTxt p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+/* INDEX.HTML CSS SLUT*/
