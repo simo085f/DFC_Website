@@ -217,9 +217,52 @@ main {
   padding-right: 15px;
   padding-bottom: 15px;
 }
-
 /* INDEX.HTML CSS SLUT*/
+/* BRØD HTML */
+.broed img,
+.boller img,
+.rugbroed img,
+.flute img {
+  width: 100%;
+}
 
+.produktBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+}
+
+.produktTxt {
+  width: 85%;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.produkt2Border {
+  border-left: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: left;
+}
+.produkt2Txt {
+  width: 85%;
+  position: absolute;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.fluteCOntainer {
+  margin-bottom: 300px;
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
