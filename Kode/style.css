@@ -70,6 +70,11 @@ header {
   border-bottom: 2px solid #be8e63;
   position: absolute;
   z-index: 2;
+  position: fixed;
+}
+
+.desktopPunkter {
+  display: none;
 }
 
 .burgermenuIkon {
@@ -81,19 +86,15 @@ header {
 .lukBurgermenu {
   float: right;
   margin-right: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .navLogo img {
-  width: 18%;
+  width: 60px;
+  margin-top: 4px;
   margin-left: 15px;
 }
 
-.navLogo2 img {
-  width: 18%;
-  margin-left: 15px;
-  margin-top: 15px;
-}
 .mobilOverlay {
   width: 0px;
   height: 100%;
@@ -120,7 +121,6 @@ header {
 }
 /* HEADER SLUT */
 /* FOOTER */
-
 footer {
   border-top: 2px solid #be8e63;
   margin-top: 50px;
@@ -204,18 +204,28 @@ main {
   height: 250px;
   width: 60%;
   float: right;
-  position: relative;
+  /* position: relative; */
 }
 
 .kagensDagImg img {
   width: 100%;
   margin-top: 20px;
 }
+
+.kagensDagBorder {
+  border-right: 2px solid #be8e63;
+  border-left: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  height: 190px;
+  position: relative;
+  top: 350px;
+}
+
+.kagensDagContainer {
+  margin-top: -190px;
+}
 .kagensDagTxt {
-  background-image: url(img/bordermobile2-02.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  margin-top: 10px;
 }
 
 .kagensDagTxt h3 {
@@ -230,3 +240,218 @@ main {
 }
 
 /* INDEX.HTML CSS SLUT*/
+
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  /* HEADER */
+  .navPunkter {
+    margin-top: 20px;
+  }
+  .burgermenuIkon {
+    margin-right: 25px;
+  }
+  .lukBurgermenu {
+    margin-right: 25px;
+  }
+  .navLogo img {
+    margin-left: 25px;
+  }
+
+  /* JUL SEKTION */
+  .julTxt {
+    margin-top: 45px;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 150px;
+    top: 270px;
+  }
+  .kagensDagContainer {
+    margin-top: -150px;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  /* NAVIGATION */
+  .navPunkter {
+    margin-top: 260px;
+  }
+  .navPunkter a {
+    font-size: 27px;
+    padding: 15px;
+  }
+
+  .burgermenuIkon {
+    margin-right: 35px;
+  }
+  .lukBurgermenu {
+    margin-right: 35px;
+  }
+  .navLogo img {
+    margin-left: 35px;
+  }
+
+  /* MAIN */
+  main {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* JUL SEKTION */
+  .julTxt {
+    width: 80%;
+  }
+
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 150px;
+    top: 240px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+
+@media screen and (min-width: 1024px) {
+  /* HEADER DESKTOP */
+  #mobilNavigation,
+  .burgermenuIkon {
+    display: none;
+  }
+
+  .desktopPunkter {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    height: 60px;
+  }
+
+  .desktopPunkter a {
+    text-transform: uppercase;
+    color: #be8e63;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .desktopPunkter a:hover {
+    font-weight: 600;
+    border-bottom: 2px solid #be8e63;
+  }
+
+  .navLogo img {
+    width: 70px;
+    margin-top: 5px;
+    margin-left: 48px;
+  }
+  /* HEADER DESKTOP SLUT */
+
+  /* JUL SEKTION */
+  #jul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .julTxt {
+    width: 41%;
+    margin-top: 30px;
+  }
+
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 120px;
+    top: 220px;
+  }
+
+  .kagensDagContainer {
+    margin-top: -120px;
+  }
+
+  /* FOOTER DESKTOP */
+
+  footer li,
+  footer h3 {
+    text-align: left;
+  }
+
+  .soMeIkoner {
+    text-align: left;
+  }
+
+  .rapportContainer {
+    margin: 0;
+  }
+
+  .kontakt {
+    margin-top: 0px;
+  }
+  .footerContainer {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28% 25% 11% 1fr;
+    padding-top: 30px;
+    grid-gap: 32px;
+  }
+  /* FOOTER DESKTOP SLUT */
+}
+
+/* MEDIA QUERIES 1200px */
+@media screen and (min-width: 1200px) {
+  /* MAIN */
+  main {
+    width: 80%;
+  }
+
+  .footerContainer {
+    width: 80%;
+    grid-template-columns: 28% 25% 14% 1fr;
+    padding-top: 30px;
+    grid-gap: 32px;
+  }
+
+  /* JUL SEKTION */
+  .julTxt {
+    width: 36%;
+    margin-top: 40px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  /* NAVIGATION */
+  .desktopPunkter {
+    margin-right: 85px;
+  }
+  .navLogo img {
+    margin-left: 80px;
+  }
+  /* FOOTER */
+  .footerContainer {
+    grid-template-columns: 28% 25% 19% 1fr;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    top: 200px;
+  }
+}
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  /* FOOTER*/
+  .footerContainer {
+    grid-template-columns: 26% 27% 21% 1fr;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    top: 180px;
+  }
+}
