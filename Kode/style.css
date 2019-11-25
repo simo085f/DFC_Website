@@ -99,6 +99,7 @@ header {
   padding: 10px;
 }
 /* HEADER SLUT */
+
 /* FOOTER */
 footer {
   border-top: 2px solid #be8e63;
@@ -146,7 +147,6 @@ ul {
 .rapportContainer img {
   width: 100%;
 }
-
 /* FOOTER SLUT*/
 
 /* INDEX.HTML CSS */
@@ -183,7 +183,6 @@ main {
   height: 250px;
   width: 60%;
   float: right;
-  /* position: relative; */
 }
 
 .kagensDagImg img {
@@ -218,12 +217,19 @@ main {
   padding-bottom: 15px;
 }
 /* INDEX.HTML CSS SLUT*/
+
 /* BRØD HTML */
 .broed img,
 .boller img,
 .rugbroed img,
 .flute img {
   width: 100%;
+}
+.broed img,
+.boller img,
+.rugbroed img,
+.flute img {
+  margin-top: 20px;
 }
 
 .produktBorder {
@@ -260,8 +266,8 @@ main {
   padding-left: 30px;
 }
 
-.fluteCOntainer {
-  margin-bottom: 300px;
+.fluteContainer {
+  margin-bottom: 320px;
 }
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
@@ -278,7 +284,7 @@ main {
   .navLogo img {
     margin-left: 25px;
   }
-
+  /* INDEX.HTML */
   /* JUL SEKTION */
   .julTxt {
     margin-top: 45px;
@@ -290,6 +296,14 @@ main {
   }
   .kagensDagContainer {
     margin-top: -150px;
+  }
+
+  /* BRØD.HTML */
+  .broed img,
+  .boller img,
+  .rugbroed img,
+  .flute img {
+    margin-top: 30px;
   }
 }
 
@@ -320,6 +334,7 @@ main {
     margin: 0 auto;
   }
 
+  /*INDEX.HTML */
   /* JUL SEKTION */
   .julTxt {
     width: 80%;
@@ -329,6 +344,17 @@ main {
   .kagensDagBorder {
     height: 150px;
     top: 240px;
+  }
+
+  /*BRØD.HTML */
+  .produktTxt {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  .produkt2Txt {
+    padding-left: 70px;
+    margin-top: 60px;
   }
 }
 
@@ -398,7 +424,7 @@ main {
     margin-left: 48px;
   }
   /* HEADER DESKTOP SLUT */
-
+  /* INDEX HTML */
   /* JUL SEKTION */
   #jul {
     display: grid;
@@ -419,6 +445,84 @@ main {
 
   .kagensDagContainer {
     margin-top: -120px;
+  }
+  /* INDEX HTML SLUT/*
+
+  /* BRØD.HTML */
+  /* BRØD SEKTION */
+  .broed img,
+  .boller img,
+  .rugbroed img,
+  .flute img {
+    margin-top: 0px;
+  }
+  .broed,
+  .boller,
+  .rugbroed,
+  .flute {
+    margin-top: 60px;
+  }
+  .broed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  .produktTxt {
+    width: 39%;
+    margin-top: 30px;
+  }
+
+  /* BOLLER SEKTION */
+  .boller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bollerContainer {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .bollerImg {
+    grid-column-start: 2;
+  }
+
+  .produktTxt {
+    width: 39%;
+    margin-top: 40px;
+  }
+
+  .produkt2Txt {
+    width: 38%;
+    padding-left: 30px;
+    margin-top: 40px;
+  }
+
+  /* RUGBRØD SEKTION */
+  .rugbroed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* FLUTE SEKTION */
+  .flute {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .fluteContainer {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 50px;
+  }
+
+  .fluteImg {
+    grid-column-start: 2;
   }
 
   /* FOOTER DESKTOP */
@@ -451,7 +555,6 @@ main {
     padding-top: 30px;
     grid-gap: 32px;
   }
-  /* FOOTER DESKTOP SLUT */
 }
 
 /* MEDIA QUERIES 1200px */
@@ -472,6 +575,18 @@ main {
   .julTxt {
     width: 36%;
     margin-top: 25px;
+  }
+
+  /* BRØD.HTML */
+  .fluteContainer {
+    margin-bottom: 100px;
+  }
+
+  .broed,
+  .boller,
+  .rugbroed,
+  .flute {
+    margin-top: 80px;
   }
 }
 /* MEDIA QUERIES 1440px */
@@ -512,6 +627,19 @@ main {
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     top: 240px;
+  }
+
+  /* BRØD.HTML */
+  /* BRØD.HTML */
+  .fluteContainer {
+    margin-bottom: 200px;
+  }
+
+  .broed,
+  .boller,
+  .rugbroed,
+  .flute {
+    margin-top: 100px;
   }
 }
 /* MEDIA QUERIES 1536px */
