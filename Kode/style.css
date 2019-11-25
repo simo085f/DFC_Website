@@ -224,11 +224,6 @@ main {
 .rugbroed img,
 .flute img {
   width: 100%;
-}
-.broed img,
-.boller img,
-.rugbroed img,
-.flute img {
   margin-top: 20px;
 }
 
@@ -269,6 +264,18 @@ main {
 .fluteContainer {
   margin-bottom: 320px;
 }
+
+/* KAGER.HTML */
+.floedeskumskager img,
+.taerter img,
+.toerkager img,
+.smaakager img {
+  width: 100%;
+  margin-top: 20px;
+}
+.smaakagerContainer {
+  margin-bottom: 320px;
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
@@ -303,6 +310,14 @@ main {
   .boller img,
   .rugbroed img,
   .flute img {
+    margin-top: 30px;
+  }
+
+  /* KAGER.HTML */
+  .floedeskumskager img,
+  .taerter img,
+  .toerkager img,
+  .smaakager img {
     margin-top: 30px;
   }
 }
@@ -359,7 +374,6 @@ main {
 }
 
 /* MEDIA QUERIES 1024px */
-
 @media screen and (min-width: 1024px) {
   /* SKRIFTSTØRRELSE TIL DESKTOP STØRRELSE*/
   h1 {
@@ -525,6 +539,67 @@ main {
     grid-column-start: 2;
   }
 
+  /* KAGER.HTML */
+  .floedeskumskager img,
+  .taerter img,
+  .toerkager img,
+  .smaakager img {
+    margin-top: 0px;
+  }
+  /* FLØDESKUMSKAGER SEKTION */
+  .floedeskumskager,
+  .taerter,
+  .toerkager,
+  .smaakager {
+    margin-top: 60px;
+  }
+  .floedeskumskager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* TÆRTER SEKTION */
+  .taerter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .taerterContainer {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .taerterImg {
+    grid-column-start: 2;
+  }
+
+  /* TØRKAGER SEKTION */
+  .toerkager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* FLUTE SEKTION */
+  .smaakager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .smaakagerContainer {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 50px;
+  }
+
+  .smaakagerImg {
+    grid-column-start: 2;
+  }
+
   /* FOOTER DESKTOP */
 
   footer li,
@@ -588,6 +663,18 @@ main {
   .flute {
     margin-top: 80px;
   }
+
+  /* KAGER.HTML */
+  .smaakagerContainer {
+    margin-bottom: 100px;
+  }
+
+  .floedeskumskager,
+  .taerter,
+  .toerkager,
+  .smaakager {
+    margin-top: 80px;
+  }
 }
 /* MEDIA QUERIES 1440px */
 @media screen and (min-width: 1440px) {
@@ -624,12 +711,12 @@ main {
   .footerContainer {
     grid-template-columns: 28% 25% 19% 1fr;
   }
+  /* INDEX.HTML */
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     top: 240px;
   }
 
-  /* BRØD.HTML */
   /* BRØD.HTML */
   .fluteContainer {
     margin-bottom: 200px;
@@ -640,6 +727,20 @@ main {
   .rugbroed,
   .flute {
     margin-top: 100px;
+  }
+  .produktTxt {
+    width: 36%;
+  }
+
+  /* KAGER.HTML */
+  .floedeskumskager,
+  .taerter,
+  .toerkager,
+  .smaakager {
+    margin-top: 100px;
+  }
+  .smaakagerContainer {
+    margin-bottom: 200px;
   }
 }
 /* MEDIA QUERIES 1536px */
