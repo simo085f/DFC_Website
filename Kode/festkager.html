@@ -34,12 +34,12 @@
           <img src="img/DFCLOGO.png" alt="Det Franske Conditori" />
         </div>
         <div class="navPunkter">
-          <a href="#brød.html">Brød</a>
-          <a href="#kager.html">Kager</a>
-          <a href="#festkager.html">Bestillingskager</a>
-          <a href="#fristelser.html">Fristelser</a>
-          <a href="#historie.html">Vores historie</a>
-          <a href="#kontakt.html">Kontakt os</a>
+          <a href="brød.html">Brød</a>
+          <a href="kager.html">Kager</a>
+          <a href="festkager.html">Bestillingskager</a>
+          <a href="fristelser.html">Fristelser</a>
+          <a href="historie.html">Vores historie</a>
+          <a href="kontakt.html">Kontakt os</a>
         </div>
       </div>
       <div class="burgermenuIkon">
@@ -47,12 +47,12 @@
       </div>
 
       <div class="desktopPunkter">
-        <a href="#brød.html">Brød</a>
-        <a href="#kager.html">Kager</a>
-        <a href="#fristelser.html">Fristelser</a>
-        <a href="#festkager.html">Bestillingskager</a>
-        <a href="#historie.html">Vores historie</a>
-        <a href="#kontakt.html">Kontakt os</a>
+        <a href="brød.html">Brød</a>
+        <a href="kager.html">Kager</a>
+        <a href="fristelser.html">Fristelser</a>
+        <a href="festkager.html">Bestillingskager</a>
+        <a href="historie.html">Vores historie</a>
+        <a href="kontakt.html">Kontakt os</a>
       </div>
     </header>
     <div class="splashImage">
@@ -67,27 +67,26 @@
         </p>
       </div>
       <div class="produkt1">
-        <!-- <div class="produkt1Img">
-          <img src="img/sandwich.JPG" alt="SANDWICHES & PANINI" />
-        </div> -->
         <div class="carouselContainer">
-          <div class="slides">
-            <img src="img/lagkage.jpg" alt="Lagkage" />
+          <div class="slides ease">
+            <img src="img/lagkage.jpg" style="width:100%" />
           </div>
-          <div class="slides">
-            <img src="img/lagkage2.jpg" alt="Lagkage" />
+          <div class="slides ease">
+            <img src="img/lagkage2.jpg" style="width:100%" />
           </div>
-          <div class="slides">
-            <img src="img/lagkage3.jpg" alt="Lagkage" />
+          <div class="slides ease">
+            <img src="img/lagkage3.jpg" style="width:100%" />
           </div>
-          <a class="forrige" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="naaste" onclick="plusSlides(1)">&#10095;</a>
+          <div class="slideKnapper">
+            <span class="slideknap" onclick="aktuelSlide(1)"></span>
+            <span class="slideknap" onclick="aktuelSlide(2)"></span>
+            <span class="slideknap" onclick="aktuelSlide(3)"></span>
+          </div>
+
+          <i class="tilbage fa" onclick="skiftSlides(-1)">&#xf104;</i>
+          <i class="frem fa" onclick="skiftSlides(1)">&#xf105;</i>
         </div>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+
         <div class="produkt1Container">
           <div class="produktBorder"></div>
           <div class="produktTxt">
@@ -100,8 +99,24 @@
         </div>
       </div>
       <div class="produkt2">
-        <div class="produkt2Img">
-          <img src="img/marmelade.jpg" alt="Marmelade" />
+        <div class="carouselContainer">
+          <div class="slidesKagemand ease">
+            <img src="img/lagkage.jpg" style="width:100%" />
+          </div>
+          <div class="slidesKagemand ease">
+            <img src="img/lagkage2.jpg" style="width:100%" />
+          </div>
+          <div class="slidesKagemand ease">
+            <img src="img/lagkage3.jpg" style="width:100%" />
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap2" onclick="aktuelSlide2(1)"></span>
+            <span class="slideknap2" onclick="aktuelSlide2(2)"></span>
+            <span class="slideknap2" onclick="aktuelSlide2(3)"></span>
+          </div>
+
+          <i class="tilbage fa" onclick="skiftSlides2(-1)">&#xf104;</i>
+          <i class="frem fa" onclick="skiftSlides2(1)">&#xf105;</i>
         </div>
         <div class="produkt2Container">
           <div class="produkt2Border"></div>
@@ -115,8 +130,24 @@
         </div>
       </div>
       <div class="produkt3">
-        <div class="produkt3Img">
-          <img src="img/musli.jpg" alt="Musli" />
+        <div class="carouselContainer">
+          <div class="slidesBryllupskage ease">
+            <img src="img/lagkage.jpg" style="width:100%" />
+          </div>
+          <div class="slidesBryllupskage ease">
+            <img src="img/lagkage2.jpg" style="width:100%" />
+          </div>
+          <div class="slidesBryllupskage ease">
+            <img src="img/lagkage3.jpg" style="width:100%" />
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap3" onclick="aktuelSlide3(1)"></span>
+            <span class="slideknap3" onclick="aktuelSlide3(2)"></span>
+            <span class="slideknap3" onclick="aktuelSlide3(3)"></span>
+          </div>
+
+          <i class="tilbage fa" onclick="skiftSlides3(-1)">&#xf104;</i>
+          <i class="frem fa" onclick="skiftSlides3(1)">&#xf105;</i>
         </div>
         <div class="produkt3Container">
           <div class="produktBorder"></div>
@@ -130,8 +161,24 @@
         </div>
       </div>
       <div class="produkt4">
-        <div class="produkt4Img">
-          <img src="img/rugbrød.jpg" alt="Rugbrødschips" />
+        <div class="carouselContainer">
+          <div class="slidesKransekage ease">
+            <img src="img/lagkage.jpg" style="width:100%" />
+          </div>
+          <div class="slidesKransekage ease">
+            <img src="img/lagkage2.jpg" style="width:100%" />
+          </div>
+          <div class="slidesKransekage ease">
+            <img src="img/lagkage3.jpg" style="width:100%" />
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap4" onclick="aktuelSlide4(1)"></span>
+            <span class="slideknap4" onclick="aktuelSlide4(2)"></span>
+            <span class="slideknap4" onclick="aktuelSlide4(3)"></span>
+          </div>
+
+          <i class="tilbage fa" onclick="skiftSlides4(-1)">&#xf104;</i>
+          <i class="frem fa" onclick="skiftSlides4(1)">&#xf105;</i>
         </div>
         <div class="produkt4Container">
           <div class="produkt2Border"></div>

@@ -265,6 +265,77 @@ main {
   margin-bottom: 320px;
 }
 
+/*BESTILLINGSKAGER.HTML */
+.slides,
+.slidesKagemand,
+.slidesBryllupskage,
+.slidesKransekage {
+  display: none;
+}
+
+.carouselContainer {
+  position: relative;
+  margin: auto;
+}
+
+.frem,
+.tilbage {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.frem {
+  right: 0;
+}
+
+.frem:hover,
+.tilbage:hover {
+  background-color: #be8d63dc;
+}
+
+.slideKnapper {
+  text-align: center;
+}
+
+.slideknap,
+.slideknap2,
+.slideknap3,
+.slideknap4 {
+  width: 30px;
+  height: 4px;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #e9c6a8;
+  transition: 0.6s ease;
+}
+
+.valgt,
+.slideknap:hover {
+  background-color: #be8e63;
+}
+.ease {
+  animation-name: easein;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes easein {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
@@ -520,6 +591,12 @@ main {
     grid-column-start: 2;
   }
 
+  /*BESTILLINGSKAGER.HTML */
+  .frem,
+  .tilbage {
+    margin-top: -40px;
+  }
+
   /* FOOTER DESKTOP */
 
   footer li,
@@ -651,3 +728,5 @@ main {
     top: 240px;
   }
 }
+
+/* STYLING TIL CAROUSEL TEST */
