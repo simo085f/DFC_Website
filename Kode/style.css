@@ -292,12 +292,29 @@ main {
   user-select: none;
 }
 
-.frem {
+.frem2,
+.tilbage2 {
+  position: absolute;
+  top: 74%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.frem,
+.frem2 {
   right: 0;
 }
 
 .frem:hover,
-.tilbage:hover {
+.tilbage:hover,
+.frem2:hover,
+.tilbage2:hover {
   background-color: #be8d63dc;
 }
 
@@ -372,6 +389,12 @@ main {
   .produkt4 img {
     margin-top: 30px;
   }
+
+  /* BESTILLINGSKAGER.HTML */
+  .frem2,
+  .tilbage2 {
+    top: 70%;
+  }
 }
 
 /* MEDIA QUERIES 768px */
@@ -422,6 +445,12 @@ main {
   .produkt2Txt {
     padding-left: 70px;
     margin-top: 60px;
+  }
+
+  /* BESTILLINGSKAGER.HTML */
+  .frem2,
+  .tilbage2 {
+    top: 67%;
   }
 }
 
@@ -594,6 +623,12 @@ main {
   /*BESTILLINGSKAGER.HTML */
   .frem,
   .tilbage {
+    margin-top: -40px;
+  }
+
+  .frem2,
+  .tilbage2 {
+    top: 50%;
     margin-top: -40px;
   }
 
