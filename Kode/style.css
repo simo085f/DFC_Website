@@ -219,10 +219,10 @@ main {
 /* INDEX.HTML CSS SLUT*/
 
 /* BRØD HTML */
-.broed img,
-.boller img,
-.rugbroed img,
-.flute img {
+.produkt1 img,
+.produkt2 img,
+.produkt3 img,
+.produkt4 img {
   width: 100%;
   margin-top: 20px;
 }
@@ -261,21 +261,10 @@ main {
   padding-left: 30px;
 }
 
-.fluteContainer {
+.produkt4Container {
   margin-bottom: 320px;
 }
 
-/* KAGER.HTML */
-.floedeskumskager img,
-.taerter img,
-.toerkager img,
-.smaakager img {
-  width: 100%;
-  margin-top: 20px;
-}
-.smaakagerContainer {
-  margin-bottom: 320px;
-}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
@@ -306,18 +295,10 @@ main {
   }
 
   /* BRØD.HTML */
-  .broed img,
-  .boller img,
-  .rugbroed img,
-  .flute img {
-    margin-top: 30px;
-  }
-
-  /* KAGER.HTML */
-  .floedeskumskager img,
-  .taerter img,
-  .toerkager img,
-  .smaakager img {
+  .produkt1 img,
+  .produkt2 img,
+  .produkt3 img,
+  .produkt4 img {
     margin-top: 30px;
   }
 }
@@ -464,19 +445,19 @@ main {
 
   /* BRØD.HTML */
   /* BRØD SEKTION */
-  .broed img,
-  .boller img,
-  .rugbroed img,
-  .flute img {
+  .produkt1 img,
+  .produkt2 img,
+  .produkt3 img,
+  .produkt4 img {
     margin-top: 0px;
   }
-  .broed,
-  .boller,
-  .rugbroed,
-  .flute {
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4 {
     margin-top: 60px;
   }
-  .broed {
+  .produkt1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -489,17 +470,17 @@ main {
   }
 
   /* BOLLER SEKTION */
-  .boller {
+  .produkt2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .bollerContainer {
+  .produkt2Container {
     grid-column-start: 1;
     grid-row-start: 1;
   }
 
-  .bollerImg {
+  .produkt2Img {
     grid-column-start: 2;
   }
 
@@ -515,7 +496,7 @@ main {
   }
 
   /* RUGBRØD SEKTION */
-  .rugbroed {
+  .produkt3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -523,80 +504,19 @@ main {
   }
 
   /* FLUTE SEKTION */
-  .flute {
+  .produkt4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
 
-  .fluteContainer {
+  .produkt4Container {
     grid-column-start: 1;
     grid-row-start: 1;
     margin-bottom: 50px;
   }
 
-  .fluteImg {
-    grid-column-start: 2;
-  }
-
-  /* KAGER.HTML */
-  .floedeskumskager img,
-  .taerter img,
-  .toerkager img,
-  .smaakager img {
-    margin-top: 0px;
-  }
-  /* FLØDESKUMSKAGER SEKTION */
-  .floedeskumskager,
-  .taerter,
-  .toerkager,
-  .smaakager {
-    margin-top: 60px;
-  }
-  .floedeskumskager {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
-  }
-
-  /* TÆRTER SEKTION */
-  .taerter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .taerterContainer {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .taerterImg {
-    grid-column-start: 2;
-  }
-
-  /* TØRKAGER SEKTION */
-  .toerkager {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
-  }
-
-  /* FLUTE SEKTION */
-  .smaakager {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-  }
-
-  .smaakagerContainer {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    margin-bottom: 50px;
-  }
-
-  .smaakagerImg {
+  .produkt4Img {
     grid-column-start: 2;
   }
 
@@ -657,22 +577,10 @@ main {
     margin-bottom: 100px;
   }
 
-  .broed,
-  .boller,
-  .rugbroed,
-  .flute {
-    margin-top: 80px;
-  }
-
-  /* KAGER.HTML */
-  .smaakagerContainer {
-    margin-bottom: 100px;
-  }
-
-  .floedeskumskager,
-  .taerter,
-  .toerkager,
-  .smaakager {
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4 {
     margin-top: 80px;
   }
 }
@@ -718,29 +626,18 @@ main {
   }
 
   /* BRØD.HTML */
-  .fluteContainer {
+  .produkt4Container {
     margin-bottom: 200px;
   }
 
-  .broed,
-  .boller,
-  .rugbroed,
-  .flute {
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4 {
     margin-top: 100px;
   }
   .produktTxt {
     width: 36%;
-  }
-
-  /* KAGER.HTML */
-  .floedeskumskager,
-  .taerter,
-  .toerkager,
-  .smaakager {
-    margin-top: 100px;
-  }
-  .smaakagerContainer {
-    margin-bottom: 200px;
   }
 }
 /* MEDIA QUERIES 1536px */
