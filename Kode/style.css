@@ -356,11 +356,23 @@ main {
 
 /* HISTORIE.HTML */
 
-.historie {
+.historie,
+.historie2,
+.historie3,
+.historie4 {
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
+}
+
+.historie2,
+.historie4 {
+  margin-top: -30px;
+}
+
+.historie3 {
+  margin-top: -75px;
 }
 
 .aarstal h2 {
@@ -379,11 +391,15 @@ main {
 }
 
 .historieImg img,
-.historieImg2 img {
+.historieImg2 img,
+.historieImg3 img,
+.historieImg4 img {
   width: 100%;
 }
 
-.historieImg {
+.historieImg,
+.historieImg3,
+.historieImg4 {
   grid-column-start: 1;
   grid-column-end: 3;
   margin-top: -35px;
@@ -437,12 +453,29 @@ main {
 
   /* HISTORIE.HTML */
   .historieImg,
-  .historieImg2 {
+  .historieImg2,
+  .historieImg3,
+  .historieImg4 {
     margin-top: -93px;
   }
 
-  .historie {
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
     grid-template-columns: 10% 1fr;
+  }
+
+  .historie2,
+  .historie4 {
+    margin-top: 0px;
+  }
+
+  .historie3 {
+    margin-top: 0px;
+  }
+  .historieMargin {
+    margin-top: 50px;
   }
 }
 
@@ -503,13 +536,18 @@ main {
   }
 
   /* HISTORIE.HTML */
-  .historieImg {
+  .historieImg,
+  .historieImg3,
+  .historieImg4 {
     margin-top: -170px;
   }
   .historieImg2 {
     margin-top: -150px;
   }
-  .historie {
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
     grid-template-columns: 20% 1fr;
     grid-gap: 10px;
   }
@@ -531,6 +569,9 @@ main {
     color: #be8e63;
     margin-block-start: -1em;
     margin-block-end: 0.5em;
+  }
+  .historieMargin {
+    margin-top: 80px;
   }
 }
 
@@ -713,7 +754,10 @@ main {
   }
 
   /* HISTORIE.HTML */
-  .historie {
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
     grid-template-columns: 12% 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
@@ -731,9 +775,14 @@ main {
   }
 
   .historieImg,
-  .historieImg2 {
+  .historieImg2,
+  .historieImg3,
+  .historieImg4 {
     grid-column-start: 3;
     margin-top: 0;
+  }
+  .historieMargin {
+    margin-top: 100px;
   }
 
   /* FOOTER DESKTOP */
@@ -824,6 +873,10 @@ main {
     text-transform: uppercase;
   }
 
+  main {
+    width: 75%;
+  }
+
   /* NAVIGATION */
   .desktopPunkter {
     margin-right: 85px;
@@ -836,9 +889,18 @@ main {
     grid-template-columns: 28% 25% 19% 1fr;
   }
   /* INDEX.HTML */
+  /* JUL SEKTION */
+
+  #jul {
+    grid-gap: 60px;
+  }
+  .julTxt {
+    width: 34%;
+    margin-top: 30px;
+  }
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
-    top: 240px;
+    top: 260px;
   }
 
   /* BRØD.HTML */
@@ -865,8 +927,20 @@ main {
     margin-top: 105px;
   }
 
-  .historie {
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
     grid-template-columns: 14% 1fr 1fr;
+  }
+  .historieMargin {
+    margin-top: 140px;
+  }
+
+  /* FOOTER */
+  .footerContainer {
+    width: 75%;
+    grid-template-columns: 28% 25% 18% 1fr;
   }
 }
 /* MEDIA QUERIES 1536px */
