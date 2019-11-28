@@ -410,6 +410,83 @@ main {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+/* KONTAKT.HTML */
+
+.kontaktImg img {
+  width: 100%;
+}
+
+.kontaktBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+}
+
+.kontaktTxt {
+  width: 85%;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.kontaktTxt p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.kontaktPTop {
+  margin-block-start: 1em;
+}
+
+.kontaktTxtContainer {
+  margin-bottom: 300px;
+}
+
+label {
+  color: white;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #be8e63;
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+textarea {
+  width: 100%;
+  border: 2px solid #be8e63;
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+textarea:focus,
+input:focus {
+  border: 2px solid #e9c6a8;
+  outline-width: 0;
+}
+.sendEmail {
+  background-color: #be8e63;
+  border: none;
+  padding: 10px;
+}
+
+.sendEmail:focus {
+  border: none;
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
@@ -574,6 +651,23 @@ main {
   }
   .historieMargin {
     margin-top: 80px;
+  }
+
+  /* KONTAKT.HTML */
+  .kontaktOs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .kontaktBorder {
+    margin: 0;
+  }
+  .kontaktTxt {
+    margin-top: 20px;
+  }
+  .kontaktForm {
+    margin-top: -270px;
   }
 }
 
@@ -787,6 +881,11 @@ main {
     margin-top: 100px;
   }
 
+  /* KONTAKT.HTML */
+  .kontaktForm {
+    margin-top: -190px;
+  }
+
   /* FOOTER DESKTOP */
 
   footer li,
@@ -849,6 +948,11 @@ main {
   .produkt3,
   .produkt4 {
     margin-top: 80px;
+  }
+
+  /* KONTAKT.HTML */
+  .kontaktForm {
+    margin-top: -150px;
   }
 }
 /* MEDIA QUERIES 1440px */
@@ -939,6 +1043,11 @@ main {
     margin-top: 140px;
   }
 
+  /* KONTAKT.HTML */
+  .kontaktForm {
+    margin-top: -100px;
+  }
+
   /* FOOTER */
   .footerContainer {
     width: 75%;
@@ -954,6 +1063,11 @@ main {
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     top: 240px;
+  }
+
+  /* KONTAKT.HTML */
+  .kontaktForm {
+    margin-top: -70px;
   }
 }
 

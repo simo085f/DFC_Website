@@ -78,21 +78,39 @@
           sikre på at alt forløber som det skal.
         </p>
       </div>
-      <div class="kontanktOs">
+      <div class="kontaktOs">
         <div class="kontaktImg">
           <img src="img/DFC_Facde_image3_web-925x725.jpg" alt="Ejerne" />
         </div>
-        <div class="borderTxtContainer">
-          <div class="julBorder"></div>
+        <div class="kontaktTxtContainer">
+          <div class="kontaktBorder"></div>
           <div class="kontaktTxt">
             <h2>Kontakt os</h2>
-            <p>Tlf: +45 35 35 15 46</p>
+            <div class="kontaktPTop">
+              <p>Tlf: +45 35 35 15 46</p>
+            </div>
             <p>Email: kontakt@detfranskeconditori.dk</p>
             <br />
             <p>H. C. Ørstedsvej 44</p>
             <p>1879 Frederiksberg</p>
           </div>
         </div>
+      </div>
+
+      <div class="kontaktForm">
+        <form
+          action="mailto:simonegrauer@hotmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="navn">Navn</label>
+          <input type="text" name="navn" />
+          <label for="email">Email</label>
+          <input type="email" name="email" />
+          <label for="besked">Besked</label>
+          <textarea name="besked" id="kontaktBesked" rows="5"></textarea>
+          <input type="submit" value="Send" class="sendEmail" />
+        </form>
       </div>
     </main>
     <footer>
