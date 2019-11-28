@@ -429,7 +429,7 @@ main {
 }
 
 .kontaktTxt {
-  width: 85%;
+  width: auto;
   position: absolute;
   margin-top: 40px;
 }
@@ -654,7 +654,7 @@ input:focus {
   }
 
   /* KONTAKT.HTML */
-  .kontaktOs {
+  .kontaktOsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -665,6 +665,7 @@ input:focus {
   }
   .kontaktTxt {
     margin-top: 20px;
+    width: auto;
   }
   .kontaktForm {
     margin-top: -270px;
