@@ -285,12 +285,15 @@ main {
   padding-left: 30px;
 }
 
+.produkt3Container,
+.produkt4Container,
 .produkt5Container {
   margin-bottom: 320px;
 }
 
 /*BESTILLINGSKAGER.HTML */
-.slides,
+
+.produkt3Container .slides,
 .slidesKagemand,
 .slidesBryllupskage,
 .slidesKransekage {
