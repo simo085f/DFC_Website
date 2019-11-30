@@ -955,6 +955,14 @@ input:focus {
 
 /* MEDIA QUERIES 1200px */
 @media screen and (min-width: 1280px) {
+  /* HEADER */
+  .navLogo img {
+    width: 73px;
+  }
+  .desktopPunkter a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   /* MAIN */
   main {
     width: 80%;
