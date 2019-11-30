@@ -224,7 +224,8 @@ main {
 .produkt1 img,
 .produkt2 img,
 .produkt3 img,
-.produkt4 img {
+.produkt4 img,
+.produkt5 img {
   width: 100%;
   margin-top: 20px;
 }
@@ -263,7 +264,7 @@ main {
   padding-left: 30px;
 }
 
-.produkt4Container {
+.produkt5Container {
   margin-bottom: 320px;
 }
 
@@ -520,7 +521,8 @@ input:focus {
   .produkt1 img,
   .produkt2 img,
   .produkt3 img,
-  .produkt4 img {
+  .produkt4 img,
+  .produkt5 img {
     margin-top: 30px;
   }
 
@@ -766,13 +768,15 @@ input:focus {
   .produkt1 img,
   .produkt2 img,
   .produkt3 img,
-  .produkt4 img {
+  .produkt4 img,
+  .produkt5 img {
     margin-top: 0px;
   }
   .produkt1,
   .produkt2,
   .produkt3,
-  .produkt4 {
+  .produkt4,
+  .produkt5 {
     margin-top: 60px;
   }
   .produkt1 {
@@ -822,7 +826,8 @@ input:focus {
   }
 
   /* FLUTE SEKTION */
-  .produkt4 {
+  .produkt4,
+  .produkt5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -831,11 +836,14 @@ input:focus {
   .produkt4Container {
     grid-column-start: 1;
     grid-row-start: 1;
-    margin-bottom: 50px;
   }
 
   .produkt4Img {
     grid-column-start: 2;
+  }
+
+  .produkt5Container {
+    margin-bottom: 0px;
   }
 
   /*BESTILLINGSKAGER.HTML */
@@ -947,7 +955,8 @@ input:focus {
   .produkt1,
   .produkt2,
   .produkt3,
-  .produkt4 {
+  .produkt4,
+  .produkt5 {
     margin-top: 80px;
   }
 
@@ -1011,14 +1020,15 @@ input:focus {
   }
 
   /* BRØD.HTML */
-  .produkt4Container {
+  .produkt5Container {
     margin-bottom: 200px;
   }
 
   .produkt1,
   .produkt2,
   .produkt3,
-  .produkt4 {
+  .produkt4,
+  .produkt5 {
     margin-top: 100px;
   }
   .produktTxt {
