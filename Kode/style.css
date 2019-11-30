@@ -169,11 +169,32 @@ main {
 .julImg img {
   width: 100%;
 }
+/* Fixer problem med at teksten blev slørret når den kommer ind fra siden*/
+/*.borderTxtContainer {
+  transform: matrix3d(
+    1.01,
+    0,
+    0,
+    0,
+    0,
+    1.01,
+    0,
+    0,
+    0,
+    0,
+    1.01,
+    0,
+    0,
+    0,
+    0,
+    1.01
+  );
+}*/
 
 .julTxt {
-  width: 85%;
+  width: 90%;
   position: absolute;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .julBorder {
