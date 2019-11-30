@@ -954,7 +954,7 @@ input:focus {
 }
 
 /* MEDIA QUERIES 1200px */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   /* MAIN */
   main {
     width: 80%;
@@ -1090,9 +1090,36 @@ input:focus {
     width: 75%;
     grid-template-columns: 28% 25% 18% 1fr;
   }
+  /* HEADER */
+  header {
+    height: 60px;
+  }
+  .desktopPunkter a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  .navLogo img {
+    width: 74px;
+  }
 }
 /* MEDIA QUERIES 1536px */
 @media screen and (min-width: 1536px) {
+  /* HEADER */
+  header {
+    height: 70px;
+  }
+  .desktopPunkter a {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .navLogo img {
+    width: 88px;
+  }
+
   /* FOOTER*/
   .footerContainer {
     grid-template-columns: 26% 27% 21% 1fr;
