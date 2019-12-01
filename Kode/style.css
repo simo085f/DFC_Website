@@ -1137,3 +1137,29 @@ input:focus {
     margin-top: -70px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  /* FOOTER */
+  .footerContainer {
+    width: 70%;
+    grid-template-columns: 27% 29% 21% 1fr;
+  }
+}
