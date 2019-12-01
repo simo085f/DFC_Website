@@ -57,9 +57,17 @@
         <a href="kontakt.html">Kontakt os</a>
       </div>
     </header>
-    <div class="splashImage">
-      <img src="img/historiestockfoto.jpg" alt="Kagens dag 2019" />
-    </div>
+    <picture class="heroBillede">
+      <source media="(min-width: 1920px)" srcset="img/h1920x780.jpg" />
+      <source media="(min-width: 1536px)" srcset="img/h1536x600.jpg" />
+      <source media="(min-width: 1440px)" srcset="img/h1440x550.jpg" />
+      <source media="(min-width: 1280px)" srcset="img/h1280x500.jpg" />
+      <source media="(min-width: 1024px)" srcset="img/h1024x480.jpg" />
+      <source media="(min-width: 768px)" srcset="img/h768x550.jpg" />
+      <source media="(min-width: 627px)" srcset="img/h627x290.jpg" />
+      <source media="(min-width: 375px)" srcset="img/h375x390.jpg" />
+      <img src="img/h375x390.jpg" alt="Det Franske Conditori" />
+    </picture>
     <main>
       <div class="dfcTxt">
         <h2>DET FRANSKE CONDITORI</h2>
