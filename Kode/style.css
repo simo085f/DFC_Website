@@ -116,7 +116,7 @@ header {
 /* FOOTER */
 footer {
   border-top: 2px solid #be8e63;
-  margin-top: 50px;
+  margin-top: 320px;
 }
 
 .kontakt {
@@ -289,12 +289,6 @@ main {
   position: absolute;
   margin-top: 50px;
   padding-left: 30px;
-}
-
-.produkt3Container,
-.produkt4Container,
-.produkt5Container {
-  margin-bottom: 320px;
 }
 
 /*BESTILLINGSKAGER.HTML */
@@ -788,6 +782,10 @@ input:focus {
     margin-top: 20px;
   }
 
+  .borderTxtContainer {
+    align-self: center;
+  }
+
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     height: 120px;
@@ -820,6 +818,13 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
+  }
+
+  .produkt1Container,
+  .produkt2Container,
+  .produkt3Container,
+  .produkt4Container {
+    align-self: center;
   }
 
   .produktTxt {
@@ -1164,7 +1169,22 @@ input:focus {
   main {
     width: 70%;
   }
+  /* INDEX.HTML */
+  .julTxt {
+    width: 28%;
+    padding-left: 65px;
+    margin-top: 25px;
+  }
 
+  /* TEXT PÅ PRODUKT SIDER */
+  .produktTxt {
+    width: 29%;
+    padding-left: 100px;
+  }
+  .produkt2Txt {
+    width: 30%;
+    padding-left: 65px;
+  }
   /* FOOTER */
   .footerContainer {
     width: 70%;
