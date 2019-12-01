@@ -766,8 +766,7 @@ input:focus {
   }
 
   .desktopPunkter a:hover {
-    font-weight: 600;
-    border-bottom: 2px solid #be8e63;
+    color: #e9c6a8;
   }
 
   .navLogo img {
