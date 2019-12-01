@@ -168,11 +168,6 @@ main {
   margin: 0 auto;
 }
 
-/* .splashImage img {
-  width: 100%;
-  position: relative;
-} */
-
 #jul {
   margin-top: 30px;
 }
@@ -303,6 +298,20 @@ main {
 }
 
 /*BESTILLINGSKAGER.HTML */
+
+.laesMereBtn {
+  border: none;
+  background-color: #be8e63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+}
+
+.laesMereBtn:hover {
+  background-color: #ce9c71;
+}
 
 .slides,
 .slidesKagemand,
