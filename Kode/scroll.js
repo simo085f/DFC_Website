@@ -8,13 +8,13 @@ ScrollReveal().reveal(
 );
 
 ScrollReveal().reveal(".kontaktTxtContainer", {
-  viewFactor: 1000,
+  viewFactor: 1.0,
   delay: 200,
   easing: "ease-in"
 });
 
 ScrollReveal().reveal(".aarstal, .aarstalDesktop", {
-  viewFactor: 1000,
+  viewFactor: 1.0,
   delay: 100,
   easing: "ease-in"
 });

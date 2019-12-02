@@ -1,15 +1,13 @@
 "use strict";
 
 ScrollReveal().reveal(".borderTxtContainer", {
-  viewFactor: 1000
-  /* distance: "800px",
-  origin: "right",
-  duration: 1000 */
+  viewFactor: 1.0,
+  delay: 100,
+  easing: "ease-in"
 });
 
 ScrollReveal().reveal(".kagensDagContainer", {
-  viewFactor: 1000
-  /* distance: "800px",
-    origin: "right",
-    duration: 1000 */
+  viewFactor: 1.0,
+  delay: 100,
+  easing: "ease-in"
 });
