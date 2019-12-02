@@ -168,7 +168,7 @@ main {
   margin: 0 auto;
 }
 
-#jul {
+/* #jul {
   margin-top: 30px;
 }
 
@@ -196,7 +196,7 @@ main {
     1.01
   );
 }*/
-
+/*
 .julTxt {
   width: 90%;
   position: absolute;
@@ -244,7 +244,7 @@ main {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
-}
+} */
 /* INDEX.HTML CSS SLUT*/
 
 /* BRØD HTML */
@@ -397,7 +397,7 @@ main {
 
 /* HISTORIE.HTML */
 
-.historie,
+/* .historie,
 .historie2,
 .historie3,
 .historie4 {
@@ -448,7 +448,7 @@ main {
 .historieImg2 {
   grid-column-start: 1;
   grid-column-end: 3;
-}
+} */
 
 /* KONTAKT.HTML */
 
@@ -543,17 +543,17 @@ input:focus {
   }
   /* INDEX.HTML */
   /* JUL SEKTION */
-  .julTxt {
+  /*.julTxt {
     margin-top: 45px;
-  }
+  }*/
   /* KAGENDAG SEKTION */
-  .kagensDagBorder {
+  /*.kagensDagBorder {
     height: 150px;
     top: 270px;
   }
   .kagensDagContainer {
     margin-top: -150px;
-  }
+  }*/
 
   /* BRØD.HTML */
   .produkt1 img,
@@ -571,7 +571,7 @@ input:focus {
   }
 
   /* HISTORIE.HTML */
-  .historieImg,
+  /* .historieImg,
   .historieImg2,
   .historieImg3,
   .historieImg4 {
@@ -595,7 +595,7 @@ input:focus {
   }
   .historieMargin {
     margin-top: 50px;
-  }
+  } */
 }
 
 /* MEDIA QUERIES 768px */
@@ -627,15 +627,15 @@ input:focus {
 
   /*INDEX.HTML */
   /* JUL SEKTION */
-  .julTxt {
+  /*.julTxt {
     width: 80%;
-  }
+  }*/
 
   /* KAGENDAG SEKTION */
-  .kagensDagBorder {
+  /*.kagensDagBorder {
     height: 150px;
     top: 240px;
-  }
+  }*/
 
   /*BRØD.HTML */
   .produktTxt {
@@ -655,7 +655,7 @@ input:focus {
   }
 
   /* HISTORIE.HTML */
-  .historieImg,
+  /* .historieImg,
   .historieImg3,
   .historieImg4 {
     margin-top: -170px;
@@ -691,7 +691,7 @@ input:focus {
   }
   .historieMargin {
     margin-top: 80px;
-  }
+  } */
 
   /* KONTAKT.HTML */
   .kontaktOsContainer {
@@ -771,7 +771,7 @@ input:focus {
   /* HEADER DESKTOP SLUT */
   /* INDEX HTML */
   /* JUL SEKTION */
-  #jul {
+  /* #jul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -783,17 +783,17 @@ input:focus {
 
   .borderTxtContainer {
     align-self: center;
-  }
+  } */
 
   /* KAGENDAG SEKTION */
-  .kagensDagBorder {
+  /* .kagensDagBorder {
     height: 120px;
     top: 240px;
   }
 
   .kagensDagContainer {
     margin-top: -120px;
-  }
+  } */
   /* INDEX HTML SLUT/*
 
   /* BRØD.HTML */
@@ -899,7 +899,7 @@ input:focus {
   }
 
   /* HISTORIE.HTML */
-  .historie,
+  /* .historie,
   .historie2,
   .historie3,
   .historie4 {
@@ -928,7 +928,7 @@ input:focus {
   }
   .historieMargin {
     margin-top: 100px;
-  }
+  } */
 
   /* KONTAKT.HTML */
   .kontaktForm {
@@ -990,10 +990,10 @@ input:focus {
   }
 
   /* JUL SEKTION */
-  .julTxt {
+  /* .julTxt {
     width: 36%;
     margin-top: 25px;
-  }
+  } */
 
   /* BRØD.HTML */
   .fluteContainer {
@@ -1048,17 +1048,17 @@ input:focus {
   /* INDEX.HTML */
   /* JUL SEKTION */
 
-  #jul {
+  /*#jul {
     grid-gap: 60px;
   }
   .julTxt {
     width: 34%;
     margin-top: 30px;
-  }
+  }*/
   /* KAGENDAG SEKTION */
-  .kagensDagBorder {
+  /*.kagensDagBorder {
     top: 260px;
-  }
+  }*/
 
   /* BRØD.HTML */
   .produkt5Container {
@@ -1077,7 +1077,7 @@ input:focus {
   }
 
   /* HISTORIE.HTML */
-  .aarstalDesktop h2 {
+  /* .aarstalDesktop h2 {
     font-size: 144px;
   }
 
@@ -1093,7 +1093,7 @@ input:focus {
   }
   .historieMargin {
     margin-top: 140px;
-  }
+  } */
 
   /* KONTAKT.HTML */
   .kontaktForm {
@@ -1140,9 +1140,9 @@ input:focus {
     grid-template-columns: 26% 27% 21% 1fr;
   }
   /* KAGENDAG SEKTION */
-  .kagensDagBorder {
+  /*  .kagensDagBorder {
     top: 240px;
-  }
+  } */
 
   /* KONTAKT.HTML */
   .kontaktForm {
@@ -1169,11 +1169,11 @@ input:focus {
     width: 70%;
   }
   /* INDEX.HTML */
-  .julTxt {
+  /*   .julTxt {
     width: 28%;
     padding-left: 65px;
     margin-top: 25px;
-  }
+  } */
 
   /* TEXT PÅ PRODUKT SIDER */
   .produktTxt {

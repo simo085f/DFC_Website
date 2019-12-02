@@ -7,7 +7,7 @@ ScrollReveal().reveal(".borderTxtContainer", {
 });
 
 ScrollReveal().reveal(".kagensDagContainer", {
-  viewFactor: 1.0,
+  viewFactor: 0.8,
   delay: 100,
   easing: "ease-in"
 });

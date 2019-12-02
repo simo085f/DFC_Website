@@ -1,0 +1,174 @@
+#jul {
+  margin-top: 30px;
+}
+
+.julImg img {
+  width: 100%;
+}
+/* Fixer problem med at teksten blev slørret når den kommer ind fra siden*/
+/*.borderTxtContainer {
+    transform: matrix3d(
+      1.01,
+      0,
+      0,
+      0,
+      0,
+      1.01,
+      0,
+      0,
+      0,
+      0,
+      1.01,
+      0,
+      0,
+      0,
+      0,
+      1.01
+    );
+  }*/
+
+.julTxt {
+  width: 90%;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.julBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+}
+
+.kagensDagImg img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.kagensDagBorder {
+  border-right: 2px solid #be8e63;
+  border-left: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  height: 190px;
+  position: relative;
+  top: 350px;
+}
+
+.kagensDagContainer {
+  margin-top: -190px;
+}
+.kagensDagTxt {
+  margin-top: 10px;
+}
+
+.kagensDagTxt h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.kagensDagTxt p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  /* INDEX.HTML */
+  /* JUL SEKTION */
+  .julTxt {
+    margin-top: 45px;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 150px;
+    top: 270px;
+  }
+  .kagensDagContainer {
+    margin-top: -150px;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  /*INDEX.HTML */
+  /* JUL SEKTION */
+  .julTxt {
+    width: 80%;
+  }
+
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 150px;
+    top: 240px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+@media screen and (min-width: 1024px) {
+  #jul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .julTxt {
+    width: 39%;
+  }
+
+  .borderTxtContainer {
+    align-self: center;
+  }
+
+  .kagensDagBorder {
+    height: 120px;
+    top: 240px;
+  }
+
+  .kagensDagContainer {
+    margin-top: -120px;
+  }
+}
+
+/* MEDIA QUERIES 1280px */
+@media screen and (min-width: 1280px) {
+  .julTxt {
+    width: 36%;
+    margin-top: 25px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  /* JUL SEKTION */
+
+  #jul {
+    grid-gap: 60px;
+  }
+  .julTxt {
+    width: 34%;
+    margin-top: 30px;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    top: 260px;
+  }
+}
+
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  .kagensDagBorder {
+    top: 240px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .julTxt {
+    width: 28%;
+    padding-left: 65px;
+    margin-top: 25px;
+  }
+}
