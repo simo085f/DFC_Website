@@ -10,13 +10,6 @@ body {
 .heroBillede img {
   width: 100%;
 }
-/* h1 {
-  font-family: "Frank Ruhl Libre", serif;
-  font-size: 36px;
-  font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-} */
 
 h1 {
   font-family: "Frank Ruhl Libre", serif;
@@ -162,370 +155,12 @@ ul {
 }
 /* FOOTER SLUT*/
 
-/* INDEX.HTML CSS */
+/* MAIN - MARGIN PÅ ALLE SIDER */
 main {
   width: 90%;
   margin: 0 auto;
 }
 
-/* #jul {
-  margin-top: 30px;
-}
-
-.julImg img {
-  width: 100%;
-}
-/* Fixer problem med at teksten blev slørret når den kommer ind fra siden*/
-/*.borderTxtContainer {
-  transform: matrix3d(
-    1.01,
-    0,
-    0,
-    0,
-    0,
-    1.01,
-    0,
-    0,
-    0,
-    0,
-    1.01,
-    0,
-    0,
-    0,
-    0,
-    1.01
-  );
-}*/
-/*
-.julTxt {
-  width: 90%;
-  position: absolute;
-  margin-top: 40px;
-}
-
-.julBorder {
-  border-right: 2px solid #be8e63;
-  border-top: 2px solid #be8e63;
-  border-bottom: 2px solid #be8e63;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 250px;
-  width: 60%;
-  float: right;
-}
-
-.kagensDagImg img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.kagensDagBorder {
-  border-right: 2px solid #be8e63;
-  border-left: 2px solid #be8e63;
-  border-bottom: 2px solid #be8e63;
-  height: 190px;
-  position: relative;
-  top: 350px;
-}
-
-.kagensDagContainer {
-  margin-top: -190px;
-}
-.kagensDagTxt {
-  margin-top: 10px;
-}
-
-.kagensDagTxt h2 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.kagensDagTxt p {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-} */
-/* INDEX.HTML CSS SLUT*/
-
-/* BRØD HTML */
-/* .produkt1 img,
-.produkt2 img,
-.produkt3 img,
-.produkt4 img,
-.produkt5 img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.produktBorder {
-  border-right: 2px solid #be8e63;
-  border-top: 2px solid #be8e63;
-  border-bottom: 2px solid #be8e63;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 250px;
-  width: 60%;
-  float: right;
-}
-
-.produktTxt {
-  width: 85%;
-  position: absolute;
-  margin-top: 50px;
-}
-
-.produkt2Border {
-  border-left: 2px solid #be8e63;
-  border-top: 2px solid #be8e63;
-  border-bottom: 2px solid #be8e63;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 250px;
-  width: 60%;
-  float: left;
-}
-.produkt2Txt {
-  width: 85%;
-  position: absolute;
-  margin-top: 50px;
-  padding-left: 30px;
-} */
-
-/*BESTILLINGSKAGER.HTML */
-
-/* .laesMereBtn {
-  border: none;
-  background-color: #be8e63;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  padding: 12px 20px 12px 20px;
-  outline: none;
-}
-
-.laesMereBtn:hover {
-  background-color: #ce9c71;
-}
-
-.slides,
-.slidesKagemand,
-.slidesBryllupskage,
-.slidesKransekage {
-  display: none;
-}
-
-.carouselContainer {
-  position: relative;
-  margin: auto;
-}
-
-.frem,
-.tilbage {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-.frem2,
-.tilbage2 {
-  position: absolute;
-  top: 74%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-.frem,
-.frem2 {
-  right: 0;
-}
-
-.frem:hover,
-.tilbage:hover,
-.frem2:hover,
-.tilbage2:hover {
-  background-color: #be8d63dc;
-}
-
-.slideKnapper {
-  text-align: center;
-}
-
-.slideknap,
-.slideknap2,
-.slideknap3,
-.slideknap4 {
-  width: 30px;
-  height: 4px;
-  margin: 0 5px;
-  display: inline-block;
-  background-color: #e9c6a8;
-  transition: 0.6s ease;
-}
-
-.valgt,
-.slideknap:hover {
-  background-color: #be8e63;
-}
-.ease {
-  animation-name: easein;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-}
-
-@keyframes easein {
-  0% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* HISTORIE.HTML */
-
-/* .historie,
-.historie2,
-.historie3,
-.historie4 {
-  display: grid;
-  grid-template-columns: 15% 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.historie2,
-.historie4 {
-  margin-top: -30px;
-}
-
-.historie3 {
-  margin-top: -75px;
-}
-
-.aarstal h2 {
-  font-size: 72px;
-  color: #be8e63;
-  margin-block-start: -1em;
-  margin-block-end: 0.5em;
-}
-
-.aarstal {
-  margin-top: 70px;
-}
-
-.aarstalDesktop {
-  display: none;
-}
-
-.historieImg img,
-.historieImg2 img,
-.historieImg3 img,
-.historieImg4 img {
-  width: 100%;
-}
-
-.historieImg,
-.historieImg3,
-.historieImg4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-top: -35px;
-}
-.historieImg2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-} */
-
-/* KONTAKT.HTML */
-
-/* .kontaktImg img {
-  width: 100%;
-}
-
-.kontaktBorder {
-  border-right: 2px solid #be8e63;
-  border-top: 2px solid #be8e63;
-  border-bottom: 2px solid #be8e63;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 250px;
-  width: 60%;
-  float: right;
-}
-
-.kontaktTxt {
-  width: auto;
-  position: absolute;
-  margin-top: 40px;
-}
-
-.kontaktTxt p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-.kontaktPTop {
-  margin-block-start: 1em;
-}
-
-.kontaktTxtContainer {
-  margin-bottom: 300px;
-}
-
-label {
-  color: white;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-input {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 2px solid #be8e63;
-  background-color: transparent;
-  padding: 5px;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-textarea {
-  width: 100%;
-  border: 2px solid #be8e63;
-  background-color: transparent;
-  padding: 5px;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-textarea:focus,
-input:focus {
-  border: 2px solid #e9c6a8;
-  outline-width: 0;
-}
-.sendEmail {
-  background-color: #be8e63;
-  border: none;
-  padding: 10px;
-}
-
-.sendEmail:focus {
-  border: none;
-} */
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   /* HEADER */
@@ -541,61 +176,6 @@ input:focus {
   .navLogo img {
     margin-left: 25px;
   }
-  /* INDEX.HTML */
-  /* JUL SEKTION */
-  /*.julTxt {
-    margin-top: 45px;
-  }*/
-  /* KAGENDAG SEKTION */
-  /*.kagensDagBorder {
-    height: 150px;
-    top: 270px;
-  }
-  .kagensDagContainer {
-    margin-top: -150px;
-  }*/
-
-  /* BRØD.HTML */
-  /*  .produkt1 img,
-  .produkt2 img,
-  .produkt3 img,
-  .produkt4 img,
-  .produkt5 img {
-    margin-top: 30px;
-  } */
-
-  /* BESTILLINGSKAGER.HTML */
-  /* .frem2,
-  .tilbage2 {
-    top: 70%;
-  } */
-
-  /* HISTORIE.HTML */
-  /* .historieImg,
-  .historieImg2,
-  .historieImg3,
-  .historieImg4 {
-    margin-top: -93px;
-  }
-
-  .historie,
-  .historie2,
-  .historie3,
-  .historie4 {
-    grid-template-columns: 10% 1fr;
-  }
-
-  .historie2,
-  .historie4 {
-    margin-top: 0px;
-  }
-
-  .historie3 {
-    margin-top: 0px;
-  }
-  .historieMargin {
-    margin-top: 50px;
-  } */
 }
 
 /* MEDIA QUERIES 768px */
@@ -619,97 +199,11 @@ input:focus {
     margin-left: 35px;
   }
 
-  /* MAIN */
+  /* MAIN - MARGIN PÅ ALLE SIDER */
   main {
     width: 85%;
     margin: 0 auto;
   }
-
-  /*INDEX.HTML */
-  /* JUL SEKTION */
-  /*.julTxt {
-    width: 80%;
-  }*/
-
-  /* KAGENDAG SEKTION */
-  /*.kagensDagBorder {
-    height: 150px;
-    top: 240px;
-  }*/
-
-  /*BRØD.HTML */
-  /* .produktTxt {
-    margin-top: 60px;
-    width: 80%;
-  }
-
-  .produkt2Txt {
-    padding-left: 70px;
-    margin-top: 60px;
-  } */
-
-  /* BESTILLINGSKAGER.HTML */
-  /* .frem2,
-  .tilbage2 {
-    top: 67%;
-  } */
-
-  /* HISTORIE.HTML */
-  /* .historieImg,
-  .historieImg3,
-  .historieImg4 {
-    margin-top: -170px;
-  }
-  .historieImg2 {
-    margin-top: -150px;
-  }
-  .historie,
-  .historie2,
-  .historie3,
-  .historie4 {
-    grid-template-columns: 20% 1fr;
-    grid-gap: 10px;
-  }
-
-  .historieTxt p {
-    margin-block-start: 0em;
-  }
-
-  .aarstal {
-    display: none;
-  }
-
-  .aarstalDesktop {
-    display: block;
-    margin-top: 75px;
-  }
-  .aarstalDesktop h2 {
-    font-size: 100px;
-    color: #be8e63;
-    margin-block-start: -1em;
-    margin-block-end: 0.5em;
-  }
-  .historieMargin {
-    margin-top: 80px;
-  } */
-
-  /* KONTAKT.HTML */
-  /* .kontaktOsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-  }
-
-  .kontaktBorder {
-    margin: 0;
-  }
-  .kontaktTxt {
-    margin-top: 20px;
-    width: auto;
-  }
-  .kontaktForm {
-    margin-top: -270px;
-  } */
 }
 
 /* MEDIA QUERIES 1024px */
@@ -768,172 +262,6 @@ input:focus {
     margin-top: 5px;
     margin-left: 48px;
   }
-  /* HEADER DESKTOP SLUT */
-  /* INDEX HTML */
-  /* JUL SEKTION */
-  /* #jul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-  }
-
-  .julTxt {
-    width: 39%;
-  }
-
-  .borderTxtContainer {
-    align-self: center;
-  } */
-
-  /* KAGENDAG SEKTION */
-  /* .kagensDagBorder {
-    height: 120px;
-    top: 240px;
-  }
-
-  .kagensDagContainer {
-    margin-top: -120px;
-  } */
-  /* INDEX HTML SLUT/*
-
-  /* BRØD.HTML */
-  /* BRØD SEKTION */
-  /*.produkt1 img,
-  .produkt2 img,
-  .produkt3 img,
-  .produkt4 img,
-  .produkt5 img {
-    margin-top: 0px;
-  }
-  .produkt1,
-  .produkt2,
-  .produkt3,
-  .produkt4,
-  .produkt5 {
-    margin-top: 60px;
-  }
-  .produkt1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
-  }
-
-  .produkt1Container,
-  .produkt2Container,
-  .produkt3Container,
-  .produkt4Container {
-    align-self: center;
-  }
-
-  .produktTxt {
-    width: 39%;
-    margin-top: 30px;
-  }*/
-
-  /* BOLLER SEKTION */
-  /*.produkt2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .produkt2Container {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .produkt2Img {
-    grid-column-start: 2;
-  }
-
-  .produktTxt {
-    width: 39%;
-    margin-top: 40px;
-  }
-
-  .produkt2Txt {
-    width: 38%;
-    padding-left: 30px;
-    margin-top: 40px;
-  }*/
-
-  /* RUGBRØD SEKTION */
-  /*.produkt3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
-  }*/
-
-  /* FLUTE SEKTION */ /*
-  .produkt4,
-  .produkt5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-  }
-
-  .produkt4Container {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .produkt4Img {
-    grid-column-start: 2;
-  }
-
-  .produkt5Container {
-    margin-bottom: 0px;
-  }*/
-
-  /*BESTILLINGSKAGER.HTML */
-  /*   .frem,
-  .tilbage {
-    margin-top: -40px;
-  }
-
-  .frem2,
-  .tilbage2 {
-    top: 50%;
-    margin-top: -40px;
-  }
- */
-  /* HISTORIE.HTML */
-  /* .historie,
-  .historie2,
-  .historie3,
-  .historie4 {
-    grid-template-columns: 12% 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
-  }
-
-  .aarstalDesktop {
-    margin-top: 75px;
-  }
-
-  .aarstalDesktop h2 {
-    font-size: 100px;
-    color: #be8e63;
-    margin-block-start: -1em;
-    margin-block-end: 0.5em;
-  }
-
-  .historieImg,
-  .historieImg2,
-  .historieImg3,
-  .historieImg4 {
-    grid-column-start: 3;
-    margin-top: 0;
-  }
-  .historieMargin {
-    margin-top: 100px;
-  } */
-
-  /* KONTAKT.HTML */
-  /*  .kontaktForm {
-    margin-top: -190px;
-  } */
 
   /* FOOTER DESKTOP */
 
@@ -977,7 +305,7 @@ input:focus {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* MAIN */
+  /* MAIN - MARGIN PÅ ALLE SIDER*/
   main {
     width: 80%;
   }
@@ -988,30 +316,6 @@ input:focus {
     padding-top: 30px;
     grid-gap: 32px;
   }
-
-  /* JUL SEKTION */
-  /* .julTxt {
-    width: 36%;
-    margin-top: 25px;
-  } */
-
-  /* BRØD.HTML */
-  /*   .fluteContainer {
-    margin-bottom: 100px;
-  }
-
-  .produkt1,
-  .produkt2,
-  .produkt3,
-  .produkt4,
-  .produkt5 {
-    margin-top: 80px;
-  }
- */
-  /* KONTAKT.HTML */
-  /*   .kontaktForm {
-    margin-top: -150px;
-  } */
 }
 /* MEDIA QUERIES 1440px */
 @media screen and (min-width: 1440px) {
@@ -1029,7 +333,7 @@ input:focus {
     font-weight: 500;
     text-transform: uppercase;
   }
-
+  /* MAIN - MARGIN PÅ ALLE SIDER*/
   main {
     width: 75%;
   }
@@ -1045,60 +349,6 @@ input:focus {
   .footerContainer {
     grid-template-columns: 28% 25% 19% 1fr;
   }
-  /* INDEX.HTML */
-  /* JUL SEKTION */
-
-  /*#jul {
-    grid-gap: 60px;
-  }
-  .julTxt {
-    width: 34%;
-    margin-top: 30px;
-  }*/
-  /* KAGENDAG SEKTION */
-  /*.kagensDagBorder {
-    top: 260px;
-  }*/
-
-  /* BRØD.HTML */
-  /* .produkt5Container {
-    margin-bottom: 200px;
-  }
-
-  .produkt1,
-  .produkt2,
-  .produkt3,
-  .produkt4,
-  .produkt5 {
-    margin-top: 100px;
-  }
-  .produktTxt {
-    width: 36%;
-  } */
-
-  /* HISTORIE.HTML */
-  /* .aarstalDesktop h2 {
-    font-size: 144px;
-  }
-
-  .aarstalDesktop {
-    margin-top: 105px;
-  }
-
-  .historie,
-  .historie2,
-  .historie3,
-  .historie4 {
-    grid-template-columns: 14% 1fr 1fr;
-  }
-  .historieMargin {
-    margin-top: 140px;
-  } */
-
-  /* KONTAKT.HTML */
-  /* .kontaktForm {
-    margin-top: -100px;
-  } */
 
   /* FOOTER */
   .footerContainer {
@@ -1139,18 +389,10 @@ input:focus {
   .footerContainer {
     grid-template-columns: 26% 27% 21% 1fr;
   }
-  /* KAGENDAG SEKTION */
-  /*  .kagensDagBorder {
-    top: 240px;
-  } */
-
-  /* KONTAKT.HTML */
-  /*  .kontaktForm {
-    margin-top: -70px;
-  } */
 }
 
 @media screen and (min-width: 1920px) {
+  /* SKRIFTSTØRRELSE*/
   h1 {
     font-family: "Frank Ruhl Libre", serif;
     font-size: 64px;
@@ -1164,26 +406,10 @@ input:focus {
     font-weight: 500;
     text-transform: uppercase;
   }
-
+  /* MAIN - MARGIN PÅ ALLE SIDER */
   main {
     width: 70%;
   }
-  /* INDEX.HTML */
-  /*   .julTxt {
-    width: 28%;
-    padding-left: 65px;
-    margin-top: 25px;
-  } */
-
-  /* TEXT PÅ PRODUKT SIDER */
-  /* .produktTxt {
-    width: 29%;
-    padding-left: 100px;
-  }
-  .produkt2Txt {
-    width: 30%;
-    padding-left: 65px;
-  } */
   /* FOOTER */
   .footerContainer {
     width: 70%;
