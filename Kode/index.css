@@ -1,5 +1,12 @@
-#jul {
+footer {
+  margin-top: 70px;
+}
+.dfcTxt {
   margin-top: 30px;
+}
+
+#jul {
+  margin-top: 35px;
 }
 
 .julImg img {
@@ -7,9 +14,9 @@
 }
 
 .julTxt {
-  width: 90%;
+  width: 84%;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .julBorder {
@@ -32,9 +39,9 @@
   border-right: 2px solid #be8e63;
   border-left: 2px solid #be8e63;
   border-bottom: 2px solid #be8e63;
-  height: 190px;
+  height: 200px;
   position: relative;
-  top: 350px;
+  top: 380px;
 }
 
 .kagensDagContainer {
@@ -47,12 +54,30 @@
 .kagensDagTxt h2 {
   padding-left: 15px;
   padding-right: 15px;
+  margin-block-start: 5px;
 }
 
 .kagensDagTxt p {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+}
+
+.facebookBtn {
+  border: none;
+  background-color: #be8e63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  outline: none;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.facebookBtn:hover {
+  background-color: #ce9c71;
 }
 
 /* MEDIA QUERIES 627px */

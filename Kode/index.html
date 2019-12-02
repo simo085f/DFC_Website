@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Det Franske Conditori beskrivelse her" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <!--SCROLLREVEAL LINK FOR AT SCROLLREVEAL DUR-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--FONTE HENTET FRA GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:500|Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:500|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- SOME IKONER HENTET FRA W3SCHOOLS -->
     <link
       rel="stylesheet"
@@ -21,8 +24,8 @@
   <body>
     <header>
       <div class="navLogo">
-        <a href="index.html"></a>
-          <img src="img/DFCLogo.png" alt="Det Franske Conditori"
+        <a href="index.html">
+          <img src="img/DFCLOGO.png" alt="Det Franske Conditori"
         /></a>
       </div>
       <div id="mobilNavigation" class="mobilOverlay">
@@ -30,7 +33,9 @@
           <img src="img/Icon-04.svg" alt="luk menu" onclick="lukNav()" />
         </div>
         <div class="navLogo">
-          <img src="img/DFCLogo.png" alt="Det Franske Conditori" />
+          <a href="index.html">
+            <img src="img/DFCLOGO.png" alt="Det Franske Conditori"
+          /></a>
         </div>
         <div class="navPunkter">
           <a href="brød.html">Brød</a>
@@ -58,15 +63,15 @@
       <img src="img/1920x780.jpg" alt="Mouse" />
     </div> -->
     <picture class="heroBillede">
-        <source media="(min-width: 1920px)" srcset="img/1920x780.jpg">
-        <source media="(min-width: 1536px)" srcset="img/1536x600.jpg">
-        <source media="(min-width: 1440px)" srcset="img/1440x550.jpg">
-        <source media="(min-width: 1280px)" srcset="img/1280x500.jpg">
-        <source media="(min-width: 1024px)" srcset="img/1024x480.jpg">
-        <source media="(min-width: 768px)" srcset="img/768x550.jpg">
-        <source media="(min-width: 627px)" srcset="img/627x290.jpg">
-        <source media="(min-width: 375px)" srcset="img/375x390.jpg">
-        <img src="img/375x390.jpg" alt="Det Franske Conditori">
+      <source media="(min-width: 1920px)" srcset="img/1920x780.jpg" />
+      <source media="(min-width: 1536px)" srcset="img/1536x600.jpg" />
+      <source media="(min-width: 1440px)" srcset="img/1440x550.jpg" />
+      <source media="(min-width: 1280px)" srcset="img/1280x500.jpg" />
+      <source media="(min-width: 1024px)" srcset="img/1024x480.jpg" />
+      <source media="(min-width: 768px)" srcset="img/768x550.jpg" />
+      <source media="(min-width: 627px)" srcset="img/627x290.jpg" />
+      <source media="(min-width: 375px)" srcset="img/375x390.jpg" />
+      <img src="img/375x390.jpg" alt="Det Franske Conditori" />
     </picture>
     <main>
       <div class="dfcTxt">
@@ -102,10 +107,7 @@
 
       <div class="kagensDag">
         <div class="kagensDagImg">
-          <img
-            src="img/kagensdag1.jpg"
-            alt="Kagens dag vinder"
-          />
+          <img src="img/kagensdag1.jpg" alt="Kagens dag vinder" />
         </div>
         <div class="kagensDagContainer">
           <div class="kagensDagBorder"></div>
@@ -121,6 +123,12 @@
               vi glæder os til at forsøge igen næste år. Følg med på vores
               facebookside når vi i år 2020 deltager endnu en gang
             </p>
+            <button
+              onclick="window.location.href='https://www.facebook.com/detfranskeconditori/'"
+              class="facebookBtn"
+            >
+              Følg os på Facebook
+            </button>
           </div>
         </div>
       </div>
