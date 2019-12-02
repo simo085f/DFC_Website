@@ -179,6 +179,20 @@ main {
 
 /* MEDIA QUERIES 768px */
 @media screen and (min-width: 768px) {
+  /* SKRIFTSTØRRELSE TIL DESKTOP STØRRELSE*/
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   /* NAVIGATION */
   .navPunkter {
     margin-top: 260px;
