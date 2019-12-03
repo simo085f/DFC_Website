@@ -133,14 +133,12 @@ ul {
   margin-block-start: 0em;
 }
 
-.fa {
-  color: white;
-  font-size: 24px !important;
-  padding-left: 5px;
-  padding-right: 5px;
-}
 .soMeIkoner {
   text-align: center;
+}
+
+.facebook {
+  padding-right: 5px;
 }
 
 .rapportContainer {
