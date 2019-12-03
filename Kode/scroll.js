@@ -9,7 +9,7 @@ ScrollReveal().reveal(".borderTxtContainer", {
 });
 
 ScrollReveal().reveal(".kagensDagContainer", {
-  viewFactor: 0.8,
+  viewFactor: 0.4,
   delay: 100,
   easing: "ease-in"
 });
@@ -29,7 +29,7 @@ function ScrollFunction() {
       ".produkt1Container, .produkt2Container, .produkt3Container, .produkt4Container",
       {
         viewFactor: 0.8,
-        delay: 200,
+        delay: 100,
         easing: "ease-in"
       }
     );
@@ -43,7 +43,7 @@ ScrollReveal().reveal(".kontaktTxtContainer", {
 });
 
 ScrollReveal().reveal(".aarstal", {
-  viewFactor: 0.8,
+  viewFactor: 0.3,
   delay: 200,
   easing: "ease-in"
 });

@@ -50,7 +50,7 @@ p {
 
 header {
   background: rgba(21, 21, 21, 0.8);
-  height: 50px;
+  height: 60px;
   width: 100%;
   border-bottom: 2px solid #be8e63;
   position: absolute;
@@ -64,7 +64,7 @@ header {
 
 .burgermenuIkon {
   float: right;
-  margin-top: -42px;
+  margin-top: -45px;
   margin-right: 15px;
 }
 
@@ -75,8 +75,8 @@ header {
 }
 
 .navLogo img {
-  width: 60px;
-  margin-top: 4px;
+  width: 70px;
+  margin-top: 6px;
   margin-left: 15px;
 }
 
@@ -214,6 +214,22 @@ main {
   }
   .navLogo img {
     margin-left: 35px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .navLogo img {
+    width: 84px;
+  }
+
+  .burgermenuIkon {
+    margin-top: -50px;
+  }
+
+  .lukBurgermenu {
+    margin-top: 20px;
   }
 }
 
