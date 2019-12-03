@@ -173,7 +173,7 @@ footer {
 
   /* FOOTER**/
   footer {
-    margin-top: 110px;
+    margin-top: 120px;
   }
 }
 
@@ -276,7 +276,7 @@ footer {
   #jul {
     margin-top: 120px;
   }
-  */ .julTxt {
+  .julTxt {
     width: 28%;
     padding-left: 65px;
     margin-top: 40px;
