@@ -9,8 +9,8 @@ ScrollReveal().reveal(".borderTxtContainer", {
 });
 
 ScrollReveal().reveal(".kagensDagContainer", {
-  viewFactor: 0.4,
-  delay: 100,
+  viewFactor: 0.5,
+  delay: 200,
   easing: "ease-in"
 });
 
@@ -28,8 +28,8 @@ function ScrollFunction() {
     ScrollReveal().reveal(
       ".produkt1Container, .produkt2Container, .produkt3Container, .produkt4Container",
       {
-        viewFactor: 0.8,
-        delay: 100,
+        viewFactor: 0.7,
+        delay: 150,
         easing: "ease-in"
       }
     );
@@ -44,12 +44,12 @@ ScrollReveal().reveal(".kontaktTxtContainer", {
 
 ScrollReveal().reveal(".aarstal", {
   viewFactor: 0.3,
-  delay: 200,
+  delay: 100,
   easing: "ease-in"
 });
 
 ScrollReveal().reveal(".aarstalDesktop", {
   viewFactor: 0.6,
-  delay: 200,
+  delay: 100,
   easing: "ease-in"
 });
