@@ -199,6 +199,7 @@ footer {
   .produkt4,
   .produkt5 {
     margin-top: 70px;
+    grid-gap: 45px;
   }
 }
 /* MEDIA QUERIES 1440px */
@@ -242,10 +243,15 @@ footer {
   .produkt4,
   .produkt5 {
     margin-top: 100px;
+    grid-gap: 70px;
   }
 
   footer {
     margin-top: 125px;
+  }
+  .produktBorder,
+  .produkt2Border {
+    height: 300px;
   }
 }
 
@@ -256,11 +262,11 @@ footer {
   }
   .produktTxt {
     width: 29%;
-    padding-left: 100px;
+    padding-left: 50px;
   }
   .produkt2Txt {
     width: 30%;
-    padding-left: 65px;
+    padding-left: 85px;
   }
   .produkt1,
   .produkt2,
@@ -272,5 +278,9 @@ footer {
 
   footer {
     margin-top: 140px;
+  }
+  .produktBorder,
+  .produkt2Border {
+    height: 330px;
   }
 }

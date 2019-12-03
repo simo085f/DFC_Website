@@ -25,7 +25,7 @@ footer {
 .kontaktTxt {
   width: auto;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 47px;
 }
 
 .kontaktTxt p {
@@ -112,6 +112,9 @@ input:focus {
   .kontaktForm {
     margin-top: -270px;
   }
+  .sendEmail {
+    width: 50%;
+  }
 }
 
 /* MEDIA QUERIES 1024px */
@@ -136,6 +139,10 @@ input:focus {
   footer {
     margin-top: 80px;
   }
+
+  .sendEmail {
+    width: 40%;
+  }
 }
 
 /* MEDIA QUERIES 1280px */
@@ -143,11 +150,19 @@ input:focus {
   .kontaktForm {
     margin-top: 70px;
   }
+  .sendEmail {
+    width: 30%;
+  }
 }
 /* MEDIA QUERIES 1440px */
 @media screen and (min-width: 1440px) {
   .dfcTxt {
     margin-top: 70px;
+  }
+
+  .kontaktTxt {
+    margin-top: 10px;
+    padding-left: 40px;
   }
   .kontaktOsContainer {
     margin-top: 90px;
@@ -169,13 +184,21 @@ input:focus {
 
   .kontaktOsContainer {
     margin-top: 100px;
-    grid-gap: 80px;
+    grid-gap: 60px;
   }
   .kontaktForm {
     margin-top: 100px;
   }
   footer {
     margin-top: 110px;
+  }
+
+  .kontaktTxt {
+    padding-left: 70px;
+    margin-top: 30px;
+  }
+  .kontaktBorder {
+    height: 300px;
   }
 }
 
@@ -190,5 +213,11 @@ input:focus {
 
   footer {
     margin-top: 130px;
+  }
+  .kontaktTxt {
+    margin-top: 35px;
+  }
+  .kontaktBorder {
+    height: 330px;
   }
 }

@@ -242,6 +242,12 @@ footer {
   footer {
     margin-top: 130px;
   }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-gap: 40px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -255,5 +261,11 @@ footer {
 
   footer {
     margin-top: 150px;
+  }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 12% 1fr 1fr;
   }
 }

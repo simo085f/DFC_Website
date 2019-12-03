@@ -241,9 +241,14 @@ footer {
   }
   #jul {
     margin-top: 100px;
+    grid-gap: 70px;
   }
   .julTxt {
-    margin-top: 45px;
+    margin-top: 68px;
+  }
+
+  .julBorder {
+    height: 300px;
   }
   .kagensDagImg img {
     margin-top: 100px;
@@ -278,11 +283,11 @@ footer {
   }
   .julTxt {
     width: 28%;
-    padding-left: 65px;
-    margin-top: 40px;
+    padding-left: 50px;
+    margin-top: 65px;
   }
   .julBorder {
-    height: 290px;
+    height: 330px;
   }
 
   .kagensDagImg img {
