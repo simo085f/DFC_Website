@@ -175,6 +175,10 @@ main {
   .navLogo img {
     margin-left: 25px;
   }
+
+  main {
+    width: 85%;
+  }
 }
 
 /* MEDIA QUERIES 768px */
@@ -210,12 +214,6 @@ main {
   }
   .navLogo img {
     margin-left: 35px;
-  }
-
-  /* MAIN - MARGIN PÅ ALLE SIDER */
-  main {
-    width: 85%;
-    margin: 0 auto;
   }
 }
 
