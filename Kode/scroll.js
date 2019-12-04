@@ -44,7 +44,6 @@ ScrollReveal().reveal(".kontaktTxtContainer", {
 
 ScrollReveal().reveal(".aarstal", {
   viewFactor: 0.3,
-  delay: 100,
   easing: "ease-in"
 });
 
