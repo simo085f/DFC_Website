@@ -1,0 +1,271 @@
+footer {
+  margin-top: -15px;
+}
+.dfcTxt {
+  margin-top: 30px;
+}
+
+.historie {
+  margin-top: 30px;
+}
+.historie,
+.historie2,
+.historie3,
+.historie4 {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.historie2,
+.historie4 {
+  margin-top: -30px;
+}
+
+.historie3 {
+  margin-top: -75px;
+}
+
+.aarstal h2 {
+  font-size: 72px;
+  color: #be8e63;
+  margin-block-start: -1em;
+  margin-block-end: 0.5em;
+}
+
+.aarstal {
+  margin-top: 70px;
+}
+
+.aarstalDesktop {
+  display: none;
+}
+
+.historieImg img,
+.historieImg2 img,
+.historieImg3 img,
+.historieImg4 img {
+  width: 100%;
+}
+
+.historieImg,
+.historieImg3,
+.historieImg4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: -35px;
+}
+.historieImg2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  .historieImg,
+  .historieImg2,
+  .historieImg3,
+  .historieImg4 {
+    margin-top: -93px;
+  }
+
+  .historieImg img,
+  .historieImg2 img,
+  .historieImg3 img,
+  .historieImg4 img {
+    margin-top: 10px;
+  }
+
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 10% 1fr;
+  }
+
+  .historie2,
+  .historie4 {
+    margin-top: 0px;
+  }
+
+  .historie3 {
+    margin-top: 0px;
+  }
+  .historieMargin {
+    margin-top: 35px;
+  }
+
+  footer {
+    margin-top: 55px;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  .dfcTxt {
+    margin-top: 40px;
+  }
+  .historieImg,
+  .historieImg3,
+  .historieImg4 {
+    margin-top: -170px;
+  }
+
+  .historieImg img,
+  .historieImg2 img,
+  .historieImg3 img,
+  .historieImg4 img {
+    margin-top: 0px;
+  }
+  .historieImg2 {
+    margin-top: -150px;
+  }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 20% 1fr;
+    grid-gap: 10px;
+  }
+
+  .historieTxt p {
+    margin-block-start: 0em;
+  }
+
+  .aarstal {
+    display: none;
+  }
+
+  .aarstalDesktop {
+    display: block;
+    margin-top: 75px;
+  }
+  .aarstalDesktop h2 {
+    font-size: 100px;
+    color: #be8e63;
+    margin-block-start: -1em;
+    margin-block-end: 0.5em;
+  }
+  .historieMargin {
+    margin-top: 60px;
+  }
+
+  footer {
+    margin-top: 65px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+@media screen and (min-width: 1024px) {
+  .dfcTxt {
+    margin-top: 60px;
+  }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 12% 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  .aarstalDesktop {
+    margin-top: 75px;
+  }
+
+  .aarstalDesktop h2 {
+    font-size: 100px;
+    color: #be8e63;
+    margin-block-start: -1em;
+    margin-block-end: 0.5em;
+  }
+
+  .historieImg,
+  .historieImg2,
+  .historieImg3,
+  .historieImg4 {
+    grid-column-start: 3;
+    margin-top: 0;
+  }
+  .historieMargin {
+    margin-top: 70px;
+  }
+
+  footer {
+    margin-top: 90px;
+  }
+}
+
+/* MEDIA QUERIES 1280px */
+@media screen and (min-width: 1280px) {
+  .historieMargin {
+    margin-top: 80px;
+  }
+
+  footer {
+    margin-top: 110px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  .dfcTxt {
+    margin-top: 70px;
+  }
+  .aarstalDesktop h2 {
+    font-size: 144px;
+  }
+
+  .aarstalDesktop {
+    margin-top: 105px;
+  }
+
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 14% 1fr 1fr;
+  }
+  .historieMargin {
+    margin-top: 90px;
+  }
+}
+
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  .dfcTxt {
+    margin-top: 80px;
+  }
+  .historieMargin {
+    margin-top: 100px;
+  }
+  footer {
+    margin-top: 130px;
+  }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .dfcTxt {
+    margin-top: 100px;
+  }
+
+  .historieMargin {
+    margin-top: 130px;
+  }
+
+  footer {
+    margin-top: 150px;
+  }
+  .historie,
+  .historie2,
+  .historie3,
+  .historie4 {
+    grid-template-columns: 12% 1fr 1fr;
+  }
+}
