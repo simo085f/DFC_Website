@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Det Franske Conditori beskrivelse her" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.css" />
+    
     <!--SCROLLREVEAL LINK FOR AT SCROLLREVEAL DUR-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--FONTE HENTET FRA GOOGLE FONTS-->
@@ -47,12 +47,103 @@
     />
     <meta name="msapplication-TileColor" content="#151515" />
     <meta name="theme-color" content="#151515" />
-
-    <title>Det Franske Conditori</title>
+    
+   @if(Model.Content.DocumentTypeAlias == "forside"){
+   <link rel="stylesheet" href="index.css" />
+     <title>Det Franske Conditori</title>
+    }
+    
+    @if(Model.Content.DocumentTypeAlias == "broed"){
+   <link rel="stylesheet" href="produkt.css" />
+     <title>Det Franske Conditoris brød</title>
+    }
+    
+    @if(Model.Content.DocumentTypeAlias == "kager"){
+   <link rel="stylesheet" href="produkt.css" />
+     <title>Det Franske Conditoris kager</title>
+    }
+    
+     @if(Model.Content.DocumentTypeAlias == "fristelser"){
+   <link rel="stylesheet" href="produkt.css" />
+     <title>Det Franske Conditoris fristelser</title>
+    }
+     @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
+   <link rel="stylesheet" href="produkt.css" />
+   <link rel="stylesheet" href="besillingskager.css" />
+     <title>Det Franske Conditoris bestillingskager</title>
+    }
+    
+    @if(Model.Content.DocumentTypeAlias == "voresHistorie"){
+   <link rel="stylesheet" href="historie.css" />
+     <title>Det Franske Conditoris historie</title>
+    }
+    
+    @if(Model.Content.DocumentTypeAlias == "voresHistorie"){
+   <link rel="stylesheet" href="kontakt.css" />
+     <title>Kontakt Det Franske Conditori</title>
+    }
+    
   </head>
   
   <body>
       
       @RenderBody()
+      
+       <footer>
+      <div class="footerContainer">
+        <div class="kontakt">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>Det Franske Conditori</li>
+            <li>+45 35 35 15 46</li>
+            <li>kontakt@detfranskeconditori.dk</li>
+            <li>H.C Ørstedsvej 44</li>
+            <li>1879 Frederiksberg</li>
+          </ul>
+        </div>
+        <div class="aabningstider">
+          <h3>Åbningstider</h3>
+          <ul>
+            <li>Vores åbningstider er:</li>
+            <li>Mandag - Fredag: 06.00 - 17.30</li>
+            <li>Lørdag - Søndag: 06.00 - 16.00</li>
+          </ul>
+        </div>
+        <div class="socialeMedier">
+          <h3>Følg os</h3>
+          <div class="soMeIkoner">
+            <a
+              href="https://www.facebook.com/detfranskeconditori/"
+              aria-label="Følg os på Facebook"
+              class="facebook"
+            >
+              <img src="img/facebook-06.svg" alt="facebook"
+            /></a>
+
+            <a
+              href="https://www.instagram.com/detfranskeconditori/"
+              aria-label="Følg os på Instagram"
+              class="instagram"
+            >
+              <img src="img/instagram-07.svg" alt="instagram"
+            /></a>
+          </div>
+        </div>
+        <div class="kontrolRapport">
+          <h3>Kontrolrapport</h3>
+          <div class="rapportContainer">
+            <a href="https://www.findsmiley.dk/112428">
+              <img src="img/Banner_groen_99x32.gif" alt="Smiley rapport"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js.js"></script>
+    <script src="scroll.js"></script>
+     @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
+   <script src="carousel.js"></script>
+    }
+ 
   </body>
   </html>
