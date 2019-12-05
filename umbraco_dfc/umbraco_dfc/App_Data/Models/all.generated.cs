@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c8e74385dbb8db8c")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8865f239c10cef3c")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
 // FILE: models.generated.cs
@@ -63,6 +63,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Forside, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Burgermenu: Burgermenu ikon til mobil
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
 		}
 
 		///<summary>
@@ -207,6 +216,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string KagensDagTekst
 		{
 			get { return this.GetPropertyValue<string>("kagensDagTekst"); }
+		}
+
+		///<summary>
+		/// Kryds: Kryds til at lukke navigation i mobil
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
 		}
 
 		///<summary>

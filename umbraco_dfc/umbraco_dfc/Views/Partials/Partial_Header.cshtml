@@ -4,7 +4,7 @@
       <div class="navLogo">
         <a href="/">
             @{
-    var logo = Model.GetPropertyValue<IPublishedContent>("logo");
+    var logo = Model.GetPropertyValue<IPublishedContent>("headerLogo");
     if(logo != null){
     <img src="@logo.Url" alt="Det Franske Conditori"
         />
@@ -14,12 +14,24 @@
       </div>
       <div id="mobilNavigation" class="mobilOverlay">
         <div class="lukBurgermenu">
-          <img src="img/Icon-04.svg" alt="luk menu" onclick="lukNav()" />
+            @{
+    var lukNav = Model.GetPropertyValue<IPublishedContent>("kryds");
+    if(lukNav != null){
+    <img src="@lukNav.Url" alt="luk menu" onclick="lukNav()" />
+    }
+    }
+          
         </div>
         <div class="navLogo">
           <a href="/">
-            <img src="img/DFCLogo.png" alt="Det Franske Conditori"
-          /></a>
+               @{
+    var logo2 = Model.GetPropertyValue<IPublishedContent>("headerLogo");
+    if(logo2 != null){
+    <img src="@logo2.Url" alt="Det Franske Conditori"
+        />
+    }
+    }
+           </a>
         </div>
         <div class="navPunkter">
           <a href="/broed">Brød</a>
@@ -31,7 +43,13 @@
         </div>
       </div>
       <div class="burgermenuIkon">
-        <img src="img/Icon-03.svg" alt="burgermenu" onclick="aabenNav()" />
+          @{
+    var burgerMenu = Model.GetPropertyValue<IPublishedContent>("burgermenu");
+    if(burgerMenu != null){
+    <img src="@burgerMenu.Url" alt="burgermenu" onclick="aabenNav()" />
+    }
+    }
+        
       </div>
 
       <div class="desktopPunkter">
