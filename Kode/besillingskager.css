@@ -11,6 +11,7 @@
 
 .laesMereBtn:hover {
   background-color: #ce9c71;
+  transition: 0.3s ease;
 }
 
 .produkt1 {

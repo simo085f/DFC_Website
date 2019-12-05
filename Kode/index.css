@@ -78,6 +78,7 @@ footer {
 
 .facebookBtn:hover {
   background-color: #ce9c71;
+  transition: 0.3s ease;
 }
 
 /* MEDIA QUERIES 627px */
