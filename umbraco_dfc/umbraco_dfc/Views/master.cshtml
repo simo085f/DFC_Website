@@ -1,0 +1,58 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Det Franske Conditori beskrivelse her" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!--SCROLLREVEAL LINK FOR AT SCROLLREVEAL DUR-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--FONTE HENTET FRA GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:500|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon-package/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-package/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-package/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon-package/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon-package/safari-pinned-tab.svg"
+      color="#be8e63"
+    />
+    <meta name="msapplication-TileColor" content="#151515" />
+    <meta name="theme-color" content="#151515" />
+
+    <title>Det Franske Conditori</title>
+  </head>
+  
+  <body>
+      
+      @RenderBody()
+  </body>
+  </html>
