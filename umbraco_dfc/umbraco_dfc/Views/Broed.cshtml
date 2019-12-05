@@ -1,5 +1,154 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Broed>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = null;
+	Layout = "master.cshtml";
 }
+
+<picture class="heroBillede">
+     @{
+    var bHero1920 = Model.GetPropertyValue<IPublishedContent>("bHero1920px");
+    if(bHero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@bHero1920.Url" />
+    }
+    }
+    @{
+    var bHero1536 = Model.GetPropertyValue<IPublishedContent>("bHero1536px");
+    if(bHero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@bHero1536.Url" />
+    }
+    }
+    @{
+    var bHero1440 = Model.GetPropertyValue<IPublishedContent>("bHero1440px");
+    if(bHero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@bHero1440.Url" />
+    }
+    }
+    @{
+    var bHero1280 = Model.GetPropertyValue<IPublishedContent>("bHero1280px");
+    if(bHero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@bHero1280.Url" />
+    }
+    }
+    @{
+    var bHero1024 = Model.GetPropertyValue<IPublishedContent>("bHero1024px");
+    if(bHero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@bHero1024.Url" />
+    }
+    }    
+    @{
+    var bHero768 = Model.GetPropertyValue<IPublishedContent>("bHero768px");
+    if(bHero768 != null){
+    <source media="(min-width: 768px)" srcset="@bHero768.Url" />
+    }
+    }    
+    @{
+    var bHero627 = Model.GetPropertyValue<IPublishedContent>("bHero627px");
+    if(bHero627 != null){
+    <source media="(min-width: 627px)" srcset="@bHero627.Url" />
+    }
+    }  
+    @{
+    var bHero375 = Model.GetPropertyValue<IPublishedContent>("bHero375px");
+    if(bHero375 != null){
+    <source media="(min-width: 375px)" srcset="@bHero375.Url" />
+    }
+    }
+    @{
+    var bHeroMobil = Model.GetPropertyValue<IPublishedContent>("bHero375px");
+    if(bHeroMobil != null){
+    <img src="@bHeroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    <main>
+      <div class="IntroTxt">
+        <h1>@Umbraco.Field("broedOverskrift")</h1>
+        <p>
+          @Umbraco.Field("broedTekst")
+        </p>
+      </div>
+      <div class="produkt1">
+        <div class="produkt1Img">
+            @{
+            var broedBillede = Model.GetPropertyValue<IPublishedContent>("broedBillede");
+            if(broedBillede != null){
+           <img src="@broedBillede.Url" alt="brød" />
+           
+            }
+             }
+         
+        </div>
+        <div class="produkt1Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt">
+            <h2>@Umbraco.Field("broedSektionOverskrift")</h2>
+            <p>
+              @Umbraco.Field("broedSektionTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt2">
+        <div class="produkt2Img">
+            @{
+            var bollerBillede = Model.GetPropertyValue<IPublishedContent>("bollerBillede");
+            if(bollerBillede != null){
+           <img src="@bollerBillede.Url" alt="Boller" />
+           
+            }
+             }
+          
+        </div>
+        <div class="produkt2Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("bollerSektionOverskrift")</h2>
+            <p>
+              @Umbraco.Field("bollerSektionTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt3">
+        <div class="produkt3Img">
+            @{
+            var rugbroedBillede = Model.GetPropertyValue<IPublishedContent>("rugbroedBillede");
+            if(rugbroedBillede != null){
+           <img src="@rugbroedBillede.Url" alt="rugbrød" />
+           
+            }
+             }
+          
+        </div>
+        <div class="produkt3Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt">
+            <h2>@Umbraco.Field("rugbroedSektionOverskrift")</h2>
+            <p>
+              @Umbraco.Field("rugbroedSektionTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt4">
+        <div class="produkt4Img">
+            @{
+            var fluteBillede = Model.GetPropertyValue<IPublishedContent>("fluteBillede");
+            if(fluteBillede != null){
+           <img src="@fluteBillede.Url" alt="flute" />
+           
+            }
+             }
+          
+        </div>
+        <div class="produkt4Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("fluteSektionOverskrift")</h2>
+            <p>
+              @Umbraco.Field("fluteSektionTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
