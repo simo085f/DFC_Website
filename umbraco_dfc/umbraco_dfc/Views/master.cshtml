@@ -13,7 +13,7 @@
     <meta name="robots" content="noindex" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Det Franske Conditori beskrivelse her" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     
     <!--SCROLLREVEAL LINK FOR AT SCROLLREVEAL DUR-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -49,43 +49,44 @@
     <meta name="theme-color" content="#151515" />
     
    @if(Model.Content.DocumentTypeAlias == "forside"){
-   <link rel="stylesheet" href="index.css" />
+   <link rel="stylesheet" href="/css/index.css" />
      <title>Det Franske Conditori</title>
     }
     
     @if(Model.Content.DocumentTypeAlias == "broed"){
-   <link rel="stylesheet" href="produkt.css" />
+   <link rel="stylesheet" href="/css/produkt.css" />
      <title>Det Franske Conditoris brød</title>
     }
     
     @if(Model.Content.DocumentTypeAlias == "kager"){
-   <link rel="stylesheet" href="produkt.css" />
+   <link rel="stylesheet" href="/css/produkt.css" />
      <title>Det Franske Conditoris kager</title>
     }
     
      @if(Model.Content.DocumentTypeAlias == "fristelser"){
-   <link rel="stylesheet" href="produkt.css" />
+   <link rel="stylesheet" href="/css/produkt.css" />
      <title>Det Franske Conditoris fristelser</title>
     }
      @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
-   <link rel="stylesheet" href="produkt.css" />
-   <link rel="stylesheet" href="besillingskager.css" />
+   <link rel="stylesheet" href="/css/produkt.css" />
+   <link rel="stylesheet" href="/css/besillingskager.css" />
      <title>Det Franske Conditoris bestillingskager</title>
     }
     
     @if(Model.Content.DocumentTypeAlias == "voresHistorie"){
-   <link rel="stylesheet" href="historie.css" />
+   <link rel="stylesheet" href="/css/historie.css" />
      <title>Det Franske Conditoris historie</title>
     }
     
     @if(Model.Content.DocumentTypeAlias == "kontaktOs"){
-   <link rel="stylesheet" href="kontakt.css" />
+   <link rel="stylesheet" href="/css/kontakt.css" />
      <title>Kontakt Det Franske Conditori</title>
     }
     
   </head>
   
   <body>
+      @Html.Partial("Partial_Header")
       
       @RenderBody()
       
@@ -139,10 +140,10 @@
         </div>
       </div>
     </footer>
-    <script src="js.js"></script>
-    <script src="scroll.js"></script>
+    <script src="/scripts/js.js"></script>
+    <script src="/scripts/scroll.js"></script>
      @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
-   <script src="carousel.js"></script>
+   <script src="/scripts/carousel.js"></script>
     }
  
   </body>
