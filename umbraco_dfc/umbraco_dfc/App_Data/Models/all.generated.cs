@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ac8e53160bcfd240")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.6")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7e7c626662173519")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -565,6 +565,231 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Kager, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Burgermenu: Burgermenu ikon
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
+		}
+
+		///<summary>
+		/// Facebook
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
+		/// Flødeskumskager billede: Billede til flødeskumskager
+		///</summary>
+		[ImplementPropertyType("floedeskumskagerBillede")]
+		public IPublishedContent FloedeskumskagerBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("floedeskumskagerBillede"); }
+		}
+
+		///<summary>
+		/// Flødeskumskager overskrift: Overskriv til flødeskumskager
+		///</summary>
+		[ImplementPropertyType("floedeskumskagerOverskrift")]
+		public string FloedeskumskagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("floedeskumskagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Flødeskumskager tekst: Tekst til flødeskumskager
+		///</summary>
+		[ImplementPropertyType("floedeskumskagerTekst")]
+		public string FloedeskumskagerTekst
+		{
+			get { return this.GetPropertyValue<string>("floedeskumskagerTekst"); }
+		}
+
+		///<summary>
+		/// Header logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
+		}
+
+		///<summary>
+		/// Instagram
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
+		}
+
+		///<summary>
+		/// Kager overskrift: Overskrift til øverste sektion
+		///</summary>
+		[ImplementPropertyType("kagerOverskrift")]
+		public string KagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("kagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Kager tekst: Tekst til øverste sektion
+		///</summary>
+		[ImplementPropertyType("kagerTekst")]
+		public string KagerTekst
+		{
+			get { return this.GetPropertyValue<string>("kagerTekst"); }
+		}
+
+		///<summary>
+		/// K hero 1024px
+		///</summary>
+		[ImplementPropertyType("kHero1024px")]
+		public IPublishedContent KHero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero1024px"); }
+		}
+
+		///<summary>
+		/// K hero 1280px: Hero billede 1280px
+		///</summary>
+		[ImplementPropertyType("kHero1280px")]
+		public IPublishedContent KHero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero1280px"); }
+		}
+
+		///<summary>
+		/// K hero 1440px: Hero billede 1440px
+		///</summary>
+		[ImplementPropertyType("kHero1440px")]
+		public IPublishedContent KHero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero1440px"); }
+		}
+
+		///<summary>
+		/// K hero 1536px: Hero billede 1536px
+		///</summary>
+		[ImplementPropertyType("kHero1536px")]
+		public IPublishedContent KHero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero1536px"); }
+		}
+
+		///<summary>
+		/// K hero 1920px: Hero billede 1920px
+		///</summary>
+		[ImplementPropertyType("kHero1920px")]
+		public IPublishedContent KHero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero1920px"); }
+		}
+
+		///<summary>
+		/// K hero 375px: Hero billede 375px
+		///</summary>
+		[ImplementPropertyType("kHero375px")]
+		public IPublishedContent KHero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero375px"); }
+		}
+
+		///<summary>
+		/// K hero 627px: Hero billede 627px
+		///</summary>
+		[ImplementPropertyType("kHero627px")]
+		public IPublishedContent KHero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero627px"); }
+		}
+
+		///<summary>
+		/// K hero 768px: Hero billede 768px
+		///</summary>
+		[ImplementPropertyType("kHero768px")]
+		public IPublishedContent KHero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kHero768px"); }
+		}
+
+		///<summary>
+		/// Kryds: Kryds til at lukke navigationen på mobil
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
+		}
+
+		///<summary>
+		/// Smiley
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
+		}
+
+		///<summary>
+		/// Tærter billede: Billede til tærter
+		///</summary>
+		[ImplementPropertyType("taerterBillede")]
+		public IPublishedContent TaerterBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("taerterBillede"); }
+		}
+
+		///<summary>
+		/// Tærter overskrift: Overskrift til tærter
+		///</summary>
+		[ImplementPropertyType("taerterOverskrift")]
+		public string TaerterOverskrift
+		{
+			get { return this.GetPropertyValue<string>("taerterOverskrift"); }
+		}
+
+		///<summary>
+		/// Tærter tekst: Tekst til tærter
+		///</summary>
+		[ImplementPropertyType("taerterTekst")]
+		public string TaerterTekst
+		{
+			get { return this.GetPropertyValue<string>("taerterTekst"); }
+		}
+
+		///<summary>
+		/// Tørkager billede: Billede til tørkager
+		///</summary>
+		[ImplementPropertyType("toerkagerBillede")]
+		public IPublishedContent ToerkagerBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("toerkagerBillede"); }
+		}
+
+		///<summary>
+		/// Tørkager overskrift: Overskrift til tørkager
+		///</summary>
+		[ImplementPropertyType("toerkagerOverskrift")]
+		public string ToerkagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("toerkagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Tørkager tekst: Tekst til tørkager
+		///</summary>
+		[ImplementPropertyType("toerkagerTekst")]
+		public string ToerkagerTekst
+		{
+			get { return this.GetPropertyValue<string>("toerkagerTekst"); }
 		}
 	}
 
