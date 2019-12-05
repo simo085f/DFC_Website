@@ -1,9 +1,16 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
  <header>
       <div class="navLogo">
         <a href="/">
-          <img src="img/DFCLogo.png" alt="Det Franske Conditori"
-        /></a>
+            @{
+    var logo = Model.GetPropertyValue<IPublishedContent>("logo");
+    if(logo != null){
+    <img src="@logo.Url" alt="Det Franske Conditori"
+        />
+    }
+    }
+         </a>
       </div>
       <div id="mobilNavigation" class="mobilOverlay">
         <div class="lukBurgermenu">

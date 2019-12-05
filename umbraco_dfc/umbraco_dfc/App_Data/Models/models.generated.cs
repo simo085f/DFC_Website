@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "2bab6c03cbe44d52")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c8e74385dbb8db8c")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -50,6 +50,87 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Facebook: Facebook ikon
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
+		/// Forside overskrift: Overskrift på forside
+		///</summary>
+		[ImplementPropertyType("forsideOverskrift")]
+		public string ForsideOverskrift
+		{
+			get { return this.GetPropertyValue<string>("forsideOverskrift"); }
+		}
+
+		///<summary>
+		/// Forside tekst: Tekst til forsiden
+		///</summary>
+		[ImplementPropertyType("forsideTekst")]
+		public string ForsideTekst
+		{
+			get { return this.GetPropertyValue<string>("forsideTekst"); }
+		}
+
+		///<summary>
+		/// Header logo: Logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero  1920px: Hero billede 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
 		/// Hero 375px: Hero billede i 375px
 		///</summary>
 		[ImplementPropertyType("hero375px")]
@@ -65,6 +146,87 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent Hero627px
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Instagram: Instagram ikon
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
+		}
+
+		///<summary>
+		/// Kagens dag billede: Billede til kagens dag
+		///</summary>
+		[ImplementPropertyType("kagensDagBillede")]
+		public IPublishedContent KagensDagBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kagensDagBillede"); }
+		}
+
+		///<summary>
+		/// Kagens dag overskrift: Overskrift til kagens dag
+		///</summary>
+		[ImplementPropertyType("kagensDagOverskrift")]
+		public string KagensDagOverskrift
+		{
+			get { return this.GetPropertyValue<string>("kagensDagOverskrift"); }
+		}
+
+		///<summary>
+		/// Kagens dag tekst: Tekst til kagens dag
+		///</summary>
+		[ImplementPropertyType("kagensDagTekst")]
+		public string KagensDagTekst
+		{
+			get { return this.GetPropertyValue<string>("kagensDagTekst"); }
+		}
+
+		///<summary>
+		/// Smiley: Smiley rapport
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
+		}
+
+		///<summary>
+		/// tids billede: Billedet til højtid/årstid
+		///</summary>
+		[ImplementPropertyType("tidsBillede")]
+		public IPublishedContent TidsBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("tidsBillede"); }
+		}
+
+		///<summary>
+		/// Tids overskrift: Overskrif til højtid/årstid
+		///</summary>
+		[ImplementPropertyType("tidsOverskrift")]
+		public string TidsOverskrift
+		{
+			get { return this.GetPropertyValue<string>("tidsOverskrift"); }
+		}
+
+		///<summary>
+		/// Tids tekst: Tekst til højtid/årstid
+		///</summary>
+		[ImplementPropertyType("tidsTekst")]
+		public string TidsTekst
+		{
+			get { return this.GetPropertyValue<string>("tidsTekst"); }
 		}
 	}
 

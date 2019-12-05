@@ -1,5 +1,119 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Forside>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
 	Layout = "master.cshtml";
 }
+
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    <main>
+      <div class="dfcTxt">
+        <h1>@Umbraco.Field("forsideOverskrift")</h1>
+        <p>
+          @Umbraco.Field("forsideTekst")
+        </p>
+      </div>
+
+      <div id="jul">
+        <div class="julImg">
+            @{
+            var tidsBillede = Model.GetPropertyValue<IPublishedContent>("tidsBillede");
+            if(tidsBillede != null){
+           
+            <img src="@tidsBillede.Url" alt="Jul i Conditoriet" />
+            }
+             }
+          
+        </div>
+        <div class="borderTxtContainer">
+          <div class="julBorder"></div>
+          <div class="julTxt">
+            <h2>@Umbraco.Field("tidsOverskrift")</h2>
+            <p>
+              @Umbraco.Field("tidsTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kagensDag">
+        <div class="kagensDagImg">
+            @{
+            var kagensDagBillede = Model.GetPropertyValue<IPublishedContent>("kagensDagBillede");
+            if(kagensDagBillede != null){
+            <img src="@kagensDagBillede.Url" alt="Kagens dag vinder" />
+            }
+            }
+          
+        </div>
+        <div class="kagensDagContainer">
+          <div class="kagensDagBorder"></div>
+          <div class="kagensDagTxt">
+            <h2>@Umbraco.Field("kagensDagOverskrift")</h2>
+            <p>
+              @Umbraco.Field("kagensDagTekst")
+            </p>
+            <button
+              onclick="window.location.href='https://www.facebook.com/detfranskeconditori/'"
+              class="facebookBtn"
+            >
+              Følg os på Facebook
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
