@@ -67,6 +67,7 @@
    <link rel="stylesheet" href="/css/produkt.css" />
      <title>Det Franske Conditoris fristelser</title>
     }
+    
      @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
    <link rel="stylesheet" href="/css/produkt.css" />
    <link rel="stylesheet" href="/css/bestillingskager.css" />
@@ -83,10 +84,13 @@
      <title>Det Franske Conditoris historie</title>
     }
     
-     @if(Model.Content.DocumentTypeAlias == "kontaktOs"){
-   <link rel="stylesheet" href="/css/kontakt.css" />
-     <title>Kontakt Det Franske Conditori</title>
+    @if(Model.Content.DocumentTypeAlias == "kontaktOs"){
+    <link rel="stylesheet" href="/css/kontakt.css"/>
+    <title>Kontakt os</title>
     }
+    
+    
+    
   </head>
   
   <body>

@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "315433ca787be5d3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1eb7fd233dc7cc61")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -1596,6 +1596,41 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Vej
 		{
 			get { return this.GetPropertyValue<string>("vej"); }
+		}
+	}
+
+	/// <summary>Kontakt</summary>
+	[PublishedContentModel("kontakt")]
+	public partial class Kontakt : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "kontakt";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Kontakt(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Kontakt, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede til 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
 		}
 	}
 
