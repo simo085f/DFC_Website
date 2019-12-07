@@ -41,7 +41,7 @@ footer {
   border-bottom: 2px solid #be8e63;
   height: 200px;
   position: relative;
-  top: 390px;
+  top: 444px;
 }
 
 .kagensDagContainer {
@@ -90,11 +90,10 @@ footer {
   }
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
-    height: 160px;
-    top: 285px;
+    top: 325px;
   }
   .kagensDagContainer {
-    margin-top: -150px;
+    margin-top: -190px;
   }
 
   footer {
@@ -119,11 +118,21 @@ footer {
 
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
-    height: 155px;
-    top: 262px;
+    height: 180px;
+    top: 308px;
   }
   .kagensDagImg img {
     margin-top: 35px;
+  }
+  .kagensDagContainer {
+    margin-top: -170px;
+  }
+
+  .kagensDagTxt p {
+    padding-right: 16px;
+  }
+  footer {
+    margin-top: 90px;
   }
 }
 
@@ -149,12 +158,12 @@ footer {
   }
 
   .kagensDagBorder {
-    height: 120px;
-    top: 250px;
+    height: 150px;
+    top: 274px;
   }
 
   .kagensDagContainer {
-    margin-top: -110px;
+    margin-top: -140px;
   }
 
   .kagensDagImg img {
@@ -245,7 +254,7 @@ footer {
     grid-gap: 70px;
   }
   .julTxt {
-    margin-top: 68px;
+    margin-top: 64px;
   }
 
   .julBorder {
@@ -271,7 +280,7 @@ footer {
 
   /* FOOTER*/
   footer {
-    margin-top: 150px;
+    margin-top: 165px;
   }
 }
 
@@ -285,7 +294,7 @@ footer {
   .julTxt {
     width: 28%;
     padding-left: 50px;
-    margin-top: 65px;
+    margin-top: 60px;
   }
   .julBorder {
     height: 330px;
@@ -295,8 +304,12 @@ footer {
     margin-top: 120px;
   }
 
+  .kagensDagBorder {
+    top: 290px;
+  }
+
   /* FOOTER */
   footer {
-    margin-top: 200px;
+    margin-top: 185px;
   }
 }

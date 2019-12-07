@@ -29,7 +29,7 @@ footer {
 .produktTxt {
   width: 85%;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 56px;
 }
 
 .produkt2Border {
@@ -45,7 +45,7 @@ footer {
 .produkt2Txt {
   width: 85%;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 65px;
   padding-left: 30px;
 }
 /*produkt.HTML */
@@ -53,6 +53,14 @@ footer {
 @media screen and (min-width: 627px) {
   footer {
     margin-top: 330px;
+  }
+
+  .produktTxt {
+    margin-top: 70px;
+    padding-right: 16px;
+  }
+  .produkt2Txt {
+    margin-top: 75px;
   }
 }
 
@@ -69,7 +77,7 @@ footer {
 
   .produkt2Txt {
     padding-left: 70px;
-    margin-top: 60px;
+    margin-top: 72px;
   }
 
   .produkt1 img,
@@ -122,7 +130,7 @@ footer {
 
   .produktTxt {
     width: 39%;
-    margin-top: 30px;
+    margin-top: 51px;
   }
 
   /* BOLLER SEKTION */
@@ -140,15 +148,10 @@ footer {
     grid-column-start: 2;
   }
 
-  .produktTxt {
-    width: 39%;
-    margin-top: 40px;
-  }
-
   .produkt2Txt {
     width: 38%;
     padding-left: 30px;
-    margin-top: 40px;
+    margin-top: 70px;
   }
 
   /* RUGBRØD SEKTION */
@@ -182,7 +185,7 @@ footer {
 
   /*FOOTER*/
   footer {
-    margin-top: 95px;
+    margin-top: 90px;
   }
 }
 
@@ -200,6 +203,9 @@ footer {
   .produkt5 {
     margin-top: 70px;
     grid-gap: 45px;
+  }
+  .produktTxt {
+    padding-right: 29px;
   }
 }
 /* MEDIA QUERIES 1440px */
@@ -224,6 +230,13 @@ footer {
 
   .produktTxt {
     width: 36%;
+    padding-right: 39px;
+  }
+
+  .produkt2Txt {
+    width: 36%;
+    margin-top: 60px;
+    padding-left: 45px;
   }
 
   footer {
@@ -253,6 +266,15 @@ footer {
   .produkt2Border {
     height: 300px;
   }
+
+  .produktTxt {
+    width: 34%;
+    margin-top: 72px;
+  }
+  .produkt2Txt {
+    width: 31%;
+    margin-top: 80px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -261,7 +283,7 @@ footer {
     margin-top: 100px;
   }
   .produktTxt {
-    width: 29%;
+    width: 32%;
     padding-left: 50px;
   }
   .produkt2Txt {

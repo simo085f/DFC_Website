@@ -11,7 +11,8 @@ footer {
 .historie,
 .historie2,
 .historie3,
-.historie4 {
+.historie4,
+.historie_3 {
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 1fr 1fr;
@@ -23,10 +24,12 @@ footer {
   margin-top: -30px;
 }
 
-.historie3 {
+.historie_3 {
   margin-top: -75px;
 }
-
+.historie3 {
+  margin-top: -25px;
+}
 .aarstal h2 {
   font-size: 72px;
   color: #be8e63;
@@ -45,13 +48,15 @@ footer {
 .historieImg img,
 .historieImg2 img,
 .historieImg3 img,
-.historieImg4 img {
+.historieImg4 img,
+.historieImg_3 img {
   width: 100%;
 }
 
 .historieImg,
 .historieImg3,
-.historieImg4 {
+.historieImg4,
+.historieImg_3 {
   grid-column-start: 1;
   grid-column-end: 3;
   margin-top: -35px;
@@ -66,14 +71,16 @@ footer {
   .historieImg,
   .historieImg2,
   .historieImg3,
-  .historieImg4 {
+  .historieImg4,
+  .historieImg_3 {
     margin-top: -93px;
   }
 
   .historieImg img,
   .historieImg2 img,
   .historieImg3 img,
-  .historieImg4 img {
+  .historieImg4 img,
+  .historieImg_3 img {
     margin-top: 10px;
   }
 
@@ -108,14 +115,16 @@ footer {
   }
   .historieImg,
   .historieImg3,
-  .historieImg4 {
+  .historieImg4,
+  .historieImg_3 {
     margin-top: -170px;
   }
 
   .historieImg img,
   .historieImg2 img,
   .historieImg3 img,
-  .historieImg4 img {
+  .historieImg4 img,
+  .historieImg_3 img {
     margin-top: 0px;
   }
   .historieImg2 {
@@ -124,7 +133,8 @@ footer {
   .historie,
   .historie2,
   .historie3,
-  .historie4 {
+  .historie4,
+  .historie_3 {
     grid-template-columns: 20% 1fr;
     grid-gap: 10px;
   }
@@ -164,7 +174,8 @@ footer {
   .historie,
   .historie2,
   .historie3,
-  .historie4 {
+  .historie4,
+  .historie_3 {
     grid-template-columns: 12% 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 30px;
@@ -184,7 +195,8 @@ footer {
   .historieImg,
   .historieImg2,
   .historieImg3,
-  .historieImg4 {
+  .historieImg4,
+  .historieImg_3 {
     grid-column-start: 3;
     margin-top: 0;
   }
@@ -201,10 +213,6 @@ footer {
 @media screen and (min-width: 1280px) {
   .historieMargin {
     margin-top: 80px;
-  }
-
-  footer {
-    margin-top: 110px;
   }
 }
 /* MEDIA QUERIES 1440px */
@@ -223,11 +231,16 @@ footer {
   .historie,
   .historie2,
   .historie3,
-  .historie4 {
+  .historie4,
+  .historie_3 {
     grid-template-columns: 14% 1fr 1fr;
   }
   .historieMargin {
     margin-top: 90px;
+  }
+
+  footer {
+    margin-top: 104px;
   }
 }
 
@@ -240,12 +253,13 @@ footer {
     margin-top: 100px;
   }
   footer {
-    margin-top: 130px;
+    margin-top: 125px;
   }
   .historie,
   .historie2,
   .historie3,
-  .historie4 {
+  .historie4,
+  .historie_3 {
     grid-gap: 40px;
   }
 }
@@ -260,12 +274,13 @@ footer {
   }
 
   footer {
-    margin-top: 150px;
+    margin-top: 135px;
   }
   .historie,
   .historie2,
   .historie3,
-  .historie4 {
+  .historie4,
+  .historie_3 {
     grid-template-columns: 12% 1fr 1fr;
   }
 }
