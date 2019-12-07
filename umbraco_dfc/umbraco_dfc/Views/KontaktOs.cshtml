@@ -4,60 +4,101 @@
 	Layout = "master.cshtml";
 }
 
-     <picture class="heroBillede">
-      <source media="(min-width: 1920px)" srcset="img/ko1920x780.jpg" />
-      <source media="(min-width: 1536px)" srcset="img/ko1536x600.jpg" />
-      <source media="(min-width: 1440px)" srcset="img/ko1440x550.jpg" />
-      <source media="(min-width: 1280px)" srcset="img/ko1280x500.jpg" />
-      <source media="(min-width: 1024px)" srcset="img/ko1024x480.jpg" />
-      <source media="(min-width: 768px)" srcset="img/ko768x550.jpg" />
-      <source media="(min-width: 627px)" srcset="img/ko627x290.jpg" />
-      <source media="(min-width: 375px)" srcset="img/ko375x390.jpg" />
-      <img src="img/ko375x390.jpg" alt="Det Franske Conditori" />
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
     </picture>
+    
     <main>
       <div class="dfcTxt">
-        <h1>Bestilling af brød og kager</h1>
+        <h1>@Umbraco.Field("bestillingsOverskrift")</h1>
         <p>
-          For bestiling af brød og kager bedes du ringe til Det Franske
-          Conditori eller komme ned i butikken med din bestilling.
+          @Umbraco.Field("bestillingsTekst")
         </p>
+        <h2>@Umbraco.Field("leveringsOverskrift")</h2>
         <p>
-          Fest- og Signaturkager til særlige lejligheder specialfremstilles.
-          Bestil derfor i god tid, afstem ønsker og pris med mester eller
-          konditor. Alle bestillinger SKAL være betalt senest 3 dage før -
-          ellers bliver ordren ikke lavet
-          <br />
-          Bryllupskager skal bestilles minimum 3 uger før.
-        </p>
-        <h2>Levering</h2>
-        <p>
-          Ved større bestillinger kan vi være behjælpelige med levering.
-          Levering skal aftales ved bestilling - og inden betaling, så vi er
-          sikre på at alt forløber som det skal.
+          @Umbraco.Field("leveringsTekst")
         </p>
       </div>
       <div class="kontaktOsContainer">
         <div class="kontaktImg">
-          <img src="img/kontaktos1.jpg" alt="Ejerne" />
+            @{
+    var ejerne = Model.GetPropertyValue<IPublishedContent>("kontaktOsBillede");
+    if(ejerne != null){
+    <img src="@ejerne.Url" alt="Ejerne" />
+    }
+    }
+          
         </div>
         <div class="kontaktTxtContainer">
           <div class="kontaktBorder"></div>
           <div class="kontaktTxt">
             <h2>Kontakt os</h2>
             <div class="kontaktPTop">
-              <p>Tlf: +45 35 35 15 46</p>
+              <p>@Umbraco.Field("tlf")</p>
             </div>
-            <p>Email: kontakt@detfranskeconditori.dk</p>
+            <p>@Umbraco.Field("email")</p>
             <br />
-            <p>H. C. Ørstedsvej 44</p>
-            <p>1879 Frederiksberg</p>
+            <p>@Umbraco.Field("vej")</p>
+            <p>@Umbraco.Field("postnummer")</p>
           </div>
         </div>
       </div>
 
       <div class="kontaktForm">
-        <h2>Skriv til os</h2>
+        <h2>@Umbraco.Field("skrivTilOs")</h2>
         <form
           action="mailto:simonegrauer@hotmail.com"
           method="POST"
@@ -73,3 +114,4 @@
         </form>
       </div>
     </main>
+    

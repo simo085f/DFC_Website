@@ -4,23 +4,66 @@
 	Layout = "master.cshtml";
 }
 <picture class="heroBillede">
-      <source media="(min-width: 1920px)" srcset="img/h1920x780.jpg" />
-      <source media="(min-width: 1536px)" srcset="img/h1536x600.jpg" />
-      <source media="(min-width: 1440px)" srcset="img/h1440x550.jpg" />
-      <source media="(min-width: 1280px)" srcset="img/h1280x500.jpg" />
-      <source media="(min-width: 1024px)" srcset="img/h1024x480.jpg" />
-      <source media="(min-width: 768px)" srcset="img/h768x550.jpg" />
-      <source media="(min-width: 627px)" srcset="img/h627x290.jpg" />
-      <source media="(min-width: 375px)" srcset="img/h375x390.jpg" />
-      <img src="img/h375x390.jpg" alt="Det Franske Conditori" />
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
     </picture>
     <main>
       <div class="dfcTxt">
-        <h1>DET FRANSKE CONDITORIS HISTORIE</h1>
+        <h1>@Umbraco.Field("historieOverskrift")</h1>
         <p>
-          Det Franske Conditori blev grundlagt i år 1898 og har altid været
-          beliggende på H.C Ørstedsvej 44. Gennem årene har der været fem
-          forskellige ejere som har holdt fast i den franske smag.
+          @Umbraco.Field("historieTekst")
         </p>
       </div>
       <div class="historie historieMargin">
@@ -36,14 +79,17 @@
         </div>
         <div class="historieTxt">
           <p>
-            Det Franske Conditori startede i år 1898, da Hans Christian Thomsen
-            havde sendt sin søn 2 år til Frankring for at lære fransk conditori
-            og is. På den meget lille plads vi også har idag, havde de servering
-            og cafepladser.
+            @Umbraco.Field("ar1898Tekst")
           </p>
         </div>
         <div class="historieImg">
-          <img src="img/historie3.jpg" alt="1898" />
+            @{
+    var historie1 = Model.GetPropertyValue<IPublishedContent>("ar1898Billede");
+    if(historie1 != null){
+    <img src="@historie1.Url" alt="1898" />
+    }
+    }
+          
         </div>
       </div>
       <div class="historie2 historieMargin">
@@ -59,20 +105,16 @@
         </div>
         <div class="historieTxt">
           <p>
-            I år 1923 solgte Hans Christian Thomsen butikken til Sheffmann, som
-            begyndte at sælge brød udover konditori. Det fik ikke en god
-            modtagelse af Thomsen, da Det Franske Conditori var Frederiksbergs
-            fineste konditori. Herefter blev det mere og mere til et bageri i
-            stedet for et konditori.
-          </p>
-          <p>
-            I 1940’erne blev servering og cafepladser afskaffet, da man skulle
-            have kundetoiletter for at få tilladselse til servering. Dette var
-            dog ikke muligt med den lille plads i butikken.
+            @Umbraco.Field("ar1923Tekst")
           </p>
         </div>
         <div class="historieImg2">
-          <img src="img/historie1.jpg" alt="1898" />
+            @{
+    var historie2 = Model.GetPropertyValue<IPublishedContent>("ar1923Billede");
+    if(historie2 != null){
+    <img src="@historie2.Url" alt="1923" />
+    }
+    }
         </div>
       </div>
 
@@ -89,12 +131,16 @@
         </div>
         <div class="historieTxt">
           <p>
-            Sidst i 1950erne overtog Asger Andersen butikken sammen med sin kone
-            drev de en traditionel god bager butik
+            @Umbraco.Field("ar1958Tekst")
           </p>
         </div>
         <div class="historieImg_3">
-          <img src="img/historie.jpg" alt="1958" />
+             @{
+    var historie3 = Model.GetPropertyValue<IPublishedContent>("ar1958Billede");
+    if(historie3 != null){
+    <img src="@historie3.Url" alt="1958" />
+    }
+    }
         </div>
       </div>
       <div class="historie3 historieMargin">
@@ -110,12 +156,16 @@
         </div>
         <div class="historieTxt">
           <p>
-            I år 1978 overtog “svigerforældrendes navne” butikken og drev en
-            almindelig bagerforretning indtil år 1995.
+            @Umbraco.Field("ar1978Tekst")
           </p>
         </div>
         <div class="historieImg3">
-          <img src="img/historie2.jpg" alt="1898" />
+            @{
+    var historie4 = Model.GetPropertyValue<IPublishedContent>("ar1978Billede");
+    if(historie4 != null){
+    <img src="@historie4.Url" alt="1978" />
+    }
+    }
         </div>
       </div>
       <div class="historie4 historieMargin">
@@ -131,13 +181,16 @@
         </div>
         <div class="historieTxt">
           <p>
-            I år 1995 overtog nuværende ejere Henrik Jonsbak og Camilla Olsen
-            butikken fra Henriks forældre.
+            @Umbraco.Field("ar1995Tekst")
           </p>
-          <p>I år 2014 fik butikken og dens facade en renovering, som</p>
         </div>
         <div class="historieImg4">
-          <img src="img/historie4.jpg" alt="1898" />
+            @{
+    var historie5 = Model.GetPropertyValue<IPublishedContent>("ar1995Billede");
+    if(historie5 != null){
+    <img src="@historie5.Url" alt="1995" />
+    }
+    }
         </div>
       </div>
     </main>

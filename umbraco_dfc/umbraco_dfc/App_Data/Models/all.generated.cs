@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1eb7fd233dc7cc61")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9bfba476ce6d9c78")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -1330,6 +1330,96 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// År 1898 billede
+		///</summary>
+		[ImplementPropertyType("ar1898Billede")]
+		public IPublishedContent Ar1898Billede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("ar1898Billede"); }
+		}
+
+		///<summary>
+		/// År 1898 tekst: Tekst til år 1898
+		///</summary>
+		[ImplementPropertyType("ar1898Tekst")]
+		public string Ar1898Tekst
+		{
+			get { return this.GetPropertyValue<string>("ar1898Tekst"); }
+		}
+
+		///<summary>
+		/// År 1923 billede: Billede til år 1923
+		///</summary>
+		[ImplementPropertyType("ar1923Billede")]
+		public IPublishedContent Ar1923Billede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("ar1923Billede"); }
+		}
+
+		///<summary>
+		/// År 1923 tekst: Tekst til år 1923
+		///</summary>
+		[ImplementPropertyType("ar1923Tekst")]
+		public string Ar1923Tekst
+		{
+			get { return this.GetPropertyValue<string>("ar1923Tekst"); }
+		}
+
+		///<summary>
+		/// År 1958 billede: Billede til år 1958
+		///</summary>
+		[ImplementPropertyType("ar1958Billede")]
+		public IPublishedContent Ar1958Billede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("ar1958Billede"); }
+		}
+
+		///<summary>
+		/// År 1958 tekst: tekst til år 1958
+		///</summary>
+		[ImplementPropertyType("ar1958Tekst")]
+		public string Ar1958Tekst
+		{
+			get { return this.GetPropertyValue<string>("ar1958Tekst"); }
+		}
+
+		///<summary>
+		/// År 1978 billede: Billede til år 1978
+		///</summary>
+		[ImplementPropertyType("ar1978Billede")]
+		public IPublishedContent Ar1978Billede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("ar1978Billede"); }
+		}
+
+		///<summary>
+		/// År 1978 tekst: Tekst til år 1978
+		///</summary>
+		[ImplementPropertyType("ar1978Tekst")]
+		public string Ar1978Tekst
+		{
+			get { return this.GetPropertyValue<string>("ar1978Tekst"); }
+		}
+
+		///<summary>
+		/// År 1995 billede: Billede til år 1995
+		///</summary>
+		[ImplementPropertyType("ar1995Billede")]
+		public IPublishedContent Ar1995Billede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("ar1995Billede"); }
+		}
+
+		///<summary>
+		/// År 1995 tekst: Tekst til år 1995
+		///</summary>
+		[ImplementPropertyType("ar1995Tekst")]
+		public string Ar1995Tekst
+		{
+			get { return this.GetPropertyValue<string>("ar1995Tekst"); }
+		}
+
+		///<summary>
 		/// Hero 1024px: Hero billede til 1024px
 		///</summary>
 		[ImplementPropertyType("hero1024px")]
@@ -1400,6 +1490,24 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
 		}
+
+		///<summary>
+		/// Historie overskrift: Overskrift til historie sektion
+		///</summary>
+		[ImplementPropertyType("historieOverskrift")]
+		public string HistorieOverskrift
+		{
+			get { return this.GetPropertyValue<string>("historieOverskrift"); }
+		}
+
+		///<summary>
+		/// Historie tekst: Tekst til historie
+		///</summary>
+		[ImplementPropertyType("historieTekst")]
+		public string HistorieTekst
+		{
+			get { return this.GetPropertyValue<string>("historieTekst"); }
+		}
 	}
 
 	/// <summary>Kontakt os</summary>
@@ -1452,15 +1560,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Email
 		{
 			get { return this.GetPropertyValue<string>("email"); }
-		}
-
-		///<summary>
-		/// Festkager bestillings tekst: Tekst til bestilling af festkager
-		///</summary>
-		[ImplementPropertyType("festkagerBestillingsTekst")]
-		public string FestkagerBestillingsTekst
-		{
-			get { return this.GetPropertyValue<string>("festkagerBestillingsTekst"); }
 		}
 
 		///<summary>
@@ -1578,6 +1677,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Postnummer
 		{
 			get { return this.GetPropertyValue<string>("postnummer"); }
+		}
+
+		///<summary>
+		/// Skriv til os: Overskrift til email formen
+		///</summary>
+		[ImplementPropertyType("skrivTilOs")]
+		public string SkrivTilOs
+		{
+			get { return this.GetPropertyValue<string>("skrivTilOs"); }
 		}
 
 		///<summary>
