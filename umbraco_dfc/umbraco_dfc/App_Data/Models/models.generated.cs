@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "537cb4b55958d70d")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "315433ca787be5d3")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -1311,6 +1311,78 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<VoresHistorie, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede til 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede til 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede til 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede til 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Her billede til 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede til 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede til 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede til 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
 		}
 	}
 
