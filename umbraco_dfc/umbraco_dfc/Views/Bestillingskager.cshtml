@@ -1,5 +1,255 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Bestillingskager>
+    @inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = null;
+	Layout = "master.cshtml";
 }
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    <main>
+      <div class="IntroTxt">
+        <h1>@Umbraco.Field("bestillingskagerOverskrift")</h1>
+        <p>
+          @Umbraco.Field("bestillingskagerTekst")
+        </p>
+        <button
+          onclick="window.location.href= 'kontakt.html';"
+          class="laesMereBtn"
+        >
+          Læs mere om bestilling her
+        </button>
+      </div>
+      <div class="produkt1">
+        <div class="carouselContainer">
+          <div class="slides ease">
+              @{
+    var lagkage1 = Model.GetPropertyValue<IPublishedContent>("LagkageSlide1");
+    if(lagkage1 != null){
+    <img src="@lagkage1.Url" alt="lagkage" />
+    }
+    }
+            
+          </div>
+          <div class="slides ease">
+              @{
+    var lagkage2 = Model.GetPropertyValue<IPublishedContent>("lagkageSlide2");
+    if(lagkage2 != null){
+    <img src="@lagkage2.Url" alt="lagkage" />
+    }
+    }
+           
+          </div>
+          <div class="slides ease">
+              @{
+    var lagkage3 = Model.GetPropertyValue<IPublishedContent>("lagkageSlide3");
+    if(lagkage3 != null){
+    <img src="@lagkage3.Url" alt="lagkage" />
+    }
+    }
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap" onclick="aktuelSlide(1)"></span>
+            <span class="slideknap" onclick="aktuelSlide(2)"></span>
+            <span class="slideknap" onclick="aktuelSlide(3)"></span>
+          </div>
+
+          <i class="tilbage fa" onclick="skiftSlides(-1)">&#xf104;</i>
+          <i class="frem fa" onclick="skiftSlides(1)">&#xf105;</i>
+        </div>
+
+        <div class="produkt1Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt">
+            <h2>@Umbraco.Field("lagkagerOverskrift")</h2>
+            <p>
+              @Umbraco.Field("lagkagerTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt2">
+        <div class="carouselContainer">
+          <div class="slidesKagemand ease">
+              @{
+    var kagemand1 = Model.GetPropertyValue<IPublishedContent>("kagemaendSlide1");
+    if(kagemand1 != null){
+    <img src="@kagemand1.Url" alt="kagemand" />
+    }
+    }
+          </div>
+          <div class="slidesKagemand ease">
+              @{
+    var kagemand2 = Model.GetPropertyValue<IPublishedContent>("kagemaendSlide2");
+    if(kagemand2 != null){
+    <img src="@kagemand2.Url" alt="kagemand" />
+    }
+    }
+          </div>
+          <div class="slidesKagemand ease">
+              @{
+    var kagemand3 = Model.GetPropertyValue<IPublishedContent>("kagemaendSlide3");
+    if(kagemand3 != null){
+    <img src="@kagemand3.Url" alt="kagemand" />
+    }
+    }
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap2" onclick="aktuelSlide2(1)"></span>
+            <span class="slideknap2" onclick="aktuelSlide2(2)"></span>
+            <span class="slideknap2" onclick="aktuelSlide2(3)"></span>
+          </div>
+
+          <i class="tilbage2 fa" onclick="skiftSlides2(-1)">&#xf104;</i>
+          <i class="frem2 fa" onclick="skiftSlides2(1)">&#xf105;</i>
+        </div>
+        <div class="produkt2Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("kagemaendOverskrift")</h2>
+            <p>
+              @Umbraco.Field("kagemaendTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt3">
+        <div class="carouselContainer">
+          <div class="slidesBryllupskage ease">
+              @{
+    var bryllup1 = Model.GetPropertyValue<IPublishedContent>("bryllupskageSlide1");
+    if(bryllup1 != null){
+    <img src="@bryllup1.Url" alt="bryllupskage" />
+    }
+    }
+            
+          </div>
+          <div class="slidesBryllupskage ease">
+              @{
+    var bryllup2 = Model.GetPropertyValue<IPublishedContent>("bryllupskageSlide2");
+    if(bryllup2 != null){
+    <img src="@bryllup2.Url" alt="bryllupskage" />
+    }
+    }
+          </div>
+          <!--    <div class="slidesBryllupskage ease">
+            <img src="img/lagkage3.jpg" alt="bryllupskage" />
+          </div> -->
+          <div class="slideKnapper">
+            <span class="slideknap3" onclick="aktuelSlide3(1)"></span>
+            <span class="slideknap3" onclick="aktuelSlide3(2)"></span>
+            <!-- <span class="slideknap3" onclick="aktuelSlide3(3)"></span> -->
+          </div>
+
+          <i class="tilbage2 fa" onclick="skiftSlides3(-1)">&#xf104;</i>
+          <i class="frem2 fa" onclick="skiftSlides3(1)">&#xf105;</i>
+        </div>
+        <div class="produkt3Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt">
+            <h2>@Umbraco.Field("bryllupskagerOverskrift")</h2>
+            <p>
+              @Umbraco.Field("bryllupskagerTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt4">
+        <div class="carouselContainer">
+          <div class="slidesKransekage ease">
+              @{
+    var kransekage1 = Model.GetPropertyValue<IPublishedContent>("kransekageSlide1");
+    if(kransekage1 != null){
+    <img src="@kransekage1.Url" alt="Kransekage" />
+    }
+    }
+          </div>
+          <div class="slidesKransekage ease">
+              @{
+    var kransekage2 = Model.GetPropertyValue<IPublishedContent>("kransekageSlide2");
+    if(kransekage2 != null){
+    <img src="@kransekage2.Url" alt="Kransekage" />
+    }
+    }
+          </div>
+          <div class="slidesKransekage ease">
+              @{
+    var kransekage3 = Model.GetPropertyValue<IPublishedContent>("kransekageSlide3");
+    if(kransekage3 != null){
+    <img src="@kransekage3.Url" alt="Kransekage" />
+    }
+    }
+          </div>
+          <div class="slideKnapper">
+            <span class="slideknap4" onclick="aktuelSlide4(1)"></span>
+            <span class="slideknap4" onclick="aktuelSlide4(2)"></span>
+            <span class="slideknap4" onclick="aktuelSlide4(3)"></span>
+          </div>
+
+          <i class="tilbage2 fa" onclick="skiftSlides4(-1)">&#xf104;</i>
+          <i class="frem2 fa" onclick="skiftSlides4(1)">&#xf105;</i>
+        </div>
+        <div class="produkt4Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("kransekagerOverskrift")</h2>
+            <p>
+              @Umbraco.Field("kransekagerTekst").
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>

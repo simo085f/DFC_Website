@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7e7c626662173519")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c41903e14ba4a631")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -801,6 +801,204 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// Fristelser overskrift: Overskrift til den øverste sektion (Introtekst)
+		///</summary>
+		[ImplementPropertyType("fristelserOverskrift")]
+		public string FristelserOverskrift
+		{
+			get { return this.GetPropertyValue<string>("fristelserOverskrift"); }
+		}
+
+		///<summary>
+		/// Fristelser tekst: Tekst til den øverste sektion (introtekst)
+		///</summary>
+		[ImplementPropertyType("fristelserTekst")]
+		public string FristelserTekst
+		{
+			get { return this.GetPropertyValue<string>("fristelserTekst"); }
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede til 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede til 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede til 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede til 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Hero billede til 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede til 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede til 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede til 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Marmelade billede: Billede til marmelade sektionen
+		///</summary>
+		[ImplementPropertyType("marmeladeBillede")]
+		public IPublishedContent MarmeladeBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("marmeladeBillede"); }
+		}
+
+		///<summary>
+		/// Marmelade Overskrift: Overskrift til marmelade sektion
+		///</summary>
+		[ImplementPropertyType("marmeladeOverskrift")]
+		public string MarmeladeOverskrift
+		{
+			get { return this.GetPropertyValue<string>("marmeladeOverskrift"); }
+		}
+
+		///<summary>
+		/// Marmelade tekst: Tekst til marmelade sektionen
+		///</summary>
+		[ImplementPropertyType("marmeladeTekst")]
+		public string MarmeladeTekst
+		{
+			get { return this.GetPropertyValue<string>("marmeladeTekst"); }
+		}
+
+		///<summary>
+		/// Musli billede: Billede til musli sektionen
+		///</summary>
+		[ImplementPropertyType("musliBillede")]
+		public IPublishedContent MusliBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("musliBillede"); }
+		}
+
+		///<summary>
+		/// Musli overskrift: Overskrift til musli sektionen
+		///</summary>
+		[ImplementPropertyType("musliOverskrift")]
+		public string MusliOverskrift
+		{
+			get { return this.GetPropertyValue<string>("musliOverskrift"); }
+		}
+
+		///<summary>
+		/// Musli tekst: Tekst til musli sektionen
+		///</summary>
+		[ImplementPropertyType("musliTekst")]
+		public string MusliTekst
+		{
+			get { return this.GetPropertyValue<string>("musliTekst"); }
+		}
+
+		///<summary>
+		/// Rugbrødchips tekst: Tekst til rugbrødschips sektionen
+		///</summary>
+		[ImplementPropertyType("rugbroedchipsTekst")]
+		public string RugbroedchipsTekst
+		{
+			get { return this.GetPropertyValue<string>("rugbroedchipsTekst"); }
+		}
+
+		///<summary>
+		/// Rugbrødschips billede: Billede til rugbrødschips sektionen
+		///</summary>
+		[ImplementPropertyType("rugbroedschipsBillede")]
+		public IPublishedContent RugbroedschipsBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("rugbroedschipsBillede"); }
+		}
+
+		///<summary>
+		/// Rugbrødschips overskrift: Overskrift til rugbrødschips sektionen
+		///</summary>
+		[ImplementPropertyType("rugbroedschipsOverskrift")]
+		public string RugbroedschipsOverskrift
+		{
+			get { return this.GetPropertyValue<string>("rugbroedschipsOverskrift"); }
+		}
+
+		///<summary>
+		/// Småkager billede: Billede til småkage sektionen
+		///</summary>
+		[ImplementPropertyType("smaakagerBillede")]
+		public IPublishedContent SmaakagerBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smaakagerBillede"); }
+		}
+
+		///<summary>
+		/// Småkager overskrift: Overskrift til småkage sektionen
+		///</summary>
+		[ImplementPropertyType("smaakagerOverskrift")]
+		public string SmaakagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("smaakagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Småkager tekst: Tekst til småkage sektionen
+		///</summary>
+		[ImplementPropertyType("smaakagerTekst")]
+		public string SmaakagerTekst
+		{
+			get { return this.GetPropertyValue<string>("smaakagerTekst"); }
+		}
 	}
 
 	/// <summary>Bestillingskager</summary>
@@ -826,6 +1024,267 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Bestillingskager, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Bestillingskager Overskrift: Overskrift til bestillingskager
+		///</summary>
+		[ImplementPropertyType("bestillingskagerOverskrift")]
+		public string BestillingskagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("bestillingskagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Bestillingskager tekst: Tekst til bestillingskager
+		///</summary>
+		[ImplementPropertyType("bestillingskagerTekst")]
+		public string BestillingskagerTekst
+		{
+			get { return this.GetPropertyValue<string>("bestillingskagerTekst"); }
+		}
+
+		///<summary>
+		/// Bryllupskager overskrift: Overskrift til bryllupskage sektionen
+		///</summary>
+		[ImplementPropertyType("bryllupskagerOverskrift")]
+		public string BryllupskagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("bryllupskagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Bryllupskager tekst: Tekst til bryllupskage sektionen
+		///</summary>
+		[ImplementPropertyType("bryllupskagerTekst")]
+		public string BryllupskagerTekst
+		{
+			get { return this.GetPropertyValue<string>("bryllupskagerTekst"); }
+		}
+
+		///<summary>
+		/// Bryllupskage slide 1: Første billede til slideshow
+		///</summary>
+		[ImplementPropertyType("bryllupskageSlide1")]
+		public IPublishedContent BryllupskageSlide1
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("bryllupskageSlide1"); }
+		}
+
+		///<summary>
+		/// Bryllupskage slide 2: Andet billede til slidehow
+		///</summary>
+		[ImplementPropertyType("bryllupskageSlide2")]
+		public IPublishedContent BryllupskageSlide2
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("bryllupskageSlide2"); }
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede til 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede til 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede til 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede til 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Hero billede til 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede til 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede til 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede til 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Kagemænd overskrift: Overskrift til kagemand sektionen
+		///</summary>
+		[ImplementPropertyType("kagemaendOverskrift")]
+		public string KagemaendOverskrift
+		{
+			get { return this.GetPropertyValue<string>("kagemaendOverskrift"); }
+		}
+
+		///<summary>
+		/// Kagemænd slide 1: Første billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kagemaendSlide1")]
+		public IPublishedContent KagemaendSlide1
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kagemaendSlide1"); }
+		}
+
+		///<summary>
+		/// Kagemænd slide 2: Andet billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kagemaendSlide2")]
+		public IPublishedContent KagemaendSlide2
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kagemaendSlide2"); }
+		}
+
+		///<summary>
+		/// kagemænd slide 3: Tredje billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kagemaendSlide3")]
+		public IPublishedContent KagemaendSlide3
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kagemaendSlide3"); }
+		}
+
+		///<summary>
+		/// Kagemænd tekst: Tekst til kagemand sektionen
+		///</summary>
+		[ImplementPropertyType("kagemaendTekst")]
+		public string KagemaendTekst
+		{
+			get { return this.GetPropertyValue<string>("kagemaendTekst"); }
+		}
+
+		///<summary>
+		/// Kransekager overskrift: Overskrift til kransekage sektionen
+		///</summary>
+		[ImplementPropertyType("kransekagerOverskrift")]
+		public string KransekagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("kransekagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Kransekager tekst: Tekst til kransekage sektionen
+		///</summary>
+		[ImplementPropertyType("kransekagerTekst")]
+		public string KransekagerTekst
+		{
+			get { return this.GetPropertyValue<string>("kransekagerTekst"); }
+		}
+
+		///<summary>
+		/// Kransekage slide 1: Første billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kransekageSlide1")]
+		public IPublishedContent KransekageSlide1
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kransekageSlide1"); }
+		}
+
+		///<summary>
+		/// Kransekage slide 2: Andet billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kransekageSlide2")]
+		public IPublishedContent KransekageSlide2
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kransekageSlide2"); }
+		}
+
+		///<summary>
+		/// Kransekage slide 3: Tredje billede til slideshow
+		///</summary>
+		[ImplementPropertyType("kransekageSlide3")]
+		public IPublishedContent KransekageSlide3
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kransekageSlide3"); }
+		}
+
+		///<summary>
+		/// Lagkager overskrift: Overskrift til lagkage sektionen
+		///</summary>
+		[ImplementPropertyType("lagkagerOverskrift")]
+		public string LagkagerOverskrift
+		{
+			get { return this.GetPropertyValue<string>("lagkagerOverskrift"); }
+		}
+
+		///<summary>
+		/// Lagkager tekst: Tekst til lagkager sektionen
+		///</summary>
+		[ImplementPropertyType("lagkagerTekst")]
+		public string LagkagerTekst
+		{
+			get { return this.GetPropertyValue<string>("lagkagerTekst"); }
+		}
+
+		///<summary>
+		/// Lagkage Slide 1: Første billede til slideshow
+		///</summary>
+		[ImplementPropertyType("LagkageSlide1")]
+		public IPublishedContent LagkageSlide1
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("LagkageSlide1"); }
+		}
+
+		///<summary>
+		/// Lagkage slide 2: Andet billede til slideshow
+		///</summary>
+		[ImplementPropertyType("lagkageSlide2")]
+		public IPublishedContent LagkageSlide2
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("lagkageSlide2"); }
+		}
+
+		///<summary>
+		/// Lagkage slide 3: Tredje billede til slideshow
+		///</summary>
+		[ImplementPropertyType("lagkageSlide3")]
+		public IPublishedContent LagkageSlide3
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("lagkageSlide3"); }
 		}
 	}
 
