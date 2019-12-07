@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c41903e14ba4a631")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "537cb4b55958d70d")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
 
 
 // FILE: models.generated.cs
@@ -1353,6 +1353,177 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<KontaktOs, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Bestillings overskrift: Overskrift til bestilling
+		///</summary>
+		[ImplementPropertyType("bestillingsOverskrift")]
+		public string BestillingsOverskrift
+		{
+			get { return this.GetPropertyValue<string>("bestillingsOverskrift"); }
+		}
+
+		///<summary>
+		/// Bestillings tekst: Tekst til bestilling
+		///</summary>
+		[ImplementPropertyType("bestillingsTekst")]
+		public string BestillingsTekst
+		{
+			get { return this.GetPropertyValue<string>("bestillingsTekst"); }
+		}
+
+		///<summary>
+		/// Email: Email
+		///</summary>
+		[ImplementPropertyType("email")]
+		public string Email
+		{
+			get { return this.GetPropertyValue<string>("email"); }
+		}
+
+		///<summary>
+		/// Festkager bestillings tekst: Tekst til bestilling af festkager
+		///</summary>
+		[ImplementPropertyType("festkagerBestillingsTekst")]
+		public string FestkagerBestillingsTekst
+		{
+			get { return this.GetPropertyValue<string>("festkagerBestillingsTekst"); }
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede til 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede til 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede til 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede til 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Hero billede til 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede til 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede til 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede til 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Kontakt os billede: Billede til kontakt os
+		///</summary>
+		[ImplementPropertyType("kontaktOsBillede")]
+		public IPublishedContent KontaktOsBillede
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kontaktOsBillede"); }
+		}
+
+		///<summary>
+		/// Kontakt os overskrift: Overkskrift til kontakt os
+		///</summary>
+		[ImplementPropertyType("kontaktOsOverskrift")]
+		public string KontaktOsOverskrift
+		{
+			get { return this.GetPropertyValue<string>("kontaktOsOverskrift"); }
+		}
+
+		///<summary>
+		/// Leverings overskrift: Overskrift til levering
+		///</summary>
+		[ImplementPropertyType("leveringsOverskrift")]
+		public string LeveringsOverskrift
+		{
+			get { return this.GetPropertyValue<string>("leveringsOverskrift"); }
+		}
+
+		///<summary>
+		/// Leverings tekst: Tekst til levering
+		///</summary>
+		[ImplementPropertyType("leveringsTekst")]
+		public string LeveringsTekst
+		{
+			get { return this.GetPropertyValue<string>("leveringsTekst"); }
+		}
+
+		///<summary>
+		/// Postnummer: Postnummer og by
+		///</summary>
+		[ImplementPropertyType("postnummer")]
+		public string Postnummer
+		{
+			get { return this.GetPropertyValue<string>("postnummer"); }
+		}
+
+		///<summary>
+		/// Tlf: Telefonnummer
+		///</summary>
+		[ImplementPropertyType("tlf")]
+		public string Tlf
+		{
+			get { return this.GetPropertyValue<string>("tlf"); }
+		}
+
+		///<summary>
+		/// Vej: Vejnavn og nr
+		///</summary>
+		[ImplementPropertyType("vej")]
+		public string Vej
+		{
+			get { return this.GetPropertyValue<string>("vej"); }
 		}
 	}
 
