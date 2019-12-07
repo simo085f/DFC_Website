@@ -81,6 +81,9 @@ input:focus {
 .sendEmail:focus {
   border: none;
 }
+form {
+  margin-top: 15px;
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   footer {
@@ -115,6 +118,13 @@ input:focus {
   .sendEmail {
     width: 50%;
   }
+  footer {
+    margin-top: 50px;
+  }
+
+  .kontaktForm h2 {
+    margin-block-start: 0em;
+  }
 }
 
 /* MEDIA QUERIES 1024px */
@@ -137,7 +147,7 @@ input:focus {
   }
 
   footer {
-    margin-top: 80px;
+    margin-top: 74px;
   }
 
   .sendEmail {
@@ -212,7 +222,7 @@ input:focus {
   }
 
   footer {
-    margin-top: 130px;
+    margin-top: 125px;
   }
   .kontaktTxt {
     margin-top: 35px;

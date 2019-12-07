@@ -109,11 +109,43 @@ i.frem2 {
     opacity: 1;
   }
 }
+
+/* PLACERING AF TEKST */
+.lagkageTxt {
+  margin-top: 67px;
+}
+
+.kagemandTxt {
+  margin-top: 55px;
+}
+
+.bryllupTxt {
+  margin-top: 50px;
+}
+.kransekageTxt {
+  margin-top: 35px;
+}
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
   .frem2,
   .tilbage2 {
     top: 70%;
+  }
+  /* PLACERING AF TEKST */
+  .lagkageTxt {
+    width: 84%;
+    margin-top: 70px;
+  }
+
+  .kagemandTxt {
+    margin-top: 65px;
+  }
+
+  .bryllupTxt {
+    margin-top: 62px;
+  }
+  .kransekageTxt {
+    margin-top: 58px;
   }
 }
 
@@ -122,6 +154,19 @@ i.frem2 {
   .frem2,
   .tilbage2 {
     top: 67%;
+  }
+
+  /* PLACERING AF TEKST */
+  .lagkageTxt {
+    margin-top: 75px;
+  }
+
+  .kagemandTxt {
+    margin-top: 70px;
+  }
+
+  .kransekageTxt {
+    margin-top: 60px;
   }
 }
 
@@ -140,15 +185,70 @@ i.frem2 {
     top: 50%;
     margin-top: -40px;
   }
+
+  /* PLACERING AF TEKST */
+  .lagkageTxt {
+    width: 40%;
+    margin-top: 60px;
+  }
+
+  .kagemandTxt {
+    margin-top: 55px;
+  }
+
+  .bryllupTxt {
+    margin-top: 45px;
+  }
+  .kransekageTxt {
+    margin-top: 35px;
+  }
 }
 
 /* MEDIA QUERIES 1280px */
 @media screen and (min-width: 1280px) {
+  /* PLACERING AF TEKST */
+  .lagkageTxt {
+    width: 39%;
+    margin-top: 65px;
+  }
+
+  .kagemandTxt {
+    margin-top: 57px;
+  }
+
+  .bryllupTxt {
+    width: 38%;
+    margin-top: 47px;
+  }
+  .kransekageTxt {
+    width: 37%;
+    margin-top: 43px;
+  }
 }
 /* MEDIA QUERIES 1440px */
 @media screen and (min-width: 1440px) {
   .produkt1 {
     margin-top: 90px;
+  }
+
+  /* PLACERING AF TEKST */
+  .lagkageTxt {
+    width: 38%;
+    margin-top: 60px;
+  }
+
+  .kagemandTxt {
+    width: 34%;
+    margin-top: 48px;
+  }
+
+  .bryllupTxt {
+    width: 36%;
+    margin-top: 50px;
+  }
+  .kransekageTxt {
+    width: 34%;
+    margin-top: 38px;
   }
 }
 
@@ -157,10 +257,46 @@ i.frem2 {
   .produkt1 {
     margin-top: 100px;
   }
+  .lagkageTxt {
+    width: 35%;
+    margin-top: 75px;
+  }
+  .kagemandTxt {
+    margin-top: 74px;
+  }
+
+  .bryllupTxt {
+    width: 34%;
+    margin-top: 74px;
+  }
+
+  .kransekageTxt {
+    width: 32%;
+    margin-top: 65px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .produkt1 {
     margin-top: 120px;
+  }
+
+  .lagkageTxt {
+    width: 34%;
+    margin-top: 80px;
+  }
+  .kagemandTxt {
+    width: 30%;
+    margin-top: 70px;
+  }
+
+  .bryllupTxt {
+    width: 33%;
+    margin-top: 70px;
+  }
+
+  .kransekageTxt {
+    width: 31%;
+    margin-top: 70px;
   }
 }
