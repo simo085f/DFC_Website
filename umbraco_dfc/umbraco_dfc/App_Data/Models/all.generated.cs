@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9bfba476ce6d9c78")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "562cf2249096ca6c")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
@@ -398,6 +398,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Brød knap: Tekst til knap
+		///</summary>
+		[ImplementPropertyType("broedKnap")]
+		public string BroedKnap
+		{
+			get { return this.GetPropertyValue<string>("broedKnap"); }
+		}
+
+		///<summary>
 		/// Brød overskrift: Overskrift til øverste sektion på brød
 		///</summary>
 		[ImplementPropertyType("broedOverskrift")]
@@ -631,6 +640,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Kager knap: Tekst til knap
+		///</summary>
+		[ImplementPropertyType("kagerKnap")]
+		public string KagerKnap
+		{
+			get { return this.GetPropertyValue<string>("kagerKnap"); }
+		}
+
+		///<summary>
 		/// Kager overskrift: Overskrift til øverste sektion
 		///</summary>
 		[ImplementPropertyType("kagerOverskrift")]
@@ -819,6 +837,24 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Burgermenu
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
+		}
+
+		///<summary>
+		/// Facebook
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
 		/// Fristelser overskrift: Overskrift til den øverste sektion (Introtekst)
 		///</summary>
 		[ImplementPropertyType("fristelserOverskrift")]
@@ -834,6 +870,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string FristelserTekst
 		{
 			get { return this.GetPropertyValue<string>("fristelserTekst"); }
+		}
+
+		///<summary>
+		/// Header logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
 		}
 
 		///<summary>
@@ -906,6 +951,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent Hero768px
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Instagram
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
+		}
+
+		///<summary>
+		/// Kryds
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
 		}
 
 		///<summary>
@@ -1015,6 +1078,15 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<string>("smaakagerTekst"); }
 		}
+
+		///<summary>
+		/// Smiley
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
+		}
 	}
 
 	/// <summary>Bestillingskager</summary>
@@ -1040,6 +1112,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Bestillingskager, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Bestillingskager knap: Tekst til knap
+		///</summary>
+		[ImplementPropertyType("bestillingskagerKnap")]
+		public string BestillingskagerKnap
+		{
+			get { return this.GetPropertyValue<string>("bestillingskagerKnap"); }
 		}
 
 		///<summary>
@@ -1094,6 +1175,33 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent BryllupskageSlide2
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("bryllupskageSlide2"); }
+		}
+
+		///<summary>
+		/// Burgermenu
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
+		}
+
+		///<summary>
+		/// Facebook
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
+		/// Header logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
 		}
 
 		///<summary>
@@ -1166,6 +1274,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent Hero768px
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
+		/// Instagram
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
 		}
 
 		///<summary>
@@ -1259,6 +1376,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Kryds
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
+		}
+
+		///<summary>
 		/// Lagkager overskrift: Overskrift til lagkage sektionen
 		///</summary>
 		[ImplementPropertyType("lagkagerOverskrift")]
@@ -1301,6 +1427,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent LagkageSlide3
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("lagkageSlide3"); }
+		}
+
+		///<summary>
+		/// Smiley
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
 		}
 	}
 
@@ -1420,6 +1555,33 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Burgermenu
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
+		}
+
+		///<summary>
+		/// Facebook
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
+		/// Header logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
+		}
+
+		///<summary>
 		/// Hero 1024px: Hero billede til 1024px
 		///</summary>
 		[ImplementPropertyType("hero1024px")]
@@ -1508,6 +1670,33 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<string>("historieTekst"); }
 		}
+
+		///<summary>
+		/// Instagram
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
+		}
+
+		///<summary>
+		/// Kryds
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
+		}
+
+		///<summary>
+		/// Smiley
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
+		}
 	}
 
 	/// <summary>Kontakt os</summary>
@@ -1554,12 +1743,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Burgermenu
+		///</summary>
+		[ImplementPropertyType("burgermenu")]
+		public IPublishedContent Burgermenu
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("burgermenu"); }
+		}
+
+		///<summary>
 		/// Email: Email
 		///</summary>
 		[ImplementPropertyType("email")]
 		public string Email
 		{
 			get { return this.GetPropertyValue<string>("email"); }
+		}
+
+		///<summary>
+		/// Facebook
+		///</summary>
+		[ImplementPropertyType("facebook")]
+		public IPublishedContent Facebook
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("facebook"); }
+		}
+
+		///<summary>
+		/// Header logo
+		///</summary>
+		[ImplementPropertyType("headerLogo")]
+		public IPublishedContent HeaderLogo
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
 		}
 
 		///<summary>
@@ -1635,6 +1851,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Instagram
+		///</summary>
+		[ImplementPropertyType("instagram")]
+		public IPublishedContent Instagram
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("instagram"); }
+		}
+
+		///<summary>
 		/// Kontakt os billede: Billede til kontakt os
 		///</summary>
 		[ImplementPropertyType("kontaktOsBillede")]
@@ -1650,6 +1875,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string KontaktOsOverskrift
 		{
 			get { return this.GetPropertyValue<string>("kontaktOsOverskrift"); }
+		}
+
+		///<summary>
+		/// Kryds
+		///</summary>
+		[ImplementPropertyType("kryds")]
+		public IPublishedContent Kryds
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("kryds"); }
 		}
 
 		///<summary>
@@ -1689,6 +1923,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Smiley
+		///</summary>
+		[ImplementPropertyType("smiley")]
+		public IPublishedContent Smiley
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("smiley"); }
+		}
+
+		///<summary>
 		/// Tlf: Telefonnummer
 		///</summary>
 		[ImplementPropertyType("tlf")]
@@ -1704,41 +1947,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Vej
 		{
 			get { return this.GetPropertyValue<string>("vej"); }
-		}
-	}
-
-	/// <summary>Kontakt</summary>
-	[PublishedContentModel("kontakt")]
-	public partial class Kontakt : PublishedContentModel
-	{
-#pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "kontakt";
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-#pragma warning restore 0109
-
-		public Kontakt(IPublishedContent content)
-			: base(content)
-		{ }
-
-#pragma warning disable 0109 // new is redundant
-		public new static PublishedContentType GetModelContentType()
-		{
-			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
-		}
-#pragma warning restore 0109
-
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Kontakt, TValue>> selector)
-		{
-			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-		}
-
-		///<summary>
-		/// Hero 375px: Hero billede til 375px
-		///</summary>
-		[ImplementPropertyType("hero375px")]
-		public IPublishedContent Hero375px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
 		}
 	}
 
