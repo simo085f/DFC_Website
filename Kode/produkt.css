@@ -48,6 +48,22 @@ footer {
   margin-top: 65px;
   padding-left: 30px;
 }
+
+.laesMereBtn {
+  border: none;
+  background-color: #be8e63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.laesMereBtn:hover {
+  background-color: #ce9c71;
+  transition: 0.3s ease;
+}
 /*produkt.HTML */
 /* MEDIA QUERIES 627px */
 @media screen and (min-width: 627px) {
