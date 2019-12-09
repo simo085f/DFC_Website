@@ -342,6 +342,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon-package\android-chrome-192x192.png" />
+    <Content Include="favicon-package\android-chrome-256x256.png" />
+    <Content Include="favicon-package\apple-touch-icon.png" />
+    <Content Include="favicon-package\browserconfig.xml" />
+    <Content Include="favicon-package\favicon-16x16.png" />
+    <Content Include="favicon-package\favicon-32x32.png" />
+    <Content Include="favicon-package\favicon.ico" />
+    <Content Include="favicon-package\mstile-150x150.png" />
+    <Content Include="favicon-package\safari-pinned-tab.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -379,6 +388,7 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <None Include="favicon-package\manifest.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,6 +1,6 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = null;
+    Layout = null;
 }
 
 @* the fun starts here *@
@@ -25,71 +25,76 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon-package/apple-touch-icon.png"
+      href="/favicon-package/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="favicon-package/favicon-32x32.png"
+      href="/favicon-package/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="favicon-package/favicon-16x16.png"
+      href="/favicon-package/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon-package/site.webmanifest" />
+      <link rel="manifest" href="/favicon-package/manifest.json">
     <link
       rel="mask-icon"
-      href="favicon-package/safari-pinned-tab.svg"
+      href="/favicon-package/safari-pinned-tab.svg"
       color="#be8e63"
     />
     <meta name="msapplication-TileColor" content="#151515" />
     <meta name="theme-color" content="#151515" />
     
-   @if(Model.Content.DocumentTypeAlias == "forside"){
-   <link rel="stylesheet" href="/css/index.css" />
-     <title>Det Franske Conditori</title>
-    }
-    
-    @if(Model.Content.DocumentTypeAlias == "broed"){
-   <link rel="stylesheet" href="/css/produkt.css" />
-     <title>Det Franske Conditoris brød</title>
-    }
-    
-    @if(Model.Content.DocumentTypeAlias == "kager"){
-   <link rel="stylesheet" href="/css/produkt.css" />
-   <link rel="stylesheet" href="/css/kager.css"/>
-     <title>Det Franske Conditoris kager</title>
-    }
-    
-     @if(Model.Content.DocumentTypeAlias == "fristelser"){
-   <link rel="stylesheet" href="/css/produkt.css" />
-   <link rel="stylesheet" href="/css/fristelser.css" />
-     <title>Det Franske Conditoris fristelser</title>
-    }
-    
-     @if(Model.Content.DocumentTypeAlias == "bestillingskager"){
-   <link rel="stylesheet" href="/css/produkt.css" />
-   <link rel="stylesheet" href="/css/bestillingskager.css" />
+      @{
+
+          switch (Model.Content.DocumentTypeAlias)
+          {
+              case "forside":
+                <link rel="stylesheet" href="/css/index.css" />
+                <title>Det Franske Conditori</title>
+                  break;
+              case "broed":
+                <link rel="stylesheet" href="/css/produkt.css" />
+                <title>Det Franske Conditoris brød</title>
+                  break;
+              case "kager":
+                <link rel="stylesheet" href="/css/produkt.css" />
+                <link rel="stylesheet" href="/css/kager.css" />
+                <title>Det Franske Conditoris kager</title>
+                  break;
+              case "fristelser":
+                <link rel="stylesheet" href="/css/produkt.css" />
+                <link rel="stylesheet" href="/css/fristelser.css" />
+                <title>Det Franske Conditoris fristelser</title>
+                  break;
+              case "bestillingskager":
+                <link rel="stylesheet" href="/css/produkt.css" />
+                <link rel="stylesheet" href="/css/bestillingskager.css" />
     <!-- SoMe og pil ikoner hentet fra W3Schools -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-     <title>Det Franske Conditoris bestillingskager</title>
+                <link rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <title>Det Franske Conditoris bestillingskager</title>
+                  break;
+              case "voresHistorie":
+                <link rel="stylesheet" href="/css/historie.css" />
+                <title>Det Franske Conditoris historie</title>
+                  break;
+              case "kontaktOs":
+                <link rel="stylesheet" href="/css/kontakt.css" />
+                <title>Kontakt Det Franske Conditori</title>
+                  break;
+
+          }
     }
-    
-    @if(Model.Content.DocumentTypeAlias == "voresHistorie"){
-   <link rel="stylesheet" href="/css/historie.css" />
-     <title>Det Franske Conditoris historie</title>
-    }
-    
-    @if(Model.Content.DocumentTypeAlias == "kontaktOs"){
+
+
+    @*@if (Model.Content.DocumentTypeAlias == "kontaktOs"){
     <link rel="stylesheet" href="/css/kontakt.css"/>
     <title>Kontakt Det Franske Conditori</title>
-    }
+    }*@
     
     
     
@@ -97,9 +102,11 @@
   
   <body>
       @Html.Partial("Partial_Header")
-      
+
+
       @RenderBody()
-      
+
+
       @Html.Partial("Partial_Footer")
      
     <script src="/scripts/js.js"></script>
