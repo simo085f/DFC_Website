@@ -1,0 +1,324 @@
+footer {
+  margin-top: 320px;
+}
+
+.IntroTxt {
+  margin-top: 30px;
+}
+/* produkt HTML */
+.produkt1 img,
+.produkt2 img,
+.produkt3 img,
+.produkt4 img,
+.produkt5 img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.produktBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+}
+
+.produktTxt {
+  width: 85%;
+  position: absolute;
+  margin-top: 56px;
+}
+
+.produkt2Border {
+  border-left: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: left;
+}
+.produkt2Txt {
+  width: 85%;
+  position: absolute;
+  margin-top: 65px;
+  padding-left: 30px;
+}
+
+.laesMereBtn {
+  border: none;
+  background-color: #be8e63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 12px 20px 12px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.laesMereBtn:hover {
+  background-color: #ce9c71;
+  transition: 0.3s ease;
+}
+/*produkt.HTML */
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  footer {
+    margin-top: 330px;
+  }
+
+  .produktTxt {
+    margin-top: 70px;
+    padding-right: 16px;
+  }
+  .produkt2Txt {
+    margin-top: 75px;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  /*produkt.HTML */
+  .IntroTxt {
+    margin-top: 40px;
+  }
+  .produktTxt {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  .produkt2Txt {
+    padding-left: 70px;
+    margin-top: 72px;
+  }
+
+  .produkt1 img,
+  .produkt2 img,
+  .produkt3 img,
+  .produkt4 img,
+  .produkt5 img {
+    margin-top: 35px;
+  }
+  /*produkt.HTML */
+
+  footer {
+    margin-top: 340px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+@media screen and (min-width: 1024px) {
+  .IntroTxt {
+    margin-top: 60px;
+  }
+  /* BRØD SEKTION */
+  .produkt1 img,
+  .produkt2 img,
+  .produkt3 img,
+  .produkt4 img,
+  .produkt5 img {
+    margin-top: 0px;
+  }
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4,
+  .produkt5 {
+    margin-top: 70px;
+  }
+  .produkt1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  .produkt1Container,
+  .produkt2Container,
+  .produkt3Container,
+  .produkt4Container {
+    align-self: center;
+  }
+
+  .produktTxt {
+    width: 39%;
+    margin-top: 51px;
+  }
+
+  /* BOLLER SEKTION */
+  .produkt2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .produkt2Container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .produkt2Img {
+    grid-column-start: 2;
+  }
+
+  .produkt2Txt {
+    width: 38%;
+    padding-left: 30px;
+    margin-top: 70px;
+  }
+
+  /* RUGBRØD SEKTION */
+  .produkt3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* FLUTE SEKTION */
+  .produkt4,
+  .produkt5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .produkt4Container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .produkt4Img {
+    grid-column-start: 2;
+  }
+
+  .produkt5Container {
+    margin-bottom: 0px;
+  }
+
+  /*FOOTER*/
+  footer {
+    margin-top: 90px;
+  }
+}
+
+/* MEDIA QUERIES 1280px */
+@media screen and (min-width: 1280px) {
+  /* produkt */
+  .fluteContainer {
+    margin-bottom: 100px;
+  }
+
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4,
+  .produkt5 {
+    margin-top: 70px;
+    grid-gap: 45px;
+  }
+  .produktTxt {
+    padding-right: 29px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  /* produkt*/
+
+  .IntroTxt {
+    margin-top: 70px;
+  }
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4,
+  .produkt5 {
+    margin-top: 90px;
+    grid-gap: 60px;
+  }
+
+  .produkt5Container {
+    margin-bottom: 200px;
+  }
+
+  .produktTxt {
+    width: 36%;
+    padding-right: 39px;
+  }
+
+  .produkt2Txt {
+    width: 36%;
+    margin-top: 60px;
+    padding-left: 45px;
+  }
+
+  footer {
+    margin-top: 105px;
+  }
+}
+
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  .IntroTxt {
+    margin-top: 80px;
+  }
+
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4,
+  .produkt5 {
+    margin-top: 100px;
+    grid-gap: 70px;
+  }
+
+  footer {
+    margin-top: 125px;
+  }
+  .produktBorder,
+  .produkt2Border {
+    height: 300px;
+  }
+
+  .produktTxt {
+    width: 34%;
+    margin-top: 72px;
+  }
+  .produkt2Txt {
+    width: 31%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* TEXT PÅ PRODUKT SIDER */
+  .IntroTxt {
+    margin-top: 100px;
+  }
+  .produktTxt {
+    width: 32%;
+    padding-left: 50px;
+  }
+  .produkt2Txt {
+    width: 30%;
+    padding-left: 85px;
+  }
+  .produkt1,
+  .produkt2,
+  .produkt3,
+  .produkt4,
+  .produkt5 {
+    margin-top: 120px;
+  }
+
+  footer {
+    margin-top: 140px;
+  }
+  .produktBorder,
+  .produkt2Border {
+    height: 330px;
+  }
+}

@@ -1,0 +1,117 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    
+    <main>
+      <div class="dfcTxt">
+        <h1>@Umbraco.Field("bestillingsOverskrift")</h1>
+        <p>
+          @Umbraco.Field("bestillingsTekst")
+        </p>
+        <h2>@Umbraco.Field("leveringsOverskrift")</h2>
+        <p>
+          @Umbraco.Field("leveringsTekst")
+        </p>
+      </div>
+      <div class="kontaktOsContainer">
+        <div class="kontaktImg">
+            @{
+    var ejerne = Model.GetPropertyValue<IPublishedContent>("kontaktOsBillede");
+    if(ejerne != null){
+    <img src="@ejerne.Url" alt="Ejerne" />
+    }
+    }
+          
+        </div>
+        <div class="kontaktTxtContainer">
+          <div class="kontaktBorder"></div>
+          <div class="kontaktTxt">
+            <h2>Kontakt os</h2>
+            <div class="kontaktPTop">
+              <p>@Umbraco.Field("tlf")</p>
+            </div>
+            <p>@Umbraco.Field("email")</p>
+            <br />
+            <p>@Umbraco.Field("vej")</p>
+            <p>@Umbraco.Field("postnummer")</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kontaktForm">
+        <h2>@Umbraco.Field("skrivTilOs")</h2>
+        <form
+          action="mailto:simonegrauer@hotmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="navn">Navn <input type="text" name="navn"/></label>
+          <label for="email">Email <input type="email" name="email"/></label>
+          <label for="besked"
+            >Besked
+            <textarea name="besked" id="kontaktBesked" rows="5"></textarea
+          ></label>
+          <input type="submit" value="Send" class="sendEmail" />
+        </form>
+      </div>
+    </main>
+    

@@ -1,0 +1,450 @@
+/* GENERELLE REGLER*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #151515;
+}
+.heroBillede img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 27px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin-block-end: 0em;
+}
+
+h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin-block-end: 0em;
+}
+
+h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin-block-end: 0em;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+/* GENERELLE REGLER SLUT */
+
+/* HEADER */
+
+header {
+  background: rgba(21, 21, 21, 0.8);
+  height: 60px;
+  width: 100%;
+  border-bottom: 2px solid #be8e63;
+  position: absolute;
+  z-index: 2;
+  position: fixed;
+}
+
+.desktopPunkter {
+  display: none;
+}
+
+.burgermenuIkon {
+  float: right;
+  margin-top: -45px;
+  margin-right: 15px;
+}
+
+.lukBurgermenu {
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.navLogo img {
+  width: 70px;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.mobilOverlay {
+  width: 0px;
+  height: 100%;
+  position: fixed;
+  background-color: #151515;
+  overflow-x: hidden;
+  z-index: 2;
+  top: 0;
+}
+
+.navPunkter {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.navPunkter a {
+  text-transform: uppercase;
+  color: #be8e63;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+/* HEADER SLUT */
+
+/* FOOTER */
+footer {
+  border-top: 2px solid #be8e63;
+}
+
+.kontakt {
+  margin-top: 50px;
+}
+
+footer h3 {
+  text-align: center;
+  margin-block-end: 0.5em;
+}
+li {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+}
+
+.soMeIkoner {
+  text-align: center;
+}
+
+.facebook {
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.rapportContainer {
+  width: 113px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.rapportContainer img {
+  width: 100%;
+}
+/* FOOTER SLUT*/
+
+/* MAIN - MARGIN PÅ ALLE SIDER */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  /* HEADER */
+  .navPunkter {
+    margin-top: 20px;
+  }
+  .burgermenuIkon {
+    margin-right: 25px;
+  }
+  .lukBurgermenu {
+    margin-right: 25px;
+  }
+  .navLogo img {
+    margin-left: 25px;
+  }
+
+  .navPunkter a {
+    font-size: 16px;
+  }
+
+  main {
+    width: 85%;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  /* SKRIFTSTØRRELSE TIL DESKTOP STØRRELSE*/
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  /* NAVIGATION */
+  .navPunkter {
+    margin-top: 260px;
+  }
+  .navPunkter a {
+    font-size: 27px;
+    padding: 15px;
+  }
+
+  .burgermenuIkon {
+    margin-right: 35px;
+  }
+  .lukBurgermenu {
+    margin-right: 35px;
+  }
+  .navLogo img {
+    margin-left: 35px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .navLogo img {
+    width: 84px;
+  }
+
+  .burgermenuIkon {
+    margin-top: -50px;
+  }
+
+  .lukBurgermenu {
+    margin-top: 20px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+@media screen and (min-width: 1024px) {
+  /* SKRIFTSTØRRELSE TIL DESKTOP STØRRELSE*/
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  /* HEADER DESKTOP */
+  #mobilNavigation,
+  .burgermenuIkon {
+    display: none;
+  }
+
+  .desktopPunkter {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    height: 60px;
+  }
+
+  .desktopPunkter a {
+    text-transform: uppercase;
+    color: #be8e63;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .desktopPunkter a:hover {
+    color: #e9c6a8;
+  }
+
+  .navLogo img {
+    width: 70px;
+    margin-top: 5px;
+    margin-left: 48px;
+  }
+
+  /* FOOTER DESKTOP */
+
+  footer li,
+  footer h3 {
+    text-align: left;
+  }
+
+  footer h3 {
+    font-size: 24px;
+  }
+  footer {
+    margin-bottom: 45px;
+  }
+  .soMeIkoner {
+    text-align: left;
+  }
+
+  .rapportContainer {
+    margin: 0;
+  }
+
+  .kontakt {
+    margin-top: 0px;
+  }
+  .footerContainer {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28% 25% 11% 1fr;
+    padding-top: 30px;
+    grid-gap: 32px;
+  }
+}
+
+/* MEDIA QUERIES 1280px */
+@media screen and (min-width: 1280px) {
+  /* HEADER */
+  .navLogo img {
+    width: 73px;
+  }
+  .desktopPunkter a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* MAIN - MARGIN PÅ ALLE SIDER*/
+  main {
+    width: 80%;
+  }
+
+  .footerContainer {
+    width: 80%;
+    grid-template-columns: 28% 25% 14% 1fr;
+    padding-top: 30px;
+    grid-gap: 32px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  /* SKRIFTSTØRRELSER TIL DESKTOP STØRRELSE */
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  /* MAIN - MARGIN PÅ ALLE SIDER*/
+  main {
+    width: 75%;
+  }
+
+  /* NAVIGATION */
+  .desktopPunkter {
+    margin-right: 85px;
+  }
+  .navLogo img {
+    margin-left: 80px;
+  }
+  /* FOOTER */
+  .footerContainer {
+    grid-template-columns: 28% 25% 19% 1fr;
+  }
+
+  /* FOOTER */
+  .footerContainer {
+    width: 75%;
+    grid-template-columns: 28% 25% 18% 1fr;
+  }
+  /* HEADER */
+  header {
+    height: 60px;
+  }
+  .desktopPunkter a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  .navLogo img {
+    width: 74px;
+  }
+}
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  /* HEADER */
+  header {
+    height: 70px;
+  }
+  .desktopPunkter a {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .navLogo img {
+    width: 88px;
+  }
+
+  /* FOOTER*/
+  .footerContainer {
+    grid-template-columns: 26% 27% 21% 1fr;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* SKRIFTSTØRRELSE*/
+  h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  /* MAIN - MARGIN PÅ ALLE SIDER */
+  main {
+    width: 70%;
+  }
+  /* FOOTER */
+  .footerContainer {
+    width: 70%;
+    grid-template-columns: 27% 29% 21% 1fr;
+  }
+}

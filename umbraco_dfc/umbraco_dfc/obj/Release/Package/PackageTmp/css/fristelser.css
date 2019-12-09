@@ -1,0 +1,107 @@
+.marmeladeTxt {
+  margin-top: 58px;
+}
+
+.rugTxt {
+  margin-top: 80px;
+}
+.produkt2Txt {
+  width: 88%;
+  margin-top: 68px;
+}
+
+@media screen and (min-width: 627px) {
+  .marmeladeTxt {
+    margin-top: 64px;
+  }
+
+  .produkt2Txt {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marmeladeTxt {
+    margin-top: 70px;
+  }
+
+  .produkt2Txt {
+    width: 83%;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .produktTxt {
+    width: 38%;
+  }
+
+  .marmeladeTxt {
+    margin-top: 50px;
+  }
+  .rugTxt {
+    margin-top: 70px;
+  }
+
+  .produkt2Txt {
+    width: 37%;
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .produkt2Txt {
+    margin-top: 70px;
+  }
+
+  .marmeladeTxt {
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .produkt2Txt {
+    width: 35%;
+    margin-top: 60px;
+  }
+
+  .marmeladeTxt {
+    width: 35%;
+    margin-top: 50px;
+  }
+
+  .rugTxt {
+    margin-top: 62px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .produkt2Txt {
+    margin-top: 85px;
+  }
+
+  .marmeladeTxt {
+    width: 35%;
+    margin-top: 72px;
+  }
+
+  .rugTxt {
+    width: 37%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .produkt2Txt {
+    width: 32%;
+    margin-top: 80px;
+  }
+
+  .produktTxt {
+    width: 33%;
+  }
+
+  .rugTxt {
+    margin-top: 88px;
+  }
+}

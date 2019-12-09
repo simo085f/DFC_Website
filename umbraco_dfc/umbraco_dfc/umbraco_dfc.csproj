@@ -342,6 +342,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="css\bestillingskager.css" />
+    <Content Include="css\fristelser.css" />
+    <Content Include="css\historie.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\kager.css" />
+    <Content Include="css\kontakt.css" />
+    <Content Include="css\produkt.css" />
+    <Content Include="css\style.css" />
     <Content Include="favicon-package\android-chrome-192x192.png" />
     <Content Include="favicon-package\android-chrome-256x256.png" />
     <Content Include="favicon-package\apple-touch-icon.png" />
@@ -351,6 +360,107 @@
     <Content Include="favicon-package\favicon.ico" />
     <Content Include="favicon-package\mstile-150x150.png" />
     <Content Include="favicon-package\safari-pinned-tab.svg" />
+    <Content Include="Media\1001\375x390.jpg" />
+    <Content Include="Media\1002\627x290.jpg" />
+    <Content Include="Media\1003\768x550.jpg" />
+    <Content Include="Media\1004\1024x480.jpg" />
+    <Content Include="Media\1005\1280x500.jpg" />
+    <Content Include="Media\1006\1440x550.jpg" />
+    <Content Include="Media\1007\1536x600.jpg" />
+    <Content Include="Media\1008\1920x780.jpg" />
+    <Content Include="Media\1009\jul.jpg" />
+    <Content Include="Media\1010\kagensdag1.jpg" />
+    <Content Include="Media\1011\instagram-07.svg" />
+    <Content Include="Media\1012\dfclogo.png" />
+    <Content Include="Media\1013\facebook-06.svg" />
+    <Content Include="Media\1014\banner_groen_99x32.gif" />
+    <Content Include="Media\1015\icon-03.svg" />
+    <Content Include="Media\1016\icon-04.svg" />
+    <Content Include="Media\1017\b375x390.jpg" />
+    <Content Include="Media\1018\b627x290.jpg" />
+    <Content Include="Media\1019\b768x550.jpg" />
+    <Content Include="Media\1020\b1024x480.jpg" />
+    <Content Include="Media\1021\b1280x500.jpg" />
+    <Content Include="Media\1022\b1440x550.jpg" />
+    <Content Include="Media\1023\b1536x600.jpg" />
+    <Content Include="Media\1024\b1920x780.jpg" />
+    <Content Include="Media\1025\bollerny.jpg" />
+    <Content Include="Media\1026\broed2.jpg" />
+    <Content Include="Media\1027\rugbroed2.jpg" />
+    <Content Include="Media\1028\fluteny.jpg" />
+    <Content Include="Media\1029\be375x390.jpg" />
+    <Content Include="Media\1030\be627x290.jpg" />
+    <Content Include="Media\1031\be768x550.jpg" />
+    <Content Include="Media\1032\be1024x480.jpg" />
+    <Content Include="Media\1033\be1280x500.jpg" />
+    <Content Include="Media\1034\be1440x550.jpg" />
+    <Content Include="Media\1035\be1536x600.jpg" />
+    <Content Include="Media\1036\be1920x780.jpg" />
+    <Content Include="Media\1037\toerkager.jpg" />
+    <Content Include="Media\1038\taarteny.jpg" />
+    <Content Include="Media\1039\kaget.jpg" />
+    <Content Include="Media\1040\fr375x390.jpg" />
+    <Content Include="Media\1041\fr627x290.jpg" />
+    <Content Include="Media\1042\fr768x550.jpg" />
+    <Content Include="Media\1043\fr1024x480.jpg" />
+    <Content Include="Media\1044\fr1280x500.jpg" />
+    <Content Include="Media\1045\fr1440x550.jpg" />
+    <Content Include="Media\1046\fr1536x600.jpg" />
+    <Content Include="Media\1047\fr1920x780.jpg" />
+    <Content Include="Media\1048\marmelade2.jpg" />
+    <Content Include="Media\1049\musli2.jpg" />
+    <Content Include="Media\1050\rugbroedchips2.jpg" />
+    <Content Include="Media\1051\smaakager.jpg" />
+    <Content Include="Media\1052\k375x390.jpg" />
+    <Content Include="Media\1053\k627x290.jpg" />
+    <Content Include="Media\1054\k768x550.jpg" />
+    <Content Include="Media\1055\k1024x480.jpg" />
+    <Content Include="Media\1056\k1280x500.jpg" />
+    <Content Include="Media\1057\k1440x550.jpg" />
+    <Content Include="Media\1058\k1536x600.jpg" />
+    <Content Include="Media\1059\k1920x780.jpg" />
+    <Content Include="Media\1060\kransekage1.jpg" />
+    <Content Include="Media\1061\kransekage2.jpg" />
+    <Content Include="Media\1062\kransekage3.jpg" />
+    <Content Include="Media\1063\lagkager1.jpg" />
+    <Content Include="Media\1064\lagkager2.jpg" />
+    <Content Include="Media\1065\lagkager3.jpg" />
+    <Content Include="Media\1066\kagemand1.jpg" />
+    <Content Include="Media\1067\kagemand2.jpg" />
+    <Content Include="Media\1068\kagemand3.jpg" />
+    <Content Include="Media\1069\bryllup1.jpg" />
+    <Content Include="Media\1070\bryllup2.jpg" />
+    <Content Include="Media\1071\ko375x390.jpg" />
+    <Content Include="Media\1072\ko627x290.jpg" />
+    <Content Include="Media\1073\ko768x550.jpg" />
+    <Content Include="Media\1074\ko1024x480.jpg" />
+    <Content Include="Media\1075\ko1280x500.jpg" />
+    <Content Include="Media\1076\ko1440x550.jpg" />
+    <Content Include="Media\1077\ko1536x600.jpg" />
+    <Content Include="Media\1078\ko1920x780.jpg" />
+    <Content Include="Media\1079\kontaktos1.jpg" />
+    <Content Include="Media\1080\h375x390.jpg" />
+    <Content Include="Media\1081\h627x290.jpg" />
+    <Content Include="Media\1082\h768x550.jpg" />
+    <Content Include="Media\1083\h1024x480.jpg" />
+    <Content Include="Media\1084\h1280x500.jpg" />
+    <Content Include="Media\1085\h1440x550.jpg" />
+    <Content Include="Media\1086\h1536x600.jpg" />
+    <Content Include="Media\1087\h1920x780.jpg" />
+    <Content Include="Media\1088\h375x390.jpg" />
+    <Content Include="Media\1089\h627x290.jpg" />
+    <Content Include="Media\1090\h768x550.jpg" />
+    <Content Include="Media\1091\h1024x480.jpg" />
+    <Content Include="Media\1092\h1280x500.jpg" />
+    <Content Include="Media\1093\h1440x550.jpg" />
+    <Content Include="Media\1094\h1536x600.jpg" />
+    <Content Include="Media\1095\h1920x780.jpg" />
+    <Content Include="Media\1096\historie.jpg" />
+    <Content Include="Media\1097\historie1.jpg" />
+    <Content Include="Media\1098\historie2.jpg" />
+    <Content Include="Media\1099\historie3.jpg" />
+    <Content Include="Media\1100\historie4.jpg" />
+    <Content Include="Media\Web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -359,18 +469,11 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
-    <Content Include="Media\Web.config" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\carousel.js" />
+    <Content Include="scripts\js.js" />
+    <Content Include="scripts\scroll.js" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
     <Content Include="config\tinyMceConfig.config" />
@@ -389,6 +492,17 @@
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
     <None Include="favicon-package\manifest.json" />
+    <Content Include="Views\Bestillingskager.cshtml" />
+    <Content Include="Views\Broed.cshtml" />
+    <Content Include="Views\Forside.cshtml" />
+    <Content Include="Views\Fristelser.cshtml" />
+    <Content Include="Views\Kager.cshtml" />
+    <Content Include="Views\KontaktOs.cshtml" />
+    <Content Include="Views\master.cshtml" />
+    <Content Include="Views\Partials\Partial_Footer.cshtml" />
+    <Content Include="Views\Partials\Partial_Header.cshtml" />
+    <Content Include="Views\VoresHistorie.cshtml" />
+    <None Include="Properties\PublishProfiles\iis_unoeuro_publish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -421,8 +535,17 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -431,6 +554,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

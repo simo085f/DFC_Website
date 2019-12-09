@@ -1,0 +1,147 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "master.cshtml";
+}
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    <main>
+      <div class="IntroTxt">
+        <h1>@Umbraco.Field("fristelserOverskrift")</h1>
+        <p>
+          @Umbraco.Field("fristelserTekst")
+        </p>
+      </div>
+      <div class="produkt1">
+        <div class="produkt1Img">
+             @{
+    var marmelade = Model.GetPropertyValue<IPublishedContent>("marmeladeBillede");
+    if(marmelade != null){
+    <img src="@marmelade.Url" alt="Marmelade" />
+    }
+    }
+        </div>
+        <div class="produkt1Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt marmeladeTxt">
+            <h2>@Umbraco.Field("marmeladeOverskrift")</h2>
+            <p>
+              @Umbraco.Field("marmeladeTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt2">
+        <div class="produkt2Img">
+            @{
+    var musli = Model.GetPropertyValue<IPublishedContent>("musliBillede");
+    if(musli != null){
+    <img src="@musli.Url" alt="Musli" />
+    }
+    }
+          
+        </div>
+        <div class="produkt2Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("musliOverskrift")</h2>
+            <p>
+              @Umbraco.Field("musliTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt3">
+        <div class="produkt3Img">
+            @{
+    var rugbroedChips = Model.GetPropertyValue<IPublishedContent>("rugbroedschipsBillede");
+    if(rugbroedChips != null){
+    <img src="@rugbroedChips.Url" alt="Rugbrødschips" />
+    }
+    }
+          
+        </div>
+        <div class="produkt3Container">
+          <div class="produktBorder"></div>
+          <div class="produktTxt rugTxt">
+            <h2>@Umbraco.Field("rugbroedschipsOverskrift")</h2>
+            <p>
+              @Umbraco.Field("rugbroedchipsTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="produkt4">
+        <div class="produkt4Img">
+            @{
+    var smaakager = Model.GetPropertyValue<IPublishedContent>("smaakagerBillede");
+    if(smaakager != null){
+     <img src="@smaakager.Url" alt="småkager" />
+    }
+    }
+        </div>
+        <div class="produkt4Container">
+          <div class="produkt2Border"></div>
+          <div class="produkt2Txt">
+            <h2>@Umbraco.Field("smaakagerOverskrift")</h2>
+            <p>
+              @Umbraco.Field("smaakagerTekst")
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>

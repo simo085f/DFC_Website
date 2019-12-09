@@ -1,0 +1,315 @@
+footer {
+  margin-top: 70px;
+}
+.dfcTxt {
+  margin-top: 30px;
+}
+
+#jul {
+  margin-top: 35px;
+}
+
+.julImg img {
+  width: 100%;
+}
+
+.julTxt {
+  width: 84%;
+  position: absolute;
+  margin-top: 45px;
+}
+
+.julBorder {
+  border-right: 2px solid #be8e63;
+  border-top: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 60%;
+  float: right;
+}
+
+.kagensDagImg img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.kagensDagBorder {
+  border-right: 2px solid #be8e63;
+  border-left: 2px solid #be8e63;
+  border-bottom: 2px solid #be8e63;
+  height: 200px;
+  position: relative;
+  top: 444px;
+}
+
+.kagensDagContainer {
+  margin-top: -190px;
+}
+.kagensDagTxt {
+  margin-top: 10px;
+}
+
+.kagensDagTxt h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-block-start: 5px;
+}
+
+.kagensDagTxt p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.facebookBtn {
+  border: none;
+  background-color: #be8e63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  outline: none;
+  margin-left: 15px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.facebookBtn:hover {
+  background-color: #ce9c71;
+  transition: 0.3s ease;
+}
+
+/* MEDIA QUERIES 627px */
+@media screen and (min-width: 627px) {
+  /* INDEX.HTML */
+  /* JUL SEKTION */
+  .julTxt {
+    margin-top: 60px;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    top: 325px;
+  }
+  .kagensDagContainer {
+    margin-top: -190px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+}
+
+/* MEDIA QUERIES 768px */
+@media screen and (min-width: 768px) {
+  /*INDEX.HTML */
+  .dfcTxt {
+    margin-top: 40px;
+  }
+  /* JUL SEKTION */
+  .julTxt {
+    width: 80%;
+  }
+
+  #jul {
+    margin-top: 45px;
+  }
+
+  /* KAGENDAG SEKTION */
+  .kagensDagBorder {
+    height: 180px;
+    top: 308px;
+  }
+  .kagensDagImg img {
+    margin-top: 35px;
+  }
+  .kagensDagContainer {
+    margin-top: -170px;
+  }
+
+  .kagensDagTxt p {
+    padding-right: 16px;
+  }
+  footer {
+    margin-top: 90px;
+  }
+}
+
+/* MEDIA QUERIES 1024px */
+@media screen and (min-width: 1024px) {
+  .dfcTxt {
+    margin-top: 60px;
+  }
+  #jul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 70px;
+  }
+
+  .julTxt {
+    width: 39%;
+    margin-top: 45px;
+  }
+
+  .borderTxtContainer {
+    align-self: center;
+  }
+
+  .kagensDagBorder {
+    height: 150px;
+    top: 274px;
+  }
+
+  .kagensDagContainer {
+    margin-top: -140px;
+  }
+
+  .kagensDagImg img {
+    margin-top: 70px;
+  }
+  .kagensDagTxt h2 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .kagensDagTxt p {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .facebookBtn {
+    margin-left: 25px;
+  }
+
+  /* FOOTER**/
+  footer {
+    margin-top: 120px;
+  }
+}
+
+/* MEDIA QUERIES 1280px */
+@media screen and (min-width: 1280px) {
+  #jul {
+    grid-gap: 45px;
+  }
+  .julTxt {
+    width: 35%;
+    margin-top: 50px;
+  }
+
+  footer {
+    margin-top: 120px;
+  }
+}
+/* MEDIA QUERIES 1440px */
+@media screen and (min-width: 1440px) {
+  /* JUL SEKTION */
+  .dfcTxt {
+    margin-top: 70px;
+  }
+  #jul {
+    grid-gap: 60px;
+    margin-top: 90px;
+  }
+  .julTxt {
+    width: 32%;
+    margin-top: 40px;
+  }
+  /* KAGENDAG SEKTION */
+  .kagensDagImg img {
+    margin-top: 90px;
+  }
+  .kagensDagBorder {
+    top: 265px;
+    height: 150px;
+  }
+  .kagensDagTxt h2 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .kagensDagTxt p {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .facebookBtn {
+    margin-left: 35px;
+  }
+  .kagensDagContainer {
+    margin-top: -135px;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 140px;
+  }
+}
+
+/* MEDIA QUERIES 1536px */
+@media screen and (min-width: 1536px) {
+  .dfcTxt {
+    margin-top: 80px;
+  }
+  #jul {
+    margin-top: 100px;
+    grid-gap: 70px;
+  }
+  .julTxt {
+    margin-top: 64px;
+  }
+
+  .julBorder {
+    height: 300px;
+  }
+  .kagensDagImg img {
+    margin-top: 100px;
+  }
+  .kagensDagBorder {
+    top: 270px;
+  }
+  .kagensDagTxt h2 {
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+  .kagensDagTxt p {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .facebookBtn {
+    margin-left: 45px;
+  }
+
+  /* FOOTER*/
+  footer {
+    margin-top: 165px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .dfcTxt {
+    margin-top: 100px;
+  }
+  #jul {
+    margin-top: 120px;
+  }
+  .julTxt {
+    width: 28%;
+    padding-left: 50px;
+    margin-top: 60px;
+  }
+  .julBorder {
+    height: 330px;
+  }
+
+  .kagensDagImg img {
+    margin-top: 120px;
+  }
+
+  .kagensDagBorder {
+    top: 290px;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 185px;
+  }
+}

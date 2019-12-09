@@ -1,0 +1,196 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "master.cshtml";
+}
+<picture class="heroBillede">
+    @{
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
+    }
+    }
+    @{
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
+    }
+    }
+    @{
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
+    }
+    }
+    @{
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
+    }
+    }
+    @{
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
+    }
+    }    
+    @{
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
+    }
+    }    
+    @{
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
+    }
+    }  
+    @{
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
+    }
+    }
+    @{
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
+    }
+    }
+    </picture>
+    <main>
+      <div class="dfcTxt">
+        <h1>@Umbraco.Field("historieOverskrift")</h1>
+        <p>
+          @Umbraco.Field("historieTekst")
+        </p>
+      </div>
+      <div class="historie historieMargin">
+        <div class="aarstal">
+          <h2>1</h2>
+          <h2>8</h2>
+          <h2>9</h2>
+          <h2>8</h2>
+        </div>
+        <div class="aarstalDesktop">
+          <h2>18</h2>
+          <h2>98</h2>
+        </div>
+        <div class="historieTxt">
+          <p>
+            @Umbraco.Field("ar1898Tekst")
+          </p>
+        </div>
+        <div class="historieImg">
+            @{
+    var historie1 = Model.GetPropertyValue<IPublishedContent>("ar1898Billede");
+    if(historie1 != null){
+    <img src="@historie1.Url" alt="1898" />
+    }
+    }
+          
+        </div>
+      </div>
+      <div class="historie2 historieMargin">
+        <div class="aarstal">
+          <h2>1</h2>
+          <h2>9</h2>
+          <h2>2</h2>
+          <h2>3</h2>
+        </div>
+        <div class="aarstalDesktop">
+          <h2>19</h2>
+          <h2>23</h2>
+        </div>
+        <div class="historieTxt">
+          <p>
+            @Umbraco.Field("ar1923Tekst")
+          </p>
+        </div>
+        <div class="historieImg2">
+            @{
+    var historie2 = Model.GetPropertyValue<IPublishedContent>("ar1923Billede");
+    if(historie2 != null){
+    <img src="@historie2.Url" alt="1923" />
+    }
+    }
+        </div>
+      </div>
+
+      <div class="historie_3 historieMargin">
+        <div class="aarstal">
+          <h2>1</h2>
+          <h2>9</h2>
+          <h2>5</h2>
+          <h2>8</h2>
+        </div>
+        <div class="aarstalDesktop">
+          <h2>19</h2>
+          <h2>58</h2>
+        </div>
+        <div class="historieTxt">
+          <p>
+            @Umbraco.Field("ar1958Tekst")
+          </p>
+        </div>
+        <div class="historieImg_3">
+             @{
+    var historie3 = Model.GetPropertyValue<IPublishedContent>("ar1958Billede");
+    if(historie3 != null){
+    <img src="@historie3.Url" alt="1958" />
+    }
+    }
+        </div>
+      </div>
+      <div class="historie3 historieMargin">
+        <div class="aarstal">
+          <h2>1</h2>
+          <h2>9</h2>
+          <h2>7</h2>
+          <h2>8</h2>
+        </div>
+        <div class="aarstalDesktop">
+          <h2>19</h2>
+          <h2>78</h2>
+        </div>
+        <div class="historieTxt">
+          <p>
+            @Umbraco.Field("ar1978Tekst")
+          </p>
+        </div>
+        <div class="historieImg3">
+            @{
+    var historie4 = Model.GetPropertyValue<IPublishedContent>("ar1978Billede");
+    if(historie4 != null){
+    <img src="@historie4.Url" alt="1978" />
+    }
+    }
+        </div>
+      </div>
+      <div class="historie4 historieMargin">
+        <div class="aarstal">
+          <h2>1</h2>
+          <h2>9</h2>
+          <h2>9</h2>
+          <h2>5</h2>
+        </div>
+        <div class="aarstalDesktop">
+          <h2>19</h2>
+          <h2>95</h2>
+        </div>
+        <div class="historieTxt">
+          <p>
+            @Umbraco.Field("ar1995Tekst")
+          </p>
+        </div>
+        <div class="historieImg4">
+            @{
+    var historie5 = Model.GetPropertyValue<IPublishedContent>("ar1995Billede");
+    if(historie5 != null){
+    <img src="@historie5.Url" alt="1995" />
+    }
+    }
+        </div>
+      </div>
+    </main>
