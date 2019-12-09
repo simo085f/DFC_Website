@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "562cf2249096ca6c")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1c5ea7b2e757fdf5")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 
 // FILE: models.generated.cs
@@ -290,78 +290,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// B hero 1024px: Hero billede 1024px
-		///</summary>
-		[ImplementPropertyType("bHero1024px")]
-		public IPublishedContent BHero1024px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero1024px"); }
-		}
-
-		///<summary>
-		/// B hero 1280px: Hero billede 1280px
-		///</summary>
-		[ImplementPropertyType("bHero1280px")]
-		public IPublishedContent BHero1280px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero1280px"); }
-		}
-
-		///<summary>
-		/// B hero 1440px: Hero billede 1440px
-		///</summary>
-		[ImplementPropertyType("bHero1440px")]
-		public IPublishedContent BHero1440px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero1440px"); }
-		}
-
-		///<summary>
-		/// B hero 1536px: Hero billede 1536px
-		///</summary>
-		[ImplementPropertyType("bHero1536px")]
-		public IPublishedContent BHero1536px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero1536px"); }
-		}
-
-		///<summary>
-		/// B hero 1920px: Hero billede 1920px
-		///</summary>
-		[ImplementPropertyType("bHero1920px")]
-		public IPublishedContent BHero1920px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero1920px"); }
-		}
-
-		///<summary>
-		/// B hero 375px: Hero billede 375px
-		///</summary>
-		[ImplementPropertyType("bHero375px")]
-		public IPublishedContent BHero375px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero375px"); }
-		}
-
-		///<summary>
-		/// B hero 627px: Hero billede 627px
-		///</summary>
-		[ImplementPropertyType("bHero627px")]
-		public IPublishedContent BHero627px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero627px"); }
-		}
-
-		///<summary>
-		/// B hero 768px: Hero billede 768px
-		///</summary>
-		[ImplementPropertyType("bHero768px")]
-		public IPublishedContent BHero768px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("bHero768px"); }
-		}
-
-		///<summary>
 		/// Boller billede: Billede til boller sektionen
 		///</summary>
 		[ImplementPropertyType("bollerBillede")]
@@ -494,6 +422,78 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent HeaderLogo
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("headerLogo"); }
+		}
+
+		///<summary>
+		/// Hero 1024px: Hero billede 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Hero billede 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
 		}
 
 		///<summary>
@@ -631,6 +631,78 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Hero 1024px
+		///</summary>
+		[ImplementPropertyType("hero1024px")]
+		public IPublishedContent Hero1024px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1024px"); }
+		}
+
+		///<summary>
+		/// Hero 1280px: Hero billede 1280px
+		///</summary>
+		[ImplementPropertyType("hero1280px")]
+		public IPublishedContent Hero1280px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1280px"); }
+		}
+
+		///<summary>
+		/// Hero 1440px: Hero billede 1440px
+		///</summary>
+		[ImplementPropertyType("hero1440px")]
+		public IPublishedContent Hero1440px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1440px"); }
+		}
+
+		///<summary>
+		/// Hero 1536px: Hero billede 1536px
+		///</summary>
+		[ImplementPropertyType("hero1536px")]
+		public IPublishedContent Hero1536px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1536px"); }
+		}
+
+		///<summary>
+		/// Hero 1920px: Hero billede 1920px
+		///</summary>
+		[ImplementPropertyType("hero1920px")]
+		public IPublishedContent Hero1920px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero1920px"); }
+		}
+
+		///<summary>
+		/// Hero 375px: Hero billede 375px
+		///</summary>
+		[ImplementPropertyType("hero375px")]
+		public IPublishedContent Hero375px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero375px"); }
+		}
+
+		///<summary>
+		/// Hero 627px: Hero billede 627px
+		///</summary>
+		[ImplementPropertyType("hero627px")]
+		public IPublishedContent Hero627px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero627px"); }
+		}
+
+		///<summary>
+		/// Hero 768px: Hero billede 768px
+		///</summary>
+		[ImplementPropertyType("hero768px")]
+		public IPublishedContent Hero768px
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("hero768px"); }
+		}
+
+		///<summary>
 		/// Instagram
 		///</summary>
 		[ImplementPropertyType("instagram")]
@@ -664,78 +736,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public string KagerTekst
 		{
 			get { return this.GetPropertyValue<string>("kagerTekst"); }
-		}
-
-		///<summary>
-		/// K hero 1024px
-		///</summary>
-		[ImplementPropertyType("kHero1024px")]
-		public IPublishedContent KHero1024px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero1024px"); }
-		}
-
-		///<summary>
-		/// K hero 1280px: Hero billede 1280px
-		///</summary>
-		[ImplementPropertyType("kHero1280px")]
-		public IPublishedContent KHero1280px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero1280px"); }
-		}
-
-		///<summary>
-		/// K hero 1440px: Hero billede 1440px
-		///</summary>
-		[ImplementPropertyType("kHero1440px")]
-		public IPublishedContent KHero1440px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero1440px"); }
-		}
-
-		///<summary>
-		/// K hero 1536px: Hero billede 1536px
-		///</summary>
-		[ImplementPropertyType("kHero1536px")]
-		public IPublishedContent KHero1536px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero1536px"); }
-		}
-
-		///<summary>
-		/// K hero 1920px: Hero billede 1920px
-		///</summary>
-		[ImplementPropertyType("kHero1920px")]
-		public IPublishedContent KHero1920px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero1920px"); }
-		}
-
-		///<summary>
-		/// K hero 375px: Hero billede 375px
-		///</summary>
-		[ImplementPropertyType("kHero375px")]
-		public IPublishedContent KHero375px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero375px"); }
-		}
-
-		///<summary>
-		/// K hero 627px: Hero billede 627px
-		///</summary>
-		[ImplementPropertyType("kHero627px")]
-		public IPublishedContent KHero627px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero627px"); }
-		}
-
-		///<summary>
-		/// K hero 768px: Hero billede 768px
-		///</summary>
-		[ImplementPropertyType("kHero768px")]
-		public IPublishedContent KHero768px
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("kHero768px"); }
 		}
 
 		///<summary>
@@ -1947,6 +1947,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Vej
 		{
 			get { return this.GetPropertyValue<string>("vej"); }
+		}
+	}
+
+	/// <summary>Sitemap</summary>
+	[PublishedContentModel("sitemap")]
+	public partial class Sitemap : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "sitemap";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Sitemap(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Sitemap, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

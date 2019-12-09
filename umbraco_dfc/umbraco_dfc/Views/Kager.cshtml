@@ -6,57 +6,57 @@
 
  <picture class="heroBillede">
       @{
-    var kHero1920 = Model.GetPropertyValue<IPublishedContent>("kHero1920px");
-    if(kHero1920 != null){
-    <source media="(min-width: 1920px)" srcset="@kHero1920.Url" />
+    var hero1920 = Model.GetPropertyValue<IPublishedContent>("hero1920px");
+    if(hero1920 != null){
+    <source media="(min-width: 1920px)" srcset="@hero1920.Url" />
     }
     }
     @{
-    var kHero1536 = Model.GetPropertyValue<IPublishedContent>("kHero1536px");
-    if(kHero1536 != null){
-    <source media="(min-width: 1536px)" srcset="@kHero1536.Url" />
+    var hero1536 = Model.GetPropertyValue<IPublishedContent>("hero1536px");
+    if(hero1536 != null){
+    <source media="(min-width: 1536px)" srcset="@hero1536.Url" />
     }
     }
     @{
-    var kHero1440 = Model.GetPropertyValue<IPublishedContent>("kHero1440px");
-    if(kHero1440 != null){
-    <source media="(min-width: 1440px)" srcset="@kHero1440.Url" />
+    var hero1440 = Model.GetPropertyValue<IPublishedContent>("hero1440px");
+    if(hero1440 != null){
+    <source media="(min-width: 1440px)" srcset="@hero1440.Url" />
     }
     }
     @{
-    var kHero1280 = Model.GetPropertyValue<IPublishedContent>("kHero1280px");
-    if(kHero1280 != null){
-    <source media="(min-width: 1280px)" srcset="@kHero1280.Url" />
+    var hero1280 = Model.GetPropertyValue<IPublishedContent>("hero1280px");
+    if(hero1280 != null){
+    <source media="(min-width: 1280px)" srcset="@hero1280.Url" />
     }
     }
     @{
-    var kHero1024 = Model.GetPropertyValue<IPublishedContent>("kHero1024px");
-    if(kHero1024 != null){
-    <source media="(min-width: 1024px)" srcset="@kHero1024.Url" />
+    var hero1024 = Model.GetPropertyValue<IPublishedContent>("hero1024px");
+    if(hero1024 != null){
+    <source media="(min-width: 1024px)" srcset="@hero1024.Url" />
     }
     }    
     @{
-    var kHero768 = Model.GetPropertyValue<IPublishedContent>("kHero768px");
-    if(kHero768 != null){
-    <source media="(min-width: 768px)" srcset="@kHero768.Url" />
+    var hero768 = Model.GetPropertyValue<IPublishedContent>("hero768px");
+    if(hero768 != null){
+    <source media="(min-width: 768px)" srcset="@hero768.Url" />
     }
     }    
     @{
-    var kHero627 = Model.GetPropertyValue<IPublishedContent>("kHero627px");
-    if(kHero627 != null){
-    <source media="(min-width: 627px)" srcset="@kHero627.Url" />
+    var hero627 = Model.GetPropertyValue<IPublishedContent>("hero627px");
+    if(hero627 != null){
+    <source media="(min-width: 627px)" srcset="@hero627.Url" />
     }
     }  
     @{
-    var kHero375 = Model.GetPropertyValue<IPublishedContent>("kHero375px");
-    if(kHero375 != null){
-    <source media="(min-width: 375px)" srcset="@kHero375.Url" />
+    var hero375 = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(hero375 != null){
+    <source media="(min-width: 375px)" srcset="@hero375.Url" />
     }
     }
     @{
-    var kHeroMobil = Model.GetPropertyValue<IPublishedContent>("kHero375px");
-    if(kHeroMobil != null){
-    <img src="@kHeroMobil.Url" alt="Det Franske Conditori" />
+    var heroMobil = Model.GetPropertyValue<IPublishedContent>("hero375px");
+    if(heroMobil != null){
+    <img src="@heroMobil.Url" alt="Det Franske Conditori" />
     }
     }
     </picture>
