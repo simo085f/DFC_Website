@@ -876,12 +876,6 @@ Umbraco.Core.Persistence.Mappers.ServerRegistrationMapper, Umbraco.Core, Version
 Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.7180.24662, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.7180.24662, Culture=neutral, PublicKeyToken=null
 
-Umbraco.Web.Editors.IEditorValidator
-
-Umbraco.ModelsBuilder.Validation.ContentTypeModelValidator, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
-Umbraco.ModelsBuilder.Validation.MediaTypeModelValidator, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
-Umbraco.ModelsBuilder.Validation.MemberTypeModelValidator, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
-
 umbraco.interfaces.ICacheRefresher
 
 Umbraco.Web.Cache.ApplicationCacheRefresher, umbraco, Version=1.0.7180.24668, Culture=neutral, PublicKeyToken=null
@@ -905,7 +899,4 @@ Umbraco.Web.Cache.TemplateCacheRefresher, umbraco, Version=1.0.7180.24668, Cultu
 Umbraco.Web.Cache.UnpublishedPageCacheRefresher, umbraco, Version=1.0.7180.24668, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserCacheRefresher, umbraco, Version=1.0.7180.24668, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserGroupPermissionsCacheRefresher, umbraco, Version=1.0.7180.24668, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 

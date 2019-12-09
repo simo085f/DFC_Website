@@ -41,7 +41,7 @@ footer {
   border-bottom: 2px solid #be8e63;
   height: 200px;
   position: relative;
-  top: 444px;
+  top: 460px;
 }
 
 .kagensDagContainer {
@@ -90,7 +90,7 @@ footer {
   }
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
-    top: 325px;
+    top: 400px;
   }
   .kagensDagContainer {
     margin-top: -190px;
@@ -119,7 +119,7 @@ footer {
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     height: 180px;
-    top: 308px;
+    top: 320px;
   }
   .kagensDagImg img {
     margin-top: 35px;
@@ -159,7 +159,7 @@ footer {
 
   .kagensDagBorder {
     height: 150px;
-    top: 274px;
+    top: 280px;
   }
 
   .kagensDagContainer {
@@ -195,6 +195,9 @@ footer {
   .julTxt {
     width: 35%;
     margin-top: 50px;
+  }
+	.kagensDagBorder {
+    top: 260px;
   }
 
   footer {

@@ -503,6 +503,7 @@
     <Content Include="Views\Partials\Partial_Header.cshtml" />
     <Content Include="Views\VoresHistorie.cshtml" />
     <None Include="Properties\PublishProfiles\iis_unoeuro_publish.pubxml" />
+    <Content Include="Views\Sitemap.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
