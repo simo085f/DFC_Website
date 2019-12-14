@@ -41,7 +41,7 @@ footer {
   border-bottom: 2px solid #be8e63;
   height: 200px;
   position: relative;
-  top: 460px;
+  top: 490px;
 }
 
 .kagensDagContainer {
@@ -90,7 +90,7 @@ footer {
   }
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
-    top: 400px;
+    top: 515px;
   }
   .kagensDagContainer {
     margin-top: -190px;
