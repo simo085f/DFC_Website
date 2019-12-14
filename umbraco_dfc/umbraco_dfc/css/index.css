@@ -86,8 +86,11 @@ footer {
   /* INDEX.HTML */
   /* JUL SEKTION */
   .julTxt {
-    margin-top: 60px;
+    margin-top: 40px;
   }
+  .julBorder{
+	height: 300px;
+}
   /* KAGENDAG SEKTION */
   .kagensDagBorder {
     top: 515px;
@@ -110,7 +113,11 @@ footer {
   /* JUL SEKTION */
   .julTxt {
     width: 80%;
+    margin-top: 60px;
   }
+  .julBorder{
+	height: 250px;
+}
 
   #jul {
     margin-top: 45px;
