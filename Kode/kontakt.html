@@ -146,11 +146,14 @@
           method="POST"
           enctype="text/plain"
         >
-          <label for="navn">Navn <input type="text" name="navn"/></label>
-          <label for="email">Email <input type="email" name="email"/></label>
+          <label for="navn"
+            >Navn <input type="text" name="navn" id="navn"
+          /></label>
+          <label for="email"
+            >Email <input type="email" name="email" id="email"
+          /></label>
           <label for="besked"
-            >Besked
-            <textarea name="besked" id="kontaktBesked" rows="5"></textarea
+            >Besked <textarea name="besked" id="besked" rows="5"></textarea
           ></label>
           <input type="submit" value="Send" class="sendEmail" />
         </form>
@@ -183,6 +186,7 @@
               href="https://www.facebook.com/detfranskeconditori/"
               aria-label="Følg os på Facebook"
               class="facebook"
+              target="_blank"
             >
               <img src="img/facebook-06.svg" alt="facebook"
             /></a>
@@ -191,6 +195,7 @@
               href="https://www.instagram.com/detfranskeconditori/"
               aria-label="Følg os på Instagram"
               class="instagram"
+              target="_blank"
             >
               <img src="img/instagram-07.svg" alt="instagram"
             /></a>
@@ -199,7 +204,7 @@
         <div class="kontrolRapport">
           <h3>Kontrolrapport</h3>
           <div class="rapportContainer">
-            <a href="https://www.findsmiley.dk/112428">
+            <a href="https://www.findsmiley.dk/112428" target="_blank">
               <img src="img/Banner_groen_99x32.gif" alt="Smiley rapport"
             /></a>
           </div>

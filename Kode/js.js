@@ -7,3 +7,7 @@ function aabenNav() {
 function lukNav() {
   document.querySelector("#mobilNavigation").style.width = "0%";
 }
+
+function nytVindue() {
+  window.open("https://www.facebook.com/detfranskeconditori/");
+}
