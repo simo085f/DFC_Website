@@ -134,18 +134,18 @@ i.frem2 {
   /* PLACERING AF TEKST */
   .lagkageTxt {
     width: 84%;
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   .kagemandTxt {
-    margin-top: 65px;
+    margin-top: 50px;
   }
 
   .bryllupTxt {
-    margin-top: 62px;
+    margin-top: 35px;
   }
   .kransekageTxt {
-    margin-top: 58px;
+    margin-top: 15px;
   }
 }
 
@@ -167,6 +167,9 @@ i.frem2 {
 
   .kransekageTxt {
     margin-top: 60px;
+  }
+  .bryllupTxt {
+    margin-top: 62px;
   }
 }
 
