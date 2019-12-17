@@ -28,7 +28,7 @@
               href="https://www.facebook.com/detfranskeconditori/"
               aria-label="Følg os på Facebook"
               class="facebook"
-              target="_blank">
+              target="_blank" rel="noopener">
                  @{
     var facebook = Model.GetPropertyValue<IPublishedContent>("facebook");
     if(facebook != null){
@@ -41,7 +41,7 @@
               href="https://www.instagram.com/detfranskeconditori/"
               aria-label="Følg os på Instagram"
               class="instagram"
-              target="_blank"
+              target="_blank" rel="noopener"
             >
                  @{
     var instagram = Model.GetPropertyValue<IPublishedContent>("instagram");
@@ -56,7 +56,7 @@
         <div class="kontrolRapport">
           <h3>Kontrolrapport</h3>
           <div class="rapportContainer">
-            <a href="https://www.findsmiley.dk/112428" target="_blank">
+            <a href="https://www.findsmiley.dk/112428" target="_blank" rel="noopener">
                 @{
     var smiley = Model.GetPropertyValue<IPublishedContent>("smiley");
     if(smiley != null){
