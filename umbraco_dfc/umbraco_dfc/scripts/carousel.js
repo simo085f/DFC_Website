@@ -1,4 +1,5 @@
-/* CAROUSEL JAVASCRIPT LAGKAGER*/
+/* Carousel javascript https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/*LAGKAGER*/
 let slideIndex = 1;
 visSlides(slideIndex);
 
